@@ -1,0 +1,1708 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nugget name="ZABAPINHO_DEPENDENCIES">
+ <DEVC DEVCLASS="ZABAPINHO_DEPENDENCIES" CTEXT="Abapinho Dev Tools - Dependencies" LANGUAGE="E" MASTERLANG="E" KORRFLAG="X" DLVUNIT="HOME" NAMESPACE="/0CUST/" PARENTCL="ZABAPINHO_DEV_TOOLS" CREATED_BY="PT99375462" CREATED_ON="20151019" CHANGED_BY="PT99375462" CHANGED_ON="20151019" SRV_CHECK="X" PROJECT_GUID="00000000000000000000000000000000" TRANSLATION_DEPTH="NOT_CLASSIFIED" TRANSLATION_DEPTH_TEXT="Not Classified"/>
+ <PROG NAME="ZABAPINHO_DEPENDENCIES" EDTX="X" VARCL="X" SUBC="1" RMAND="040" RLOAD="E" FIXPT="X" UCCHECK="X">
+  <textPool>
+   <language SPRAS="E">
+    <textElement ID="I" KEY="B01" ENTRY="Object selection" LENGTH="16 "/>
+    <textElement ID="I" KEY="B02" ENTRY="Aditional options" LENGTH="17 "/>
+    <textElement ID="I" KEY="C02" ENTRY="Obj. Desc." LENGTH="10 "/>
+    <textElement ID="I" KEY="C03" ENTRY="Deepness" LENGTH="8 "/>
+    <textElement ID="I" KEY="C04" ENTRY="Scope" LENGTH="5 "/>
+    <textElement ID="I" KEY="C05" ENTRY="Depend" LENGTH="6 "/>
+    <textElement ID="I" KEY="CM1" ENTRY="Cross-system objects versions check" LENGTH="35 "/>
+    <textElement ID="I" KEY="M01" ENTRY="Objects not found" LENGTH="20 "/>
+    <textElement ID="I" KEY="M02" ENTRY="Please fill all required fields" LENGTH="31 "/>
+    <textElement ID="I" KEY="M03" ENTRY="Critical error" LENGTH="14 "/>
+    <textElement ID="I" KEY="M04" ENTRY="No objects selected" LENGTH="19 "/>
+    <textElement ID="I" KEY="M05" ENTRY="Transport not allowed for multiple targets" LENGTH="42 "/>
+    <textElement ID="I" KEY="M06" ENTRY="Error creating transport request" LENGTH="32 "/>
+    <textElement ID="I" KEY="M07" ENTRY="Objects added to request (" LENGTH="26 "/>
+    <textElement ID="I" KEY="M08" ENTRY="Please select a remote system" LENGTH="29 "/>
+    <textElement ID="I" KEY="M09" ENTRY="RFCs destinations missing" LENGTH="25 "/>
+    <textElement ID="I" KEY="M10" ENTRY="Request canceled, object with $TEMP detected" LENGTH="44 "/>
+    <textElement ID="I" KEY="M11" ENTRY="Navigation not suported" LENGTH="23 "/>
+    <textElement ID="I" KEY="M12" ENTRY="Transport canceled" LENGTH="18 "/>
+    <textElement ID="I" KEY="M13" ENTRY="Object dependencies check not support" LENGTH="37 "/>
+    <textElement ID="I" KEY="M14" ENTRY="No dependecies found" LENGTH="20 "/>
+    <textElement ID="I" KEY="M15" ENTRY="Error treating transport request" LENGTH="32 "/>
+    <textElement ID="I" KEY="M16" ENTRY="Please fill deepness for standard objects" LENGTH="41 "/>
+    <textElement ID="I" KEY="O01" ENTRY="Equal" LENGTH="5 "/>
+    <textElement ID="I" KEY="O02" ENTRY="Different" LENGTH="9 "/>
+    <textElement ID="I" KEY="O03" ENTRY="New" LENGTH="3 "/>
+    <textElement ID="I" KEY="O04" ENTRY="No version" LENGTH="10 "/>
+    <textElement ID="I" KEY="P01" ENTRY="Adding object" LENGTH="13 "/>
+    <textElement ID="I" KEY="P02" ENTRY="Checking dependecies" LENGTH="20 "/>
+    <textElement ID="I" KEY="P03" ENTRY="Checking remote" LENGTH="15 "/>
+    <textElement ID="I" KEY="P04" ENTRY="Display objects" LENGTH="15 "/>
+    <textElement ID="I" KEY="P05" ENTRY="Processing options" LENGTH="18 "/>
+    <textElement ID="I" KEY="PB1" ENTRY="% Complete" LENGTH="10 "/>
+    <textElement ID="R" ENTRY="Cross system objects recursive dependencies check with transport" LENGTH="64 "/>
+    <textElement ID="S" KEY="P_DEEP" ENTRY="        Dependencies deepness" LENGTH="29 "/>
+    <textElement ID="S" KEY="P_DEP" ENTRY="        Dependencies check" LENGTH="26 "/>
+    <textElement ID="S" KEY="P_ERFC" ENTRY="        Exclude RFCs if exist" LENGTH="29 "/>
+    <textElement ID="S" KEY="P_ICD" ENTRY="        Include tables CDs" LENGTH="32 "/>
+    <textElement ID="S" KEY="P_IDEV" ENTRY="        Include packages in transport" LENGTH="37 "/>
+    <textElement ID="S" KEY="P_ILO" ENTRY="        Include tables locks" LENGTH="35 "/>
+    <textElement ID="S" KEY="P_IST" ENTRY="        Include standard objects" LENGTH="32 "/>
+    <textElement ID="S" KEY="P_ITM" ENTRY="        Include tables maintenances" LENGTH="35 "/>
+    <textElement ID="S" KEY="P_OBJECT" ENTRY="D       ." LENGTH="19 "/>
+    <textElement ID="S" KEY="P_OBJ_N" ENTRY="D       ." LENGTH="19 "/>
+    <textElement ID="S" KEY="P_PGMID" ENTRY="D       ." LENGTH="18 "/>
+    <textElement ID="S" KEY="P_RFC" ENTRY="        Remote versions checks" LENGTH="30 "/>
+    <textElement ID="S" KEY="P_RFC_D" ENTRY="D       ." LENGTH="19 "/>
+    <textElement ID="S" KEY="P_TR" ENTRY="        Transport request" LENGTH="25 "/>
+    <textElement ID="S" KEY="R_OBJ" ENTRY="        Check workbench object" LENGTH="30 "/>
+    <textElement ID="S" KEY="R_TR" ENTRY="        Check transport request" LENGTH="34 "/>
+   </language>
+  </textPool>
+  <pfstatus>
+   <pfstatus_sta CODE="STATUS" MODAL="D" ACTCODE="000002" PFKCODE="000002" BUTCODE="0001" INT_NOTE="Status"/>
+   <pfstatus_fun CODE="%PC" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_EXPORT" ICON_ID="@49@" FUN_TEXT="Local File..." PATH="L"/>
+   <pfstatus_fun CODE="%SC" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_SEARCH" ICON_ID="@13@" FUN_TEXT="Find"/>
+   <pfstatus_fun CODE="%SC+" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_SEARCH_NEXT" ICON_ID="@4E@" FUN_TEXT="Find next"/>
+   <pfstatus_fun CODE="&amp;ALL" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_SELECT_ALL" ICON_ID="@4B@" FUN_TEXT="Select All" PATH="S"/>
+   <pfstatus_fun CODE="&amp;AVE" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_ALV_VARIANT_SAVE" ICON_ID="@DN@" FUN_TEXT="Save Layout..."/>
+   <pfstatus_fun CODE="&amp;F03" TEXTNO="001" TEXT_TYPE="S" FUN_TEXT="Back" PATH="B"/>
+   <pfstatus_fun CODE="&amp;F12" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_CANCEL" ICON_ID="@0W@" FUN_TEXT="Cancel" PATH="A"/>
+   <pfstatus_fun CODE="&amp;F15" TEXTNO="001" TEXT_TYPE="S" FUN_TEXT="Exit" PATH="X"/>
+   <pfstatus_fun CODE="&amp;ILT" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_FILTER" ICON_ID="@4G@" FUN_TEXT="Set Filter" PATH="F"/>
+   <pfstatus_fun CODE="&amp;OAD" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_ALV_VARIANT_CHOOSE" ICON_ID="@DM@" FUN_TEXT="Select Layout"/>
+   <pfstatus_fun CODE="&amp;ODN" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_SORT_DOWN" ICON_ID="@3F@" FUN_TEXT="Sort in Descending Order" PATH="O"/>
+   <pfstatus_fun CODE="&amp;OL0" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_ALV_VARIANTS" ICON_ID="@LZ@" FUN_TEXT="Change Layout..."/>
+   <pfstatus_fun CODE="&amp;OUP" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_SORT_UP" ICON_ID="@3E@" FUN_TEXT="Sort in Ascending Order" PATH="I"/>
+   <pfstatus_fun CODE="&amp;SAL" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_DESELECT_ALL" ICON_ID="@4D@" FUN_TEXT="Deselect All" PATH="D"/>
+   <pfstatus_fun CODE="DALL" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_DESELECT_ALL" ICON_ID="@4D@" FUN_TEXT="Deselect All" PATH="D"/>
+   <pfstatus_fun CODE="SALL" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_SELECT_ALL" ICON_ID="@4B@" FUN_TEXT="Select All" PATH="S"/>
+   <pfstatus_fun CODE="TR" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_IMPORT_TRANSPORT_REQUEST" ICON_ID="@K5@" FUN_TEXT="Create transport" ICON_TEXT="Create transport" INFO_TEXT="Create transport" PATH="T"/>
+   <pfstatus_but PFK_CODE="000002" CODE="0001" NO="01" PFNO="05"/>
+   <pfstatus_but PFK_CODE="000002" CODE="0001" NO="02" PFNO="06"/>
+   <pfstatus_but PFK_CODE="000002" CODE="0001" NO="03" PFNO="S"/>
+   <pfstatus_but PFK_CODE="000002" CODE="0001" NO="04" PFNO="28"/>
+   <pfstatus_but PFK_CODE="000002" CODE="0001" NO="05" PFNO="40"/>
+   <pfstatus_but PFK_CODE="000002" CODE="0001" NO="06" PFNO="29"/>
+   <pfstatus_but PFK_CODE="000002" CODE="0001" NO="07" PFNO="S"/>
+   <pfstatus_but PFK_CODE="000002" CODE="0001" NO="08" PFNO="45"/>
+   <pfstatus_but PFK_CODE="000002" CODE="0001" NO="09" PFNO="S"/>
+   <pfstatus_but PFK_CODE="000002" CODE="0001" NO="10" PFNO="32"/>
+   <pfstatus_but PFK_CODE="000002" CODE="0001" NO="11" PFNO="33"/>
+   <pfstatus_but PFK_CODE="000002" CODE="0001" NO="12" PFNO="34"/>
+   <pfstatus_but PFK_CODE="000002" CODE="0001" NO="13" PFNO="S"/>
+   <pfstatus_but PFK_CODE="000002" CODE="0001" NO="14" PFNO="08"/>
+   <pfstatus_pfk CODE="000002" PFNO="03" FUNCODE="&amp;F03" FUNNO="001"/>
+   <pfstatus_pfk CODE="000002" PFNO="05" FUNCODE="&amp;ALL" FUNNO="001"/>
+   <pfstatus_pfk CODE="000002" PFNO="06" FUNCODE="&amp;SAL" FUNNO="001"/>
+   <pfstatus_pfk CODE="000002" PFNO="08" FUNCODE="TR" FUNNO="001"/>
+   <pfstatus_pfk CODE="000002" PFNO="12" FUNCODE="&amp;F12" FUNNO="001"/>
+   <pfstatus_pfk CODE="000002" PFNO="15" FUNCODE="&amp;F15" FUNNO="001"/>
+   <pfstatus_pfk CODE="000002" PFNO="28" FUNCODE="&amp;OUP" FUNNO="001"/>
+   <pfstatus_pfk CODE="000002" PFNO="29" FUNCODE="&amp;ILT" FUNNO="001"/>
+   <pfstatus_pfk CODE="000002" PFNO="32" FUNCODE="&amp;OL0" FUNNO="001"/>
+   <pfstatus_pfk CODE="000002" PFNO="33" FUNCODE="&amp;OAD" FUNNO="001"/>
+   <pfstatus_pfk CODE="000002" PFNO="34" FUNCODE="&amp;AVE" FUNNO="001"/>
+   <pfstatus_pfk CODE="000002" PFNO="40" FUNCODE="&amp;ODN" FUNNO="001"/>
+   <pfstatus_pfk CODE="000002" PFNO="45" FUNCODE="%PC" FUNNO="001"/>
+   <pfstatus_pfk CODE="000002" PFNO="71" FUNCODE="%SC" FUNNO="001"/>
+   <pfstatus_pfk CODE="000002" PFNO="84" FUNCODE="%SC+" FUNNO="001"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="%PC"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="%SC"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="%SC+"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="&amp;ALL"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="&amp;AVE"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="&amp;F03"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="&amp;F12"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="&amp;F15"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="&amp;ILT"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="&amp;OAD"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="&amp;ODN"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="&amp;OL0"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="&amp;OUP"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="&amp;SAL"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="TR"/>
+   <pfstatus_doc OBJ_TYPE="A" OBJ_CODE="000002" MODAL="D" INT_NOTE="Status"/>
+   <pfstatus_doc OBJ_TYPE="P" OBJ_CODE="000002" MODAL="D" NORM="X" INT_NOTE="Status"/>
+   <pfstatus_doc OBJ_TYPE="B" OBJ_CODE="000002" SUB_CODE="0001" MODAL="D" INT_NOTE="Status"/>
+  </pfstatus>
+  <source>REPORT zabapinho_dependencies MESSAGE-ID 00.
+*----------------------------------------------------------------------*
+* Created by NM for Cross system objects recursive dependencies check with transport
+*----------------------------------------------------------------------*
+
+*---------------------------------------------- LOCAL CLASS DEFINITION *
+CLASS obj_dep_trans DEFINITION FINAL.
+  PUBLIC SECTION.
+    TYPE-POOLS: abap, icon.
+*--------------------------------------------------- Public structures *
+    TYPES:
+      BEGIN OF ty_objects,
+        status   TYPE icon_d,       &quot;Check status
+        pgmid    TYPE pgmid,        &quot;Program ID in requests and tasks
+        object   TYPE trobjtype,    &quot;Object type
+        obj_name TYPE sobj_name,    &quot;Object name in object directory
+        obj_desc TYPE ddtext,       &quot;Object explanatory short text
+        deep     TYPE i,            &quot;Object dependecie deepness
+        depend_t TYPE trobjtype,
+        depend   TYPE string,       &quot;Dependecie
+        scope    TYPE icon_d,       &quot;Object transport Scope
+        devclass TYPE developclass, &quot;Development package
+        target   TYPE tr_target,    &quot;Transport target of request
+        remote(10),                 &quot;Remote check status
+      END OF ty_objects.
+
+    DATA:
+      t_objects   TYPE TABLE OF ty_objects, &quot;Objects to transport
+      t_objs_desc TYPE TABLE OF ko100,      &quot;Objects prograns IDs
+      t_e071      TYPE TABLE OF e071,       &quot;Object entries of Requests/Tasks
+      t_e071k     TYPE TABLE OF e071k.
+*------------------------------------------------------ Public methods *
+    METHODS:
+*---------- Public method constructor definition ----------*
+      constructor,
+
+*---------- Public method PGMID definition ----------*
+      pgmid_f4,
+
+*---------- Public methods object F4 definition ----------*
+      object_f4 CHANGING c_pgmid  TYPE pgmid      &quot;Program ID
+                         c_object TYPE trobjtype, &quot;Object type
+
+*---------- Public method object name F4 definition ----------*
+      object_name_f4 IMPORTING i_object TYPE trobjtype  &quot;Object type
+                      CHANGING c_obj_n  TYPE sobj_name, &quot;Object name
+
+*---------- Public method transport request F4 fefinition ----------*
+      tr_f4 CHANGING c_tr TYPE trkorr,  &quot;Request/Task
+
+*---------- Public method RFC F4 definition ----------*
+      rfc_f4 CHANGING c_rfc_d TYPE tmssysnam, &quot;System name
+
+*---------- Public method screen PAI definition ----------*
+      screen_pai IMPORTING i_robj   TYPE abap_bool  &quot;Add from object
+                           i_pgmid  TYPE pgmid      &quot;Program ID
+                           i_object TYPE trobjtype  &quot;Object type
+                           i_obj_n  TYPE sobj_name  &quot;Object name
+                           i_rtr    TYPE abap_bool  &quot;Add from TR
+                           i_tr     TYPE trkorr     &quot;Transport request
+                           i_deep   TYPE i          &quot;Dependencies deepness
+                           i_rfc    TYPE abap_bool  &quot;Remote versions checks
+                           i_rfc_d  TYPE tmssysnam  &quot;System name
+                           i_idev   TYPE abap_bool  &quot;Include packages in transport
+                           i_ist    TYPE abap_bool  &quot;Include standard objects
+                           i_itm    TYPE abap_bool  &quot;Include tables maintenance
+                           i_ilo    TYPE abap_bool  &quot;Include lock objects
+                           i_icd    TYPE abap_bool  &quot;Include change documents
+                           i_erfc   TYPE abap_bool  &quot;Exclude RFCs if exist
+                           i_dep    TYPE abap_bool, &quot;Object dependecies check,
+
+*---------- Public method run checks definition ----------*
+      run_checks,
+
+*---------- Public method display objects definition ----------*
+      display_objects.
+
+*----------------------------------------------------- Public handlers *
+    METHODS:
+*---------- Public handler on user command definition ----------*
+      on_user_command FOR EVENT added_function OF cl_salv_events  IMPORTING e_salv_function,
+
+*---------- Public handler on double click definition ----------*
+      on_double_click FOR EVENT double_click OF cl_salv_events_table IMPORTING row column. &quot;#EC NEEDED
+
+  PRIVATE SECTION.
+*--------------------------------------------------- Private constants *
+    DATA:
+      c_r3tr TYPE pgmid        VALUE &apos;R3TR&apos;,  &quot;Main object
+      c_tobj TYPE trobjtype    VALUE &apos;TOBJ&apos;,  &quot;Table content in transport
+      c_chdo TYPE trobjtype    VALUE &apos;CHDO&apos;,  &quot;Change documents
+      c_fugr TYPE trobjtype    VALUE &apos;FUGR&apos;,  &quot;Function group
+      c_tabl TYPE trobjtype    VALUE &apos;TABL&apos;,  &quot;Table
+      c_devc TYPE trobjtype    VALUE &apos;DEVC&apos;,  &quot;Development class
+      c_temp TYPE developclass VALUE &apos;$TMP&apos;.  &quot;Local development class
+
+*--------------------------------------------------- Private variables *
+    DATA:
+      v_robj    TYPE abap_bool, &quot;Add from Object
+      v_pgmid   TYPE pgmid,     &quot;Program ID
+      v_object  TYPE trobjtype, &quot;Object type
+      v_obj_n   TYPE sobj_name, &quot;Object name
+      v_rtr     TYPE abap_bool, &quot;Add from TR
+      v_tr      TYPE trkorr,    &quot;Transport request
+      v_deep    TYPE i,         &quot;Dependencies deepness
+      v_rfc     TYPE abap_bool, &quot;Remote versions checks
+      v_rfc_d   TYPE tmssysnam, &quot;System name
+      v_idev    TYPE abap_bool, &quot;Include packages in transport
+      v_ist     TYPE abap_bool, &quot;Include standard objects
+      v_itm     TYPE abap_bool, &quot;Include tables maintenance
+      v_ilo     TYPE abap_bool, &quot;Include lock objects
+      v_icd     TYPE abap_bool, &quot;Include change documents
+      v_erfc    TYPE abap_bool, &quot;Exclude RFCs if exist
+      v_dep     TYPE abap_bool, &quot;Dependecies check
+      v_percent TYPE i.         &quot;Progress bar percentage
+*--------------------------------------------------- Private class ALV *
+    DATA o_objects TYPE REF TO cl_salv_table. &quot;Objects ALV
+
+*----------------------------------------------------- Private methods *
+    METHODS:
+*---------- Private method progress bar definition ----------*
+      progress_bar IMPORTING value(i_value) TYPE itex132 &quot;#EC CI_VALPAR
+                                   i_tabix  TYPE i,
+
+*---------- Private method execute add objects definition ----------*
+      execute_add_objects,
+
+*---------- Private Method execute add from transport definition ----------*
+      execute_add_from_transport,
+
+*---------- Private method check add object definition ----------*
+      check_add_object IMPORTING value(i_pgmid)  TYPE pgmid &quot;Program ID
+                                 value(i_object) TYPE any   &quot;Object type
+                                 value(i_obj_n)  TYPE any   &quot;Object name
+                                 is_env_tab      TYPE senvi &quot;Info system
+                                 i_deep          TYPE i     &quot;Deepness
+                                 i_depend        TYPE any,  &quot;Dependecie
+
+*---------- Private method add objects from class definition ----------*
+      add_objects_of_devclass IMPORTING i_obj_n TYPE any &quot;Object name
+                                        i_deep  TYPE i,  &quot;Deepness
+
+*---------- Private method add object definition ----------*
+      add_object CHANGING cs_object TYPE ty_objects,  &quot;Objects table
+
+*---------- Private method objects dependencies check definition ----------*
+      objects_dependencies_check,
+
+*---------- Private method remote objects check definition ----------*
+      remote_objects_check,
+
+*---------- Private method exclude RFCs definition ----------*
+      exclude_rfcs IMPORTING i_obj_name TYPE sobj_name  &quot;Object name
+                    CHANGING c_no_rfc   TYPE abap_bool, &quot;Found RFC flag
+
+*---------- Private method include maintenances definition ----------*
+      include_maintenances,
+
+*---------- Private method include locks definition ----------*
+      include_locks,
+
+*---------- Private method include change documents definition ----------*
+      include_cds,
+
+*---------- Private method add TOBJ content definition ----------*
+      add_tobj_content IMPORTING i_obj_name TYPE sobj_name, &quot;Object name
+
+*---------- Private method object header definition ----------*
+      add_object_header IMPORTING i_pgmid   TYPE pgmid    &quot;Program ID
+                                  i_object  TYPE any      &quot;Object type
+                                  i_obj_n   TYPE any      &quot;Object name
+                                  i_objfunc TYPE objfunc, &quot;Object function
+
+*---------- Private method object keys definition ----------*
+      add_object_keys IMPORTING i_pgmid  TYPE pgmid &quot;Program ID
+                                i_object TYPE any   &quot;Object type
+                                i_obj_n  TYPE any   &quot;Object name
+                                i_tabkey TYPE any.  &quot;Table key
+ENDCLASS.                    &quot;obj_dep_trans DEFINITION
+
+*--------------------------------------------------------- GLOBAL DATA *
+DATA go_odt TYPE REF TO obj_dep_trans.                      &quot;#EC NEEDED
+
+*---------------------------------------------------- SELECTION SCREEN *
+*---------------------------------------------------- Object selection *
+SELECTION-SCREEN BEGIN OF BLOCK b01 WITH FRAME TITLE text-b01.
+SELECTION-SCREEN SKIP 1.
+PARAMETERS r_obj RADIOBUTTON GROUP rbt USER-COMMAND rbt DEFAULT &apos;X&apos;.  &quot;Add from objects or development package
+SELECTION-SCREEN BEGIN OF LINE.
+SELECTION-SCREEN POSITION 4.
+PARAMETERS:
+  p_pgmid  TYPE pgmid DEFAULT &apos;R3TR&apos;, &quot;Program ID
+  p_object TYPE trobjtype,            &quot;Object type
+  p_obj_n  TYPE sobj_name.            &quot;Object name
+SELECTION-SCREEN END OF LINE.
+
+SELECTION-SCREEN SKIP 1.
+PARAMETERS r_tr RADIOBUTTON GROUP rbt.  &quot;Add from TR
+SELECTION-SCREEN BEGIN OF LINE.
+SELECTION-SCREEN POSITION 4.
+PARAMETERS p_tr TYPE trkorr.  &quot;Transport request
+SELECTION-SCREEN END OF LINE.
+
+SELECTION-SCREEN SKIP 1.
+PARAMETERS p_deep TYPE i DEFAULT 0. &quot;Dependencies deepness
+SELECTION-SCREEN END OF BLOCK b01.
+
+*-------------------------------------------------- Aditional options *
+SELECTION-SCREEN BEGIN OF BLOCK b02 WITH FRAME TITLE text-b02.
+SELECTION-SCREEN SKIP 1.
+PARAMETERS p_dep AS CHECKBOX DEFAULT abap_true.  &quot;Dependencies check
+
+SELECTION-SCREEN BEGIN OF LINE.
+PARAMETERS p_rfc AS CHECKBOX. &quot;Remote versions checks
+SELECTION-SCREEN COMMENT (37) com_rfc.
+PARAMETERS p_rfc_d TYPE tmssysnam.  &quot;System name
+SELECTION-SCREEN END OF LINE.
+
+SELECTION-SCREEN SKIP 1.
+PARAMETERS:
+  p_idev AS CHECKBOX DEFAULT abap_true, &quot;Include packages in transport
+  p_ist  AS CHECKBOX,                   &quot;Include standard objects
+  p_itm  AS CHECKBOX,                   &quot;Include tables maintenance
+  p_ilo  AS CHECKBOX,                   &quot;Include lock objects
+  p_icd  AS CHECKBOX.                   &quot;Include change documents
+
+SELECTION-SCREEN SKIP 1.
+PARAMETERS p_erfc AS CHECKBOX. &quot;Exclude RFCs if exist
+SELECTION-SCREEN END OF BLOCK b02.
+
+*------------------------------------------ SELECTION SCREEN PAI HELPS *
+*------------------------------------------------------- Program ID F4 *
+AT SELECTION-SCREEN ON VALUE-REQUEST FOR p_pgmid.
+  go_odt-&gt;pgmid_f4( ).
+*------------------------------------------------------ Object type F4 *
+AT SELECTION-SCREEN ON VALUE-REQUEST FOR p_object.
+  go_odt-&gt;object_f4( CHANGING c_pgmid = p_pgmid c_object = p_object ).
+*------------------------------------------------------ Object name F4 *
+AT SELECTION-SCREEN ON VALUE-REQUEST FOR p_obj_n.
+  go_odt-&gt;object_name_f4( EXPORTING i_object = p_object CHANGING c_obj_n = p_obj_n ).
+*------------------------------------------------ Transport request F4 *
+AT SELECTION-SCREEN ON VALUE-REQUEST FOR p_tr.
+  go_odt-&gt;tr_f4( CHANGING c_tr = p_tr ).
+*-------------------------------------------------- Systems and RFC F4 *
+AT SELECTION-SCREEN ON VALUE-REQUEST FOR p_rfc_d.
+  go_odt-&gt;rfc_f4( CHANGING c_rfc_d = p_rfc_d ).
+
+*------------------------------------------------ SELECTION SCREEN PAI *
+AT SELECTION-SCREEN.
+  go_odt-&gt;screen_pai( i_robj   = r_obj    &quot;Add from Object
+                      i_pgmid  = p_pgmid  &quot;Program ID
+                      i_object = p_object &quot;Object type
+                      i_obj_n  = p_obj_n  &quot;Object name
+                      i_rtr    = r_tr     &quot;Add from TR
+                      i_tr     = p_tr     &quot;Transport request
+                      i_deep   = p_deep   &quot;Dependencies deepness
+                      i_rfc    = p_rfc    &quot;Remote versions checks
+                      i_rfc_d  = p_rfc_d  &quot;System name
+                      i_idev   = p_idev   &quot;Include packages in transport
+                      i_ist    = p_ist    &quot;Include standard objects
+                      i_itm    = p_itm    &quot;Include tables maintenance
+                      i_ilo    = p_ilo    &quot;Include lock objects
+                      i_icd    = p_icd    &quot;Include change documents
+                      i_erfc   = p_erfc   &quot;Exclude RFCs if exist
+                      i_dep    = p_dep ). &quot;Object dependecies check
+
+*------------------------------------------------------- REPORT EVENTS *
+*----------------------------------------------- Initialization events *
+INITIALIZATION.
+  com_rfc = &apos;Cross-system objects versions check&apos;(cm1).
+  CREATE OBJECT go_odt. &quot;Create main class
+
+*---------------------------------------------------- Executing events *
+START-OF-SELECTION.
+  go_odt-&gt;run_checks( ).      &quot;Execution
+  go_odt-&gt;display_objects( ). &quot;Result display
+
+*------------------------------------------ LOCAL CLASS IMPLEMENTATION *
+CLASS obj_dep_trans IMPLEMENTATION.
+*---------------------------- Public method constructor implementation *
+  METHOD constructor.
+    CALL FUNCTION &apos;TR_OBJECT_TABLE&apos; &quot;Fill program IDs
+      TABLES
+        wt_object_text = t_objs_desc.
+  ENDMETHOD.                    &quot;constructor
+
+*------------------------------- Public method PGMID F4 implementation *
+  METHOD pgmid_f4.
+    DATA lt_pgmids TYPE TABLE OF ko101.  &quot;Program IDs with description
+
+*---------- Read PGMID ----------*
+    CALL FUNCTION &apos;TR_PGMID_TABLE&apos;
+      TABLES
+        wt_pgmid_text = lt_pgmids.
+
+*---------- Set PGMID F4 ----------*
+    CALL FUNCTION &apos;F4IF_INT_TABLE_VALUE_REQUEST&apos; &quot;#EC FB_RC &quot;#EC CI_SUBRC
+      EXPORTING
+        retfield        = &apos;PGMID&apos;
+        dynpprog        = sy-cprog
+        value_org       = &apos;S&apos;
+        dynpnr          = &apos;1000&apos;
+        dynprofield     = &apos;TRE071X-PGMID&apos;
+      TABLES
+        value_tab       = lt_pgmids
+      EXCEPTIONS
+        parameter_error = 1
+        no_values_found = 2
+        OTHERS          = 3.
+  ENDMETHOD.                    &quot;pgmid_f4
+
+*------------------------------ Public method object F4 implementation *
+  METHOD object_f4.
+    CONSTANTS:
+      lc_object TYPE fieldname VALUE &apos;OBJECT&apos;, &quot;Object field
+      lc_pgmid  TYPE fieldname VALUE &apos;PGMID&apos;.  &quot;Program ID
+
+    DATA:
+      lt_shlp          TYPE shlp_descr,           &quot;Description of search help
+      lt_return_values TYPE TABLE OF ddshretval,  &quot;Interface structure search help
+      ls_return_values LIKE LINE OF lt_return_values,
+      lv_rc            TYPE sysubrc.              &quot;Return value of ABAP statements
+
+    FIELD-SYMBOLS &lt;interface&gt; TYPE ddshiface. &quot;Interface description of a F4 help method
+
+*---------- Get search help ----------*
+    CALL FUNCTION &apos;F4IF_GET_SHLP_DESCR&apos;
+      EXPORTING
+        shlpname = &apos;SCTSOBJECT&apos;
+      IMPORTING
+        shlp     = lt_shlp.
+
+*---------- Fill search help ----------*
+    LOOP AT lt_shlp-interface ASSIGNING &lt;interface&gt;.
+      IF &lt;interface&gt;-shlpfield = lc_object.
+        &lt;interface&gt;-valfield = abap_true.
+        &lt;interface&gt;-value    = c_object.
+      ENDIF.
+      IF &lt;interface&gt;-shlpfield = lc_pgmid.
+        &lt;interface&gt;-valfield = abap_true.
+        &lt;interface&gt;-value    = c_pgmid.
+      ENDIF.
+    ENDLOOP.
+
+*---------- Call search help ----------*
+    CALL FUNCTION &apos;F4IF_START_VALUE_REQUEST&apos;
+      EXPORTING
+        shlp          = lt_shlp
+      IMPORTING
+        rc            = lv_rc
+      TABLES
+        return_values = lt_return_values.
+
+*---------- Set search help return ----------*
+    IF lv_rc IS INITIAL.
+      READ TABLE lt_return_values INTO ls_return_values WITH KEY fieldname = lc_object.
+      IF sy-subrc IS INITIAL.
+        c_object = ls_return_values-fieldval.
+      ENDIF.
+
+      READ TABLE lt_return_values INTO ls_return_values WITH KEY fieldname = lc_pgmid.
+      IF sy-subrc IS INITIAL.
+        c_pgmid = ls_return_values-fieldval.
+      ENDIF.
+    ENDIF.
+  ENDMETHOD.                    &quot;object_f4
+
+*------------------------- Public method object name F4 implementation *
+  METHOD object_name_f4.
+    DATA lv_object_type TYPE seu_obj.  &quot;Object type
+
+*---------- Get objects repository information ----------*
+    lv_object_type = i_object.
+    CALL FUNCTION &apos;REPOSITORY_INFO_SYSTEM_F4&apos;  &quot;#EC FB_RC &quot;#EC CI_SUBRC
+      EXPORTING
+        object_type          = lv_object_type
+        object_name          = c_obj_n
+      IMPORTING
+        object_name_selected = c_obj_n
+      EXCEPTIONS
+        cancel               = 1
+        wrong_type           = 2
+        OTHERS               = 3.
+  ENDMETHOD.                    &quot;object_name_f4
+
+*------------------- Public method transport request F4 implementation *
+  METHOD tr_f4.
+    CALL FUNCTION &apos;TR_F4_REQUESTS&apos;
+      IMPORTING
+        ev_selected_request = c_tr.
+  ENDMETHOD.                    &quot;tr_f4
+
+*--------------------------------- Public method RFC F4 implementation *
+  METHOD rfc_f4.
+    CALL FUNCTION &apos;TMS_UI_F4_SYSTEMS&apos;
+      CHANGING
+        cv_system = c_rfc_d.
+  ENDMETHOD.                    &quot;rfc_f4
+
+*----------------------------- Public method screen PAI implementation *
+  METHOD screen_pai.
+    IF sy-ucomm = &apos;ONLI&apos;.
+*---------- Set values ----------*
+      v_robj   = i_robj.    &quot;Add from Object
+      v_pgmid  = i_pgmid.   &quot;Program ID
+      v_object = i_object.  &quot;Object type
+      v_obj_n  = i_obj_n.   &quot;Object name
+      v_rtr    = i_rtr.     &quot;Add from TR
+      v_tr     = i_tr.      &quot;Transport request
+      v_deep   = i_deep.    &quot;Dependencies deepness
+      v_rfc    = i_rfc.     &quot;Remote versions checks
+      v_rfc_d  = i_rfc_d.   &quot;System name
+      v_idev   = i_idev.    &quot;Include packages in transport
+      v_ist    = i_ist.     &quot;Include standard objects
+      v_itm    = i_itm.     &quot;Include tables maintenance
+      v_ilo    = i_ilo.     &quot;Include lock objects
+      v_icd    = i_icd.     &quot;Include change documents
+      v_erfc   = i_erfc.    &quot;Exclude RFCs if exist
+      v_dep    = i_dep.     &quot;Objects dependecies check
+
+*---------- Check required data ----------*
+      IF ( v_robj IS NOT INITIAL AND ( v_pgmid IS INITIAL OR v_object IS INITIAL OR v_obj_n IS INITIAL ) ) OR
+         ( v_rtr IS NOT INITIAL AND v_tr IS INITIAL ) OR
+         ( v_rfc IS NOT INITIAL AND v_rfc_d IS INITIAL ).
+        MESSAGE e398(00) WITH &apos;Please fill all required fields&apos;(m02) space space space DISPLAY LIKE &apos;W&apos;.
+      ENDIF.
+
+      IF v_rfc IS NOT INITIAL AND v_rfc_d = sy-sysid.
+        MESSAGE e398(00) WITH &apos;Please select a remote system&apos;(m08) space space space DISPLAY LIKE &apos;W&apos;.
+      ENDIF.
+
+*---------- Add first object ----------*
+      progress_bar( i_value = &apos;Adding object&apos;(p01) i_tabix = &apos;10&apos; ).
+
+      CASE abap_true.
+        WHEN v_robj.  &quot;Add object or dev class objects
+          execute_add_objects( ).
+
+        WHEN v_rtr. &quot;Add TR objects
+          execute_add_from_transport( ).
+      ENDCASE.
+
+*---------- Check if object found  ----------*
+      IF t_objects IS INITIAL.
+        MESSAGE e398(00) WITH &apos;Objects not found&apos;(m01) space space space DISPLAY LIKE &apos;W&apos;.
+      ENDIF.
+
+*---------- Check options with performance impact ----------*
+      IF v_ist IS NOT INITIAL AND ( v_deep IS INITIAL OR v_deep = 0 ). &quot;Performance test
+        MESSAGE e398(00) WITH &apos;Please fill deepness for standard objects&apos;(m16) space space space DISPLAY LIKE &apos;I&apos;.
+      ENDIF.
+    ENDIF.
+  ENDMETHOD.                    &quot;screen_pai
+
+*----------------------------- Public method run checks implementation *
+  METHOD run_checks.
+    IF t_objects IS NOT INITIAL.
+*---------- Dependecies check ----------*
+      IF v_dep IS NOT INITIAL.
+        progress_bar( i_value = &apos;Checking dependecies&apos;(p02) i_tabix = &apos;20&apos; ).
+        objects_dependencies_check( ).
+      ENDIF.
+
+      progress_bar( i_value = &apos;Processing options&apos;(p05) i_tabix = &apos;50&apos; ).
+
+*---------- Include tables maintenance ----------*
+      IF v_itm IS NOT INITIAL.
+        include_maintenances( ).
+        IF v_dep IS NOT INITIAL.
+          objects_dependencies_check( ).
+        ENDIF.
+      ENDIF.
+
+*---------- Include lock objects ----------*
+      IF v_ilo IS NOT INITIAL. include_locks( ). ENDIF.
+
+*---------- Include change documents ----------*
+      IF v_icd IS NOT INITIAL. include_cds( ). ENDIF.
+
+*---------- Remote check ----------*
+      IF v_rfc IS NOT INITIAL.
+        progress_bar( i_value = &apos;Checking remote&apos;(p03) i_tabix = &apos;80&apos; ).
+        remote_objects_check( ).
+      ENDIF.
+    ENDIF.
+  ENDMETHOD.                    &quot;run_checks
+
+*------------------------ Public method display objects implementation *
+  METHOD display_objects.
+    DATA:
+      lr_events     TYPE REF TO cl_salv_events_table,     &quot;ALV events
+      lr_display    TYPE REF TO cl_salv_display_settings, &quot;ALV output appearance
+      lr_columns    TYPE REF TO cl_salv_columns_table,    &quot;ALV columns
+      lr_column     TYPE REF TO cl_salv_column_table,
+      lr_selections TYPE REF TO cl_salv_selections,       &quot;ALV selections
+      lr_layout     TYPE REF TO cl_salv_layout.           &quot;ALV layout
+
+    DATA:
+      lt_column_ref TYPE salv_t_column_ref, &quot;Columns of ALV list
+      ls_column_ref TYPE salv_s_column_ref,
+      ls_key        TYPE salv_s_layout_key.
+
+    DATA:
+      lv_title   TYPE lvc_title,  &quot;ALV title
+      lv_lines   TYPE i,          &quot;Number of objects
+      lv_lines_c TYPE string,
+      lv_text_s  TYPE scrtext_s,  &quot;Short field label
+      lv_text_m  TYPE scrtext_m,  &quot;Medium field label
+      lv_text_l  TYPE scrtext_l.  &quot;Long field label
+
+    progress_bar( i_value = &apos;Display objects&apos;(p04) i_tabix = &apos;90&apos; ).
+
+    TRY.
+        IF lines( t_objects ) = 1.
+          MESSAGE s398(00) WITH &apos;No dependecies found&apos;(m14) space space space DISPLAY LIKE &apos;W&apos;.
+        ELSE.
+          SORT t_objects BY deep pgmid object obj_name.
+        ENDIF.
+
+*---------- Create ALV ----------*
+        cl_salv_table=&gt;factory( IMPORTING r_salv_table = o_objects
+                                 CHANGING t_table      = t_objects ).
+
+*---------- Set functions ----------*
+        o_objects-&gt;set_screen_status(
+          pfstatus      = &apos;STATUS&apos;
+          report        = sy-cprog
+          set_functions = o_objects-&gt;c_functions_all ).
+
+*---------- Set layout ----------*
+        lr_layout = o_objects-&gt;get_layout( ).
+        ls_key-report = sy-repid.
+        lr_layout-&gt;set_key( ls_key ).
+        lr_layout-&gt;set_save_restriction( ).
+
+*---------- Set selections ----------*
+        lr_selections = o_objects-&gt;get_selections( ).
+        lr_selections-&gt;set_selection_mode( if_salv_c_selection_mode=&gt;row_column ).
+
+*---------- Set display and title ----------*
+        lr_display = o_objects-&gt;get_display_settings( ).
+        lr_display-&gt;set_striped_pattern( if_salv_c_bool_sap=&gt;true ).
+
+        lv_lines = lines( t_objects ).
+        lv_lines_c = lv_lines.
+        CONDENSE lv_lines_c NO-GAPS.
+        CONCATENATE &apos;(&apos; lv_lines_c &apos;)&apos; INTO lv_lines_c.
+        CONCATENATE sy-title lv_lines_c INTO lv_title SEPARATED BY space.
+        lr_display-&gt;set_list_header( lv_title ).
+
+*---------- Set columns ----------*
+        lr_columns = o_objects-&gt;get_columns( ).
+        lr_columns-&gt;set_key_fixation( ).
+        lr_columns-&gt;set_optimize( ).
+        lt_column_ref = lr_columns-&gt;get( ).
+
+        LOOP AT lt_column_ref INTO ls_column_ref. &quot;Default format for all columns
+          lr_column ?= lr_columns-&gt;get_column( ls_column_ref-columnname ).
+          lr_column-&gt;set_f4( if_salv_c_bool_sap=&gt;false ).
+          lr_column-&gt;set_alignment( if_salv_c_alignment=&gt;centered ).
+
+*---------- Format key fields ----------*
+          IF ls_column_ref-columnname = &apos;STATUS&apos; OR &quot;Check status
+             ls_column_ref-columnname = &apos;PGMID&apos;  OR &quot;Program ID
+             ls_column_ref-columnname = &apos;OBJECT&apos; OR &quot;Object type
+             ls_column_ref-columnname = &apos;OBJ_NAME&apos;. &quot;Object name
+            lr_column-&gt;set_key( if_salv_c_bool_sap=&gt;true ).
+
+            IF ls_column_ref-columnname = &apos;OBJ_NAME&apos;. &quot;Object name
+              lr_column-&gt;set_alignment( if_salv_c_alignment=&gt;left ).
+            ENDIF.
+          ENDIF.
+
+*---------- Format description ----------*
+          IF ls_column_ref-columnname = &apos;OBJ_DESC&apos;.
+            lr_column-&gt;set_alignment( if_salv_c_alignment=&gt;left ).
+            lr_column-&gt;set_short_text( &apos;Obj. Desc.&apos;(c02) ).
+            lr_column-&gt;set_medium_text( &apos;Obj. Desc.&apos;(c02) ).
+            lr_column-&gt;set_long_text( &apos;Obj. Desc.&apos;(c02) ).
+          ENDIF.
+
+*---------- Format dependecie deepness ----------*
+          IF ls_column_ref-columnname = &apos;DEEP&apos;.
+            lr_column-&gt;set_short_text( &apos;Deepness&apos;(c03) ).
+            lr_column-&gt;set_medium_text( &apos;Deepness&apos;(c03) ).
+            lr_column-&gt;set_long_text( &apos;Deepness&apos;(c03) ).
+          ENDIF.
+
+*---------- Format Dependecie ----------*
+          IF ls_column_ref-columnname = &apos;DEPEND&apos;.
+            lr_column-&gt;set_short_text( &apos;Depend&apos;(c05) ).
+            lr_column-&gt;set_medium_text( &apos;Depend&apos;(c05) ).
+            lr_column-&gt;set_long_text( &apos;Depend&apos;(c05) ).
+          ENDIF.
+
+*---------- Format transport scope ----------*
+          IF ls_column_ref-columnname = &apos;SCOPE&apos;.
+            lr_column-&gt;set_short_text( &apos;Scope&apos;(c04) ).
+            lr_column-&gt;set_medium_text( &apos;Scope&apos;(c04) ).
+            lr_column-&gt;set_long_text( &apos;Scope&apos;(c04) ).
+          ENDIF.
+
+*---------- Format remote check status ----------*
+          IF ls_column_ref-columnname = &apos;REMOTE&apos;.
+            IF v_rfc IS INITIAL.  &quot;Hide if no active
+              lr_column-&gt;set_visible( if_salv_c_bool_sap=&gt;false ).
+
+            ELSE. &quot;Display and set remote column name
+              lv_text_s = lv_text_m = lv_text_l = v_rfc_d.
+              lr_column-&gt;set_short_text( lv_text_s ).
+              lr_column-&gt;set_medium_text( lv_text_m ).
+              lr_column-&gt;set_long_text( lv_text_l ).
+            ENDIF.
+          ENDIF.
+        ENDLOOP.
+
+*---------- Register events ----------*
+        lr_events = o_objects-&gt;get_event( ).
+        SET HANDLER on_user_command FOR lr_events.
+        SET HANDLER on_double_click FOR lr_events.
+
+*---------- Display ALV ----------*
+        o_objects-&gt;display( ).
+
+      CATCH cx_root.                                     &quot;#EC CATCH_ALL
+        MESSAGE s398(00) WITH &apos;Critical error&apos;(m03) space space space DISPLAY LIKE &apos;E&apos;.
+    ENDTRY.
+  ENDMETHOD.                    &quot;display_objects
+
+*--------------- Public handler on user command handler implementation *
+  METHOD on_user_command.
+    CHECK e_salv_function = &apos;TR&apos;.  &quot;Create transport request
+
+    DATA lr_selections TYPE REF TO cl_salv_selections. &quot;ALV selections
+
+    DATA:
+      lt_rows       TYPE salv_t_row,          &quot;ALV rows
+      ls_row        TYPE i,
+      lt_e071_temp  TYPE TABLE OF e071,       &quot;Object entries of Requests/Tasks
+      ls_e071       LIKE LINE OF t_e071,
+      lt_e071k_temp TYPE TABLE OF e071k,
+      lt_objects    TYPE TABLE OF ty_objects, &quot;Objects to transport
+      ls_object     LIKE LINE OF t_objects,
+      lt_targets    TYPE TABLE OF tr_target,  &quot;Transport target
+      ls_target     LIKE LINE OF lt_targets.
+
+    DATA:
+      lv_order TYPE trkorr, &quot;Request/Task
+      lv_task  TYPE trkorr.
+
+*---------- Get selected lines ----------*
+    lr_selections = o_objects-&gt;get_selections( ).
+    lt_rows = lr_selections-&gt;get_selected_rows( ).
+
+*---------- Get selected objects to transport ----------*
+    LOOP AT lt_rows INTO ls_row.
+      READ TABLE t_objects INTO ls_object INDEX ls_row.
+
+      IF sy-subrc IS INITIAL AND ls_object-scope = icon_transport AND
+        ( ls_object-status = icon_led_yellow OR ls_object-status = icon_led_green ).
+
+        IF ls_object-devclass = c_temp.
+          MESSAGE i398(00) WITH &apos;Request canceled, object with $TEMP detected&apos;(m10) space space space DISPLAY LIKE &apos;E&apos;.
+          RETURN.
+        ENDIF.
+
+        APPEND ls_object TO lt_objects.
+        MOVE-CORRESPONDING ls_object TO ls_e071.
+        APPEND ls_e071 TO t_e071.
+
+        IF ls_object-object = c_tobj. &quot;Add TABU object directly to the transport
+          add_tobj_content( i_obj_name = ls_object-obj_name ).  &quot;Object name
+        ENDIF.
+      ENDIF.
+    ENDLOOP.
+
+*---------- Get possible target ----------*
+    LOOP AT lt_objects INTO ls_object.
+      ls_target = ls_object-target.
+      APPEND ls_target TO lt_targets.
+    ENDLOOP.
+
+    SORT lt_targets.
+    DELETE ADJACENT DUPLICATES FROM lt_targets.
+
+*---------- Create transport request and task ----------*
+    IF lt_objects IS NOT INITIAL. &quot;Objects selected to transport
+      IF lines( lt_targets ) = 1. &quot;Only one valid target
+
+        CALL FUNCTION &apos;TRINT_ORDER_CHOICE&apos;  &quot;Create transport request
+          EXPORTING
+            iv_tarsystem           = ls_target
+          IMPORTING
+            we_order               = lv_order
+            we_task                = lv_task
+          TABLES
+            wt_e071                = lt_e071_temp
+            wt_e071k               = lt_e071k_temp
+          EXCEPTIONS
+            no_correction_selected = 1
+            display_mode           = 2
+            object_append_error    = 3
+            recursive_call         = 4
+            wrong_order_type       = 5
+            OTHERS                 = 6.
+
+        IF sy-subrc IS INITIAL AND lv_task IS NOT INITIAL.
+          IF v_idev IS NOT INITIAL. &quot;Add objects development class
+            ls_e071-pgmid    = c_r3tr.
+            ls_e071-object   = c_devc.
+            ls_e071-obj_name = ls_object-devclass.
+            APPEND ls_e071 TO t_e071.
+          ENDIF.
+
+          CALL FUNCTION &apos;TRINT_APPEND_COMM&apos; &quot;Add object to transport request
+            EXPORTING
+              wi_exclusive       = abap_false
+              wi_sel_e071        = abap_true
+              wi_sel_e071k       = abap_true
+              wi_trkorr          = lv_task
+            TABLES
+              wt_e071            = t_e071
+              wt_e071k           = t_e071k
+            EXCEPTIONS
+              e071k_append_error = 1
+              e071_append_error  = 2
+              trkorr_empty       = 3
+              OTHERS             = 4.
+
+          IF sy-subrc IS INITIAL. &quot;Added with sucess
+*---------- Sort and compress request --------*
+            CALL FUNCTION &apos;TR_SORT_AND_COMPRESS_COMM&apos; &quot;#EC FB_RC   &quot;#EC CI_SUBRC
+              EXPORTING
+                iv_trkorr                      = lv_task
+              EXCEPTIONS
+                trkorr_not_found               = 1
+                order_released                 = 2
+                error_while_modifying_obj_list = 3
+                tr_enqueue_failed              = 4
+                no_authorization               = 5
+                OTHERS                         = 6.
+
+            MESSAGE i001(00) WITH &apos;Objects added to request (&apos;(m07) lv_order &apos;)&apos; space.
+          ELSE.
+            MESSAGE s398(00) WITH &apos;Error creating transport request&apos;(m06) space space space DISPLAY LIKE &apos;E&apos;.
+          ENDIF.
+
+        ELSE.
+          MESSAGE s398(00) WITH &apos;Transport canceled&apos;(m12) space space space DISPLAY LIKE &apos;W&apos;.
+        ENDIF.
+
+      ELSE.
+        MESSAGE i398(00) WITH &apos;Transport not allowed for multiple targets&apos;(m05) space space space.
+      ENDIF.
+
+    ELSE.
+      MESSAGE i398(00) WITH &apos;No objects selected&apos;(m04) space space space.
+    ENDIF.
+  ENDMETHOD.                    &quot;on_user_command
+
+*----------------------- Public handler on double vlick implementation *
+  METHOD on_double_click.
+    DATA ls_object LIKE LINE OF t_objects.  &quot;Objects to transport
+
+    READ TABLE t_objects INTO ls_object INDEX row.  &quot;Get selected Row
+    IF sy-subrc IS INITIAL.
+
+      CASE column.
+
+*---------- Display development package ----------*
+        WHEN &apos;DEVCLASS&apos; OR &apos;TARGET&apos;.
+          IF ls_object-devclass IS NOT INITIAL.
+            SET PARAMETER ID &apos;PACKNAME&apos; FIELD ls_object-devclass.
+            CALL TRANSACTION &apos;SE21&apos; AND SKIP FIRST SCREEN. &quot;#EC CI_CALLTA
+          ENDIF.
+
+*---------- Display all others objects ----------*
+        WHEN OTHERS.
+          CASE ls_object-object.
+            WHEN c_tobj.  &quot;Display tables maintenance
+              SET PARAMETER ID &apos;DVI&apos; FIELD ls_object-obj_name.
+              CALL TRANSACTION &apos;SE54&apos;.                   &quot;#EC CI_CALLTA
+
+            WHEN c_chdo.  &quot;Display change documents
+              CALL TRANSACTION &apos;SCDO&apos;.                   &quot;#EC CI_CALLTA
+
+            WHEN OTHERS.  &quot;Display all
+              CALL FUNCTION &apos;RS_TOOL_ACCESS&apos;
+                EXPORTING
+                  operation           = &apos;SHOW&apos;
+                  object_name         = ls_object-obj_name
+                  object_type         = ls_object-object
+                EXCEPTIONS
+                  not_executed        = 1
+                  invalid_object_type = 2
+                  OTHERS              = 3.
+
+              IF sy-subrc IS NOT INITIAL.
+                MESSAGE s398(00) WITH &apos;Navigation not suported&apos;(m11) space space space DISPLAY LIKE &apos;W&apos;.
+              ENDIF.
+          ENDCASE.
+      ENDCASE.
+
+    ENDIF.
+  ENDMETHOD.                    &quot;on_double_click
+
+*-------------------------- Private method progress bar implementation *
+  METHOD progress_bar.
+    DATA:
+      lv_text(40),
+      lv_percentage TYPE p,
+      lv_percent_char(3).
+
+    lv_percentage = ( i_tabix / 100 ) * 100.
+    lv_percent_char = lv_percentage.
+    SHIFT lv_percent_char LEFT DELETING LEADING &apos; &apos;.
+    CONCATENATE i_value &apos;...&apos; INTO i_value.
+    CONCATENATE i_value lv_percent_char &apos;% Complete&apos;(pb1) INTO lv_text SEPARATED BY space.
+
+    IF lv_percentage GT v_percent OR i_tabix = 1.
+      CALL FUNCTION &apos;SAPGUI_PROGRESS_INDICATOR&apos;
+        EXPORTING
+          percentage = lv_percentage
+          text       = lv_text.
+      v_percent = lv_percentage.
+    ENDIF.
+  ENDMETHOD.                    &quot;progress_bar
+
+*------------------- Private Method Execute Add Objects Implementation *
+  METHOD execute_add_objects.
+    DATA ls_env_dummy  TYPE senvi.  &quot;System info environement
+
+    CASE v_object.
+*---------- Development class ----------*
+      WHEN c_devc.
+        add_objects_of_devclass( i_obj_n = v_obj_n  &quot;Object name
+                                 i_deep  = &apos;0&apos; ).   &quot;Deepness
+
+*---------- All others object ----------*
+      WHEN OTHERS.
+        check_add_object( i_pgmid    = v_pgmid      &quot;Program ID
+                          i_object   = v_object     &quot;Object type
+                          i_obj_n    = v_obj_n      &quot;Object name
+                          is_env_tab = ls_env_dummy &quot;Info system
+                          i_deep     = &apos;0&apos;          &quot;Deepness
+                          i_depend   = v_obj_n ).   &quot;Dependecie
+    ENDCASE.
+  ENDMETHOD.                    &quot;execute_add_objects
+
+*------------ Private method rxecute add from transport implementation *
+  METHOD execute_add_from_transport.
+    DATA:
+      lt_request_headers TYPE trwbo_request_headers,  &quot;Context of a request
+      ls_request_headers TYPE trwbo_request_header,
+      lt_objects         TYPE tr_objects,             &quot;Objects
+      lt_objects_temp    TYPE tr_objects,             &quot;Temporary objects
+      ls_object          TYPE e071,                   &quot;Object entries of Requests/Tasks
+      ls_env_dummy       TYPE senvi.                  &quot;System info environement
+
+*---------- Read requests and tasks ----------*
+    CALL FUNCTION &apos;TR_READ_REQUEST_WITH_TASKS&apos;
+      EXPORTING
+        iv_trkorr          = v_tr
+      IMPORTING
+        et_request_headers = lt_request_headers
+      EXCEPTIONS
+        invalid_input      = 1
+        OTHERS             = 2.
+
+    IF sy-subrc IS NOT INITIAL.
+      MESSAGE e398(00) WITH &apos;Error treating transport request&apos;(m15) space space space DISPLAY LIKE &apos;W&apos;.
+    ENDIF.
+
+*---------- Check if is request or task ----------*
+    READ TABLE lt_request_headers INTO ls_request_headers WITH KEY trkorr = v_tr.
+    IF ls_request_headers-trfunction = &apos;S&apos;. &quot;Is task, delete main request
+      DELETE lt_request_headers WHERE trkorr &lt;&gt; v_tr.
+
+    ELSE. &quot;Is main request, detele all tasks
+      DELETE lt_request_headers WHERE trfunction = &apos;S&apos;.
+    ENDIF.
+
+*---------- Read objects inside request and tasks ----------*
+    LOOP AT lt_request_headers INTO ls_request_headers.
+      REFRESH lt_objects_temp.
+      CALL FUNCTION &apos;TR_GET_OBJECTS_OF_REQ_AN_TASKS&apos;
+        EXPORTING
+          is_request_header      = ls_request_headers
+          iv_condense_objectlist = &apos;X&apos;
+        IMPORTING
+          et_objects             = lt_objects_temp
+        EXCEPTIONS
+          invalid_input          = 1
+          OTHERS                 = 2.
+
+      IF sy-subrc IS NOT INITIAL.
+        MESSAGE e398(00) WITH &apos;Error treating transport request&apos;(m15) space space space DISPLAY LIKE &apos;W&apos;.
+      ENDIF.
+
+      LOOP AT lt_objects_temp INTO ls_object. &quot;#EC CI_NESTED
+        ls_object-activity = ls_request_headers-trkorr.
+        APPEND ls_object TO lt_objects.
+      ENDLOOP.
+    ENDLOOP.
+
+    CALL FUNCTION &apos;TR_SORT_OBJECT_AND_KEY_LIST&apos;
+      CHANGING
+        ct_objects = lt_objects.
+
+    LOOP AT lt_objects INTO ls_object. &quot;Add found objects to processing
+      check_add_object( i_pgmid    = ls_object-pgmid        &quot;Program ID
+                        i_object   = ls_object-object       &quot;Object type
+                        i_obj_n    = ls_object-obj_name     &quot;Object name
+                        is_env_tab = ls_env_dummy           &quot;Info system
+                        i_deep     = &apos;0&apos;                    &quot;Deepness
+                        i_depend   = ls_object-activity ).  &quot;Dependecie
+    ENDLOOP.
+  ENDMETHOD.                    &quot;execute_add_from_transport
+
+*---------------------- Private method check add object implementation *
+  METHOD check_add_object.
+    DATA lo_wb_object TYPE REF TO cl_wb_object. &quot;Repository object
+
+    DATA:
+      ls_tadir          TYPE tadir,             &quot;Directory of repository objects
+      ls_wb_object_type TYPE wbobjtype,         &quot;Global WB type
+      ls_object         LIKE LINE OF t_objects. &quot;Objects to transport line
+
+    DATA:
+      lv_tr_object   TYPE trobjtype,  &quot;Object type
+      lv_tr_obj_name TYPE trobj_name, &quot;Object name
+      lv_trans_pgmid TYPE pgmid.      &quot;Program ID
+
+*---------- Object convertions ----------*
+    IF i_pgmid &lt;&gt; c_r3tr.
+      SELECT pgmid UP TO 1 ROWS FROM tadir              &quot;#EC CI_GENBUFF
+        INTO i_pgmid
+       WHERE object   = i_object
+         AND obj_name = i_obj_n.
+      ENDSELECT.
+
+*---------- Is not a TADIR object and Conversion required ----------*
+      IF sy-subrc IS NOT INITIAL.
+        lv_tr_object   = i_object.
+        lv_tr_obj_name = i_obj_n.
+
+        cl_wb_object=&gt;create_from_transport_key( EXPORTING p_object                = lv_tr_object
+                                                           p_obj_name              = lv_tr_obj_name
+                                                 RECEIVING p_wb_object             = lo_wb_object
+                                                EXCEPTIONS objecttype_not_existing = 1
+                                                           empty_object_key        = 2
+                                                           key_not_available       = 3
+                                                           OTHERS                  = 4 ).
+        IF sy-subrc IS INITIAL.
+          lo_wb_object-&gt;get_global_wb_key( IMPORTING p_object_type     = ls_wb_object_type
+                                          EXCEPTIONS key_not_available = 1
+                                                     OTHERS            = 2 ).
+          IF sy-subrc IS INITIAL.
+            lo_wb_object-&gt;get_transport_key( IMPORTING p_pgmid           = lv_trans_pgmid &quot;#EC CI_SUBRC
+                                            EXCEPTIONS key_not_available = 1
+                                                       OTHERS            = 2 ).
+*---------- Check program ID ----------*
+            CASE lv_trans_pgmid.
+              WHEN c_r3tr.  &quot;Main objects
+                i_pgmid = lv_trans_pgmid.
+
+              WHEN &apos;LIMU&apos;.  &quot;Sub object
+                CALL FUNCTION &apos;GET_R3TR_OBJECT_FROM_LIMU_OBJ&apos;
+                  EXPORTING
+                    p_limu_objtype = lv_tr_object
+                    p_limu_objname = lv_tr_obj_name
+                  IMPORTING
+                    p_r3tr_objtype = lv_tr_object
+                    p_r3tr_objname = lv_tr_obj_name
+                  EXCEPTIONS
+                    no_mapping     = 1
+                    OTHERS         = 2.
+
+                IF sy-subrc IS INITIAL. &quot;Add main objects
+                  ls_object-pgmid    = c_r3tr.          &quot;Program ID
+                  ls_object-object   = lv_tr_object.    &quot;Object type
+                  ls_object-obj_name = lv_tr_obj_name.  &quot;Object name
+                  ls_object-deep     = i_deep.          &quot;Object dependecie deepness
+                  ls_object-depend   = i_depend.        &quot;Dependecie
+                  add_object( CHANGING cs_object = ls_object ).
+                  RETURN.
+                ENDIF.
+
+              WHEN OTHERS.  &quot;Include objects
+                i_pgmid = c_r3tr.
+                CALL FUNCTION &apos;GET_TADIR_TYPE_FROM_WB_TYPE&apos;
+                  EXPORTING
+                    wb_objtype        = ls_wb_object_type-subtype_wb
+                  IMPORTING
+                    transport_objtype = lv_tr_object
+                  EXCEPTIONS
+                    no_mapping_found  = 1
+                    no_unique_mapping = 2
+                    OTHERS            = 3.
+
+                IF sy-subrc IS INITIAL.
+                  i_object = lv_tr_object.
+                  IF is_env_tab-encl_obj IS NOT INITIAL.
+                    i_obj_n = is_env_tab-encl_obj.
+                  ENDIF.
+                ENDIF.
+            ENDCASE.
+          ENDIF.
+        ENDIF.
+      ENDIF.
+    ENDIF.
+
+*---------- Check in TADIR ----------*
+    SELECT SINGLE * FROM tadir
+      INTO ls_tadir
+     WHERE pgmid    = i_pgmid
+       AND object   = i_object
+       AND obj_name = i_obj_n.
+
+*---------- Add object ----------*
+    IF ls_tadir IS NOT INITIAL AND ls_tadir-delflag IS INITIAL.
+      MOVE-CORRESPONDING ls_tadir TO ls_object. &quot;Move main fields
+
+      IF ls_tadir-genflag IS NOT INITIAL. &quot;SAP Generated object ststus
+        ls_object-status = icon_generate.
+      ENDIF.
+
+      ls_object-deep   = i_deep.    &quot;Object dependecie deepness
+      ls_object-depend = i_depend.  &quot;Object Dependecie
+
+      add_object( CHANGING cs_object = ls_object ). &quot;Add object to be checked
+
+*---------- Error object not valid ----------*
+    ELSE.
+      IF lines( t_objects ) &gt; 0. &quot;Skip first object
+        ls_object-pgmid    = i_pgmid.
+        ls_object-object   = i_object.
+        ls_object-obj_name = i_obj_n.
+
+*---------- Check if is deleted ----------*
+        IF ls_tadir-delflag IS NOT INITIAL.
+          ls_object-status = icon_delete.
+
+        ELSE. &quot;Object with error
+          ls_object-depend = i_depend.
+          ls_object-status = icon_led_red.
+        ENDIF.
+
+        ls_object-deep = i_deep.  &quot;Object dependecie deepness
+
+        add_object( CHANGING cs_object = ls_object ).
+      ENDIF.
+    ENDIF.
+  ENDMETHOD.                    &quot;check_add_object
+
+*--- Private method add object from development package implementation *
+  METHOD add_objects_of_devclass.
+    DATA:
+      ls_env_dummy  TYPE senvi,               &quot;System info environement
+      lt_objectlist TYPE TABLE OF rseui_set,  &quot;Transfer table
+      ls_objectlist LIKE LINE OF lt_objectlist.
+
+    DATA:
+      lv_devclass TYPE devclass,  &quot;Package
+      lv_deep     TYPE i.         &quot;Deepness
+
+*---------- Get development package objects ----------*
+    lv_devclass = i_obj_n.
+    CALL FUNCTION &apos;RS_GET_OBJECTS_OF_DEVCLASS&apos; &quot;#EC FB_RC  &quot;#EC CI_SUBRC
+      EXPORTING
+        devclass            = lv_devclass
+      TABLES
+        objectlist          = lt_objectlist
+      EXCEPTIONS
+        no_objects_selected = 1
+        OTHERS              = 2.
+
+*---------- Add found objects  ----------*
+    LOOP AT lt_objectlist INTO ls_objectlist.
+      lv_deep = i_deep.
+      IF ls_objectlist-obj_name &lt;&gt; lv_devclass.
+        ADD 1 TO lv_deep.
+      ENDIF.
+
+      check_add_object( i_pgmid    = c_r3tr                 &quot;Program ID
+                        i_object   = ls_objectlist-obj_type &quot;Object type
+                        i_obj_n    = ls_objectlist-obj_name &quot;Object name
+                        is_env_tab = ls_env_dummy           &quot;Info system
+                        i_deep     = lv_deep                &quot;Deepness
+                        i_depend   = lv_devclass ).         &quot;Dependecie
+    ENDLOOP.
+  ENDMETHOD.                    &quot;add_objects_of_devclass
+
+*---------------------------- Private method add object implementation *
+  METHOD add_object.
+    CONSTANTS lc_namespace TYPE string VALUE &apos;/0CUST/&apos;. &quot;Customer name space
+
+    DATA:
+       ls_objs_desc LIKE LINE OF t_objs_desc, &quot;Objects prograns ID
+       lt_devclass  TYPE scts_devclass,       &quot;Development packages
+       ls_devclass  TYPE trdevclass.
+
+    DATA:
+      lv_object    TYPE trobjtype,  &quot;Object type
+      lv_objname   TYPE sobj_name,  &quot;Object name
+      lv_namespace TYPE namespace.  &quot;Object namespace
+
+*---------- Check if already added ----------*
+    READ TABLE t_objects TRANSPORTING NO FIELDS WITH KEY pgmid    = cs_object-pgmid
+                                                         object   = cs_object-object
+                                                         obj_name = cs_object-obj_name.
+    IF sy-subrc IS NOT INITIAL. &quot;New object
+*---------- Check if is customer objects ----------*
+      lv_object  = cs_object-object.
+      lv_objname = cs_object-obj_name.
+
+      CALL FUNCTION &apos;TRINT_GET_NAMESPACE&apos;      &quot;#EC FB_RC &quot;#EC CI_SUBRC
+        EXPORTING
+          iv_pgmid            = cs_object-pgmid
+          iv_object           = lv_object
+          iv_obj_name         = lv_objname
+        IMPORTING
+          ev_namespace        = lv_namespace
+        EXCEPTIONS
+          invalid_prefix      = 1
+          invalid_object_type = 2
+          OTHERS              = 3.
+
+      IF lv_namespace = lc_namespace OR v_ist IS NOT INITIAL.  &quot;Is customer object
+*---------- Read object description ----------*
+        READ TABLE t_objs_desc INTO ls_objs_desc WITH KEY object = cs_object-object.
+        IF sy-subrc IS INITIAL.
+          cs_object-obj_desc = ls_objs_desc-text.  &quot;Object type description
+        ENDIF.
+
+*---------- Read development class tecnical information ----------*
+        IF cs_object-devclass IS INITIAL.
+          SELECT SINGLE devclass FROM tadir
+            INTO cs_object-devclass
+           WHERE pgmid    = cs_object-pgmid
+             AND object   = cs_object-object
+             AND obj_name = cs_object-obj_name.
+        ENDIF.
+
+        IF cs_object-devclass IS NOT INITIAL AND cs_object-devclass &lt;&gt; c_temp.
+          ls_devclass-devclass = cs_object-devclass.
+          APPEND ls_devclass TO lt_devclass.
+
+          CALL FUNCTION &apos;TR_READ_DEVCLASSES&apos;
+            EXPORTING
+              it_devclass = lt_devclass
+            IMPORTING
+              et_devclass = lt_devclass.
+
+          READ TABLE lt_devclass INTO ls_devclass INDEX 1.
+          IF sy-subrc IS INITIAL.
+            cs_object-target = ls_devclass-target.  &quot;Development package target
+          ENDIF.
+        ENDIF.
+
+*---------- Add object scope ----------*
+        IF lv_namespace = lc_namespace AND cs_object-target IS NOT INITIAL.
+          cs_object-scope = icon_transport.
+        ENDIF.
+
+*---------- Add object to transport ----------*
+        APPEND cs_object TO t_objects.
+      ENDIF.
+    ENDIF.
+  ENDMETHOD.                    &quot;add_object
+
+*------------ Private method objects dependencies check implementation *
+  METHOD objects_dependencies_check.
+    DATA:
+      lt_env_tab  TYPE TABLE OF senvi,  &quot;Object to check dependencies
+      ls_env_tab  TYPE senvi.           &quot;Info Environment
+
+    DATA:
+      lv_obj_type TYPE seu_obj,   &quot;Object type
+      lv_no_rfc   TYPE abap_bool, &quot;RFC flag
+      lv_deep     TYPE i,         &quot;Actual deepness
+      lv_tcode    TYPE tcode.     &quot;Transaction code
+
+    FIELD-SYMBOLS &lt;ls_object&gt; LIKE LINE OF t_objects.  &quot;Objects to transport
+
+    LOOP AT t_objects ASSIGNING &lt;ls_object&gt; WHERE status IS INITIAL.
+
+*---------- Check if transaction exist ----------*
+      IF &lt;ls_object&gt;-object = &apos;PROG&apos;.
+        CLEAR lv_tcode.
+        SELECT tcode FROM tstc UP TO 1 ROWS &quot;#EC CI_SEL_NESTED &quot;#EC CI_GENBUFF
+          INTO lv_tcode
+         WHERE pgmna = &lt;ls_object&gt;-obj_name.
+        ENDSELECT.
+
+        IF sy-subrc IS INITIAL.
+          check_add_object( i_pgmid    = c_r3tr                   &quot;Program ID
+                            i_object   = &apos;TRAN&apos;                   &quot;Object type
+                            i_obj_n    = lv_tcode                 &quot;Object name
+                            is_env_tab = ls_env_tab               &quot;Info system
+                            i_deep     = lv_deep + 1              &quot;Deepness
+                            i_depend   = &lt;ls_object&gt;-obj_name ).  &quot;Dependecie
+        ENDIF.
+      ENDIF.
+
+*---------- Check deepness ----------*
+      lv_deep = &lt;ls_object&gt;-deep + 1. &quot;Set deepness
+      IF v_deep IS NOT INITIAL AND lv_deep &gt; v_deep.
+        &lt;ls_object&gt;-status = icon_led_yellow.  &quot;Status checked
+        CONTINUE.
+      ENDIF.
+
+*---------- Exclude RFCs if exist ----------*
+      IF v_erfc IS NOT INITIAL AND &lt;ls_object&gt;-object = c_fugr.
+        CLEAR lv_no_rfc.
+        exclude_rfcs( EXPORTING i_obj_name = &lt;ls_object&gt;-obj_name &quot;Object name
+                       CHANGING c_no_rfc   = lv_no_rfc ).         &quot;Found RFC flag
+        IF lv_no_rfc IS INITIAL.
+          &lt;ls_object&gt;-status = icon_led_red.
+          CONTINUE.
+        ENDIF.
+      ENDIF.
+
+*---------- Get object dependecies ----------*
+      REFRESH lt_env_tab.
+      lv_obj_type = &lt;ls_object&gt;-object.
+
+      CALL FUNCTION &apos;REPOSITORY_ENVIRONMENT_RFC&apos;
+        EXPORTING
+          obj_type        = lv_obj_type
+          object_name     = &lt;ls_object&gt;-obj_name
+        TABLES
+          environment_tab = lt_env_tab.
+
+      IF lines( lt_env_tab ) IS INITIAL AND lines( t_objects ) = 1.
+        MESSAGE s398(00) WITH &apos;Object dependencies check not support&apos;(m13) space space space DISPLAY LIKE &apos;E&apos;.
+        &lt;ls_object&gt;-status = icon_led_red.
+
+      ELSE.
+        DELETE lt_env_tab WHERE type   = lv_obj_type
+                            AND object = &lt;ls_object&gt;-obj_name.
+
+*---------- Add founded dependecies ----------*
+        LOOP AT lt_env_tab INTO ls_env_tab.              &quot;#EC CI_NESTED
+          CASE ls_env_tab-type.
+            WHEN c_devc.  &quot;Add from Development class
+              add_objects_of_devclass( i_obj_n = ls_env_tab-object  &quot;Object name
+                                       i_deep  = lv_deep ).         &quot;Deepness
+
+            WHEN OTHERS.  &quot;Add all others object
+              check_add_object( i_pgmid    = space                    &quot;Program ID
+                                i_object   = ls_env_tab-type          &quot;Object type
+                                i_obj_n    = ls_env_tab-object        &quot;Object name
+                                is_env_tab = ls_env_tab               &quot;Info system
+                                i_deep     = lv_deep                  &quot;Deepness
+                                i_depend   = &lt;ls_object&gt;-obj_name ).  &quot;Dependecie
+          ENDCASE.
+        ENDLOOP.
+
+        &lt;ls_object&gt;-status = icon_led_green.  &quot;Status checked
+      ENDIF.
+    ENDLOOP.
+  ENDMETHOD.                    &quot;objects_dependencies_check
+
+*------------------ Private method remote objects check implementation *
+  METHOD remote_objects_check.
+    DATA:
+      ls_e071 TYPE e071,          &quot;Object entries of Requests/Tasks
+      lt_vrso TYPE TABLE OF vrso, &quot;Object list (versions)
+      ls_vrso LIKE LINE OF lt_vrso.
+
+    DATA:
+      lv_diagnosis(20),                 &quot;Version check result
+      lv_local_rfc_dest  TYPE rfcdest,  &quot;Logical destinations
+      lv_remote_rfc_dest TYPE rfcdest.
+
+    FIELD-SYMBOLS &lt;ls_object&gt; LIKE LINE OF t_objects. &quot;Objects to transport
+
+*---------- Get local rfc destination ----------*
+    SELECT desadm FROM tmscsys UP TO 1 ROWS             &quot;#EC CI_NOFIRST
+      INTO lv_local_rfc_dest
+     WHERE sysnam = sy-sysid.
+    ENDSELECT.
+
+*---------- Get remote rfc destination ----------*
+    SELECT desadm FROM tmscsys UP TO 1 ROWS             &quot;#EC CI_NOFIRST
+      INTO lv_remote_rfc_dest
+     WHERE sysnam = v_rfc_d.
+    ENDSELECT.
+
+*---------- Check objects versions ----------*
+    IF lv_local_rfc_dest IS NOT INITIAL AND lv_remote_rfc_dest IS NOT INITIAL.
+      LOOP AT t_objects ASSIGNING &lt;ls_object&gt;.
+
+*---------- Get Sub Objects ----------*
+        ls_e071-object   = &lt;ls_object&gt;-object.
+        ls_e071-obj_name = &lt;ls_object&gt;-obj_name.
+
+        REFRESH lt_vrso.
+        CALL FUNCTION &apos;TRINT_RESOLVE_OBJ&apos;
+          EXPORTING
+            is_e071             = ls_e071
+          TABLES
+            et_vrso             = lt_vrso
+          EXCEPTIONS
+            not_versionable     = 1
+            communication_error = 2
+            OTHERS              = 3.
+
+        IF sy-subrc IS INITIAL.
+*---------- Remote check all objects and subobjects ----------*
+          LOOP AT lt_vrso INTO ls_vrso WHERE objtype &lt;&gt; &apos;DOCU&apos;. &quot;#EC CI_NESTED
+
+            CLEAR lv_diagnosis.
+            CALL FUNCTION &apos;TRINT_COMP_VERSION&apos;
+              EXPORTING
+                is_vrso          = ls_vrso
+                dest1            = lv_local_rfc_dest
+                dest2            = lv_remote_rfc_dest
+              IMPORTING
+                ev_diagnosis     = lv_diagnosis
+              EXCEPTIONS
+                rfc_error_loc    = 1
+                rfc_error_rem    = 2
+                intern_error_loc = 3
+                intern_error_rem = 4
+                OTHERS           = 5.
+
+            IF sy-subrc IS INITIAL.
+              CASE lv_diagnosis.
+                WHEN 0.
+                  &lt;ls_object&gt;-remote = &apos;Equal&apos;(o01).
+                WHEN 1.
+                  &lt;ls_object&gt;-remote = &apos;Different&apos;(o02).
+                  EXIT.
+                WHEN 3.
+                  &lt;ls_object&gt;-remote = &apos;New&apos;(o03).
+                  EXIT.
+              ENDCASE.
+            ENDIF.
+          ENDLOOP.
+
+        ELSE.
+          &lt;ls_object&gt;-remote = &apos;No version&apos;(o04).
+        ENDIF.
+      ENDLOOP.
+
+    ELSE.
+      MESSAGE s398(00) WITH &apos;RFCs destinations missing&apos;(m09) space space space DISPLAY LIKE &apos;W&apos;.
+    ENDIF.
+  ENDMETHOD.                    &quot;remote_objects_check
+
+*-------------------------- Private method exclude RFCs implementation *
+  METHOD exclude_rfcs.
+    DATA lt_fbinfo_remote TYPE TABLE OF fbinfor.  &quot;Function module information
+    DATA lv_complete_area TYPE rs38l_area.        &quot;Function group, to which the function module belongs
+
+*---------- Check if all are RFCs ----------*
+    lv_complete_area = i_obj_name.
+    CALL FUNCTION &apos;FUNCTION_SELECT_TFDIR&apos;      &quot;#EC FB_RC &quot;#EC CI_SUBRC
+      EXPORTING
+        im_complete_area        = lv_complete_area
+      IMPORTING
+        ex_fbinfo_remote        = lt_fbinfo_remote
+      EXCEPTIONS
+        include_not_found_trdir = 1
+        report_source_not_found = 2
+        permission_failure      = 3
+        OTHERS                  = 4.
+
+    LOOP AT lt_fbinfo_remote TRANSPORTING NO FIELDS WHERE remote &lt;&gt; &apos;R&apos;.
+      c_no_rfc = abap_true. &quot;One function found that are not RFCs
+      EXIT.
+    ENDLOOP.
+  ENDMETHOD.                    &quot;exclude_rfcs
+
+*------------------ Private method include maintenances implementation *
+  METHOD include_maintenances.
+    DATA:
+      ls_tvdir      TYPE tvdir,             &quot;View directory
+      ls_object     LIKE LINE OF t_objects, &quot;Objects to transport line
+      ls_object_add LIKE LINE OF t_objects.
+
+    DATA:
+      lv_obj_type,                  &quot;Object type
+      lv_tobj_name  TYPE sobj_name, &quot;Object name
+      lv_objectname TYPE ob_object. &quot;Object name
+
+    LOOP AT t_objects INTO ls_object WHERE object = c_tabl AND status = icon_led_green.
+      CLEAR ls_tvdir.
+      SELECT SINGLE * FROM tvdir                     &quot;#EC CI_SEL_NESTED
+        INTO ls_tvdir
+       WHERE tabname = ls_object-obj_name.
+
+      IF sy-subrc IS INITIAL.
+*---------- Add function group if exist ----------*
+        ls_object_add-pgmid    = c_r3tr.              &quot;Program ID
+        ls_object_add-object   = c_fugr.              &quot;Object type
+        ls_object_add-obj_name = ls_tvdir-area.       &quot;Object name
+        ls_object_add-deep     = ls_object-deep + 1.  &quot;Object dependecie deepness
+        ls_object_add-depend   = ls_object-obj_name.  &quot;Dependecie
+        add_object( CHANGING cs_object = ls_object_add ).
+
+        IF ls_tvdir-bastab IS INITIAL. lv_obj_type = &apos;V&apos;. ELSE. lv_obj_type = &apos;S&apos;. ENDIF.
+*---------- Add definition of a maintenance and transport object ----------*
+        CLEAR lv_tobj_name.
+        lv_objectname = ls_object-obj_name.
+
+        CALL FUNCTION &apos;CTO_OBJECT_GET_TADIR_KEY&apos;
+          EXPORTING
+            iv_objectname = lv_objectname
+            iv_objecttype = lv_obj_type
+          IMPORTING
+            ev_obj_name   = lv_tobj_name.
+
+        ls_object_add-pgmid    = c_r3tr.              &quot;Program ID
+        ls_object_add-object   = c_tobj.              &quot;Object type
+        ls_object_add-obj_name = lv_tobj_name.        &quot;Object name
+        ls_object_add-deep     = ls_object-deep + 1.  &quot;Object dependecie deepness
+        ls_object_add-depend   = ls_object-obj_name.  &quot;Dependecie
+        ls_object_add-status   = icon_led_green.      &quot;Check status
+        add_object( CHANGING cs_object = ls_object_add ).
+      ENDIF.
+    ENDLOOP.
+  ENDMETHOD.                    &quot;include_maintenances
+
+*------------------------- Private method include locks implementation *
+  METHOD include_locks.
+    DATA:
+      ls_object     LIKE LINE OF t_objects,  &quot;Objects to transport line
+      ls_object_add LIKE LINE OF t_objects.
+
+    DATA lv_viewname TYPE viewname. &quot;Maintenance view name
+
+*---------- Add lock objects if exist ----------*
+    LOOP AT t_objects INTO ls_object WHERE object = c_tabl AND status = icon_led_green.
+      CLEAR lv_viewname.
+      SELECT viewname FROM dd25l UP TO 1 ROWS &quot;#EC CI_SEL_NESTED &quot;#EC CI_NOFIRST
+        INTO lv_viewname
+       WHERE aggtype = &apos;E&apos;
+         AND roottab = ls_object-obj_name.
+      ENDSELECT.
+
+      IF sy-subrc IS INITIAL.
+        ls_object_add-pgmid    = c_r3tr.              &quot;Program ID
+        ls_object_add-object   = &apos;ENQU&apos;.              &quot;Object type
+        ls_object_add-obj_name = lv_viewname.         &quot;Object name
+        ls_object_add-deep     = ls_object-deep + 1.  &quot;Object dependecie deepness
+        ls_object_add-depend   = ls_object-obj_name.  &quot;Dependecie
+        ls_object_add-status   = icon_led_green.      &quot;Check status
+        add_object( CHANGING cs_object = ls_object_add ).
+      ENDIF.
+    ENDLOOP.
+  ENDMETHOD.                    &quot;include_locks
+
+*--------------------------- Private method include CDs implementation *
+  METHOD include_cds.
+    DATA:
+      ls_object     LIKE LINE OF t_objects,  &quot;Objects to transport line
+      ls_object_add LIKE LINE OF t_objects.
+
+    DATA lv_object TYPE cdobjectcl. &quot;Object class
+
+*---------- Add change document object if exist ----------*
+    LOOP AT t_objects INTO ls_object WHERE object = c_tabl AND status = icon_led_green.
+
+      CLEAR lv_object.
+      SELECT object FROM tcdob UP TO 1 ROWS &quot;#EC CI_SEL_NESTED &quot;#EC CI_GENBUFF
+        INTO lv_object
+       WHERE tabname = ls_object-obj_name.
+      ENDSELECT.
+
+      IF sy-subrc IS INITIAL.
+        ls_object_add-pgmid    = c_r3tr.              &quot;Program ID
+        ls_object_add-object   = c_chdo.              &quot;Object type
+        ls_object_add-obj_name = lv_object.           &quot;Object name
+        ls_object_add-deep     = ls_object-deep + 1.  &quot;Object dependecie deepness
+        ls_object_add-depend   = ls_object-obj_name.  &quot;Dependecie
+        ls_object_add-status   = icon_led_green.      &quot;Check status
+        add_object( CHANGING cs_object = ls_object_add ).
+      ENDIF.
+    ENDLOOP.
+  ENDMETHOD.                    &quot;include_cds
+
+*---------------------- Private method add TOBJ content implementation *
+  METHOD add_tobj_content.
+    CONSTANTS:
+      lc_tabu    TYPE trobjtype VALUE &apos;TABU&apos;,
+      lc_tvdir   TYPE sobj_name VALUE &apos;TVDIR&apos;,
+      lc_tddat   TYPE sobj_name VALUE &apos;TDDAT&apos;,
+      lc_tvimf   TYPE sobj_name VALUE &apos;TVIMF&apos;,
+      lc_objfunc TYPE objfunc   VALUE &apos;K&apos;.
+
+    DATA:
+      lt_tvimf TYPE TABLE OF tvimf,   &quot;User routines called from view maintenance
+      ls_tvimf LIKE LINE OF lt_tvimf.
+
+    DATA lv_tabkey TYPE tabkey.  &quot;Table Key
+
+*---------- Add table content ----------*
+    add_object_header( i_pgmid   = c_r3tr         &quot;Program ID
+                       i_object  = lc_tabu        &quot;Object type
+                       i_obj_n   = lc_tvdir       &quot;Object name
+                       i_objfunc = lc_objfunc ).  &quot;Object function
+
+    add_object_keys( i_pgmid  = c_r3tr        &quot;Program ID
+                     i_object = lc_tabu       &quot;Object type
+                     i_obj_n  = lc_tvdir      &quot;Object name
+                     i_tabkey = i_obj_name ). &quot;Table key
+
+    CLEAR lt_tvimf. &quot;Read user routines called from view maintenance
+    SELECT * FROM tvimf                                 &quot;#EC CI_GENBUFF
+      INTO TABLE lt_tvimf
+     WHERE tabname = i_obj_name.
+
+    LOOP AT lt_tvimf INTO ls_tvimf.
+      AT FIRST.
+        add_object_header( i_pgmid  = c_r3tr          &quot;Program ID
+                           i_object  = lc_tabu        &quot;Object type
+                           i_obj_n   = lc_tvimf       &quot;Object name
+                           i_objfunc = lc_objfunc ).  &quot;Object function
+      ENDAT.
+
+      lv_tabkey    = i_obj_name.
+      lv_tabkey+30 = ls_tvimf-event.
+
+      add_object_keys( i_pgmid  = c_r3tr        &quot;Program ID
+                       i_object = lc_tabu       &quot;Object type
+                       i_obj_n  = lc_tvimf      &quot;Object name
+                       i_tabkey = lv_tabkey ).  &quot;Table Key
+      CLEAR lv_tabkey.
+    ENDLOOP.
+
+    add_object_header( i_pgmid   = c_r3tr         &quot;Program ID
+                       i_object  = lc_tabu        &quot;Object type
+                       i_obj_n   = lc_tddat       &quot;Object name
+                       i_objfunc = lc_objfunc ).  &quot;Object function
+
+    add_object_keys( i_pgmid  = c_r3tr        &quot;Program ID
+                     i_object = lc_tabu       &quot;Object type
+                     i_obj_n  = lc_tddat      &quot;Object name
+                     i_tabkey = i_obj_name ). &quot;Table key
+  ENDMETHOD.                    &quot;add_tobj_content
+
+*--------------------- Private method add object header implementation *
+  METHOD add_object_header.
+    DATA ls_e071 LIKE LINE OF t_e071. &quot;Object entries of Requests/Tasks
+
+    READ TABLE t_e071 TRANSPORTING NO FIELDS WITH KEY pgmid    = i_pgmid    &quot;Program ID
+                                                      object   = i_object   &quot;Object type
+                                                      obj_name = i_obj_n    &quot;Object name
+                                                      objfunc  = i_objfunc. &quot;Object function
+    IF sy-subrc IS NOT INITIAL.
+      ls_e071-pgmid    = i_pgmid.   &quot;Program ID
+      ls_e071-object   = i_object.  &quot;Object type
+      ls_e071-obj_name = i_obj_n.   &quot;Object name
+      ls_e071-objfunc  = i_objfunc. &quot;Object function
+      APPEND ls_e071 TO t_e071.     &quot;Add to transport
+    ENDIF.
+  ENDMETHOD.                    &quot;add_object_header
+
+*----------------------- Private method add object keys implementation *
+  METHOD add_object_keys.
+    DATA ls_e071k LIKE LINE OF t_e071k. &quot;Object entries of Requests/Tasks
+
+    ls_e071k-pgmid      = i_pgmid.  &quot;Program ID
+    ls_e071k-object     = i_object. &quot;Object type
+    ls_e071k-objname    = i_obj_n.  &quot;Object name
+    ls_e071k-mastertype = i_object. &quot;Object type
+    ls_e071k-mastername = i_obj_n.  &quot;Object name
+    ls_e071k-tabkey     = i_tabkey. &quot;Table Key
+    APPEND ls_e071k TO t_e071k.     &quot;Add to transport
+  ENDMETHOD.                    &quot;add_object_keys
+
+ENDCLASS.                    &quot;obj_dep_trans IMPLEMENTATION</source>
+ </PROG>
+ <TRAN TCODE="ZABAPINHO_DEPENDENCI" PGMNA="ZABAPINHO_DEPENDENCIES" DYPNO="1000" CINFO="80">
+  <tstct SPRSL="E" TCODE="ZABAPINHO_DEPENDENCI" TTEXT="Dependencies - Abapinho Dev Tools"/>
+  <tstcc TCODE="ZABAPINHO_DEPENDENCI" S_WEBGUI="1" S_WIN32="X" S_PLATIN="X"/>
+  <tstcp/>
+  <rsstcd ST_PROG="X" DEVCLASS="$TMP"/>
+ </TRAN>
+</nugget>

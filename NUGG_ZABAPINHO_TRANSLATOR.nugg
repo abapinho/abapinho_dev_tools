@@ -1,0 +1,1971 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nugget name="ZABAPINHO_TRANSLATOR">
+ <DEVC DEVCLASS="ZABAPINHO_TRANSLATOR" CTEXT="Abapinho Dev Tools - Translator" LANGUAGE="E" MASTERLANG="E" KORRFLAG="X" DLVUNIT="HOME" NAMESPACE="/0CUST/" PARENTCL="ZABAPINHO_DEV_TOOLS" CREATED_BY="PT99375462" CREATED_ON="20151019" CHANGED_BY="PT99375462" CHANGED_ON="20151019" SRV_CHECK="X" PROJECT_GUID="00000000000000000000000000000000" TRANSLATION_DEPTH="NOT_CLASSIFIED" TRANSLATION_DEPTH_TEXT="Not Classified"/>
+ <PROG NAME="ZABAPINHO_TRANSLATOR" VARCL="X" SUBC="1" RMAND="040" RLOAD="E" FIXPT="X" UCCHECK="X">
+  <textPool>
+   <language SPRAS="E">
+    <textElement ID="I" KEY="B01" ENTRY="Objects selection" LENGTH="17 "/>
+    <textElement ID="I" KEY="B02" ENTRY="Options" LENGTH="7 "/>
+    <textElement ID="I" KEY="C01" ENTRY="Obj. Desc." LENGTH="10 "/>
+    <textElement ID="I" KEY="C02" ENTRY="Source" LENGTH="6 "/>
+    <textElement ID="I" KEY="C03" ENTRY="Targets" LENGTH="7 "/>
+    <textElement ID="I" KEY="C04" ENTRY="Trans. St." LENGTH="10 "/>
+    <textElement ID="I" KEY="C05" ENTRY="Proc. St." LENGTH="9 "/>
+    <textElement ID="I" KEY="C06" ENTRY="Check St." LENGTH="9 "/>
+    <textElement ID="I" KEY="D01" ENTRY="Please select target language:" LENGTH="30 "/>
+    <textElement ID="I" KEY="D02" ENTRY="Edit Translation" LENGTH="16 "/>
+    <textElement ID="I" KEY="EX1" ENTRY="Executed with success" LENGTH="21 "/>
+    <textElement ID="I" KEY="EX2" ENTRY="Executed with errors" LENGTH="20 "/>
+    <textElement ID="I" KEY="F01" ENTRY="Translations" LENGTH="12 "/>
+    <textElement ID="I" KEY="F02" ENTRY="Automatic translations. Continue?" LENGTH="33 "/>
+    <textElement ID="I" KEY="G01" ENTRY="Upload Template" LENGTH="15 "/>
+    <textElement ID="I" KEY="G02" ENTRY="Download Template" LENGTH="17 "/>
+    <textElement ID="I" KEY="M01" ENTRY="Please fill all required fields" LENGTH="31 "/>
+    <textElement ID="I" KEY="M02" ENTRY="Error opening file" LENGTH="18 "/>
+    <textElement ID="I" KEY="M03" ENTRY="Objects not found" LENGTH="17 "/>
+    <textElement ID="I" KEY="M04" ENTRY="No objects selected" LENGTH="19 "/>
+    <textElement ID="I" KEY="M05" ENTRY="Transport not allowed for multiple targets" LENGTH="42 "/>
+    <textElement ID="I" KEY="M06" ENTRY="No dependecies found" LENGTH="20 "/>
+    <textElement ID="I" KEY="M07" ENTRY="Objects added to request" LENGTH="24 "/>
+    <textElement ID="I" KEY="M08" ENTRY="Overwrite existent translations activated" LENGTH="41 "/>
+    <textElement ID="I" KEY="M09" ENTRY="Transport canceled" LENGTH="18 "/>
+    <textElement ID="I" KEY="M10" ENTRY="Request canceled, at least one object $TEMP detected" LENGTH="52 "/>
+    <textElement ID="I" KEY="M11" ENTRY="File not valid" LENGTH="14 "/>
+    <textElement ID="I" KEY="M12" ENTRY="File source language not valid" LENGTH="30 "/>
+    <textElement ID="I" KEY="M13" ENTRY="File target languages not valid" LENGTH="31 "/>
+    <textElement ID="I" KEY="M14" ENTRY="Error treating transport request" LENGTH="32 "/>
+    <textElement ID="I" KEY="P01" ENTRY="Adding object" LENGTH="13 "/>
+    <textElement ID="I" KEY="P02" ENTRY="Checking Dependecies" LENGTH="20 "/>
+    <textElement ID="I" KEY="P03" ENTRY="Checking Translations" LENGTH="21 "/>
+    <textElement ID="I" KEY="P04" ENTRY="Display objects" LENGTH="15 "/>
+    <textElement ID="I" KEY="PB1" ENTRY="% Complete" LENGTH="10 "/>
+    <textElement ID="I" KEY="T01" ENTRY="Object" LENGTH="6 "/>
+    <textElement ID="I" KEY="T02" ENTRY="dependecies" LENGTH="11 "/>
+    <textElement ID="I" KEY="T03" ENTRY="and translations" LENGTH="16 "/>
+    <textElement ID="R" ENTRY="Development Translation and Transport" LENGTH="37 "/>
+    <textElement ID="S" KEY="P_DEP" ENTRY="        Dependencies check" LENGTH="26 "/>
+    <textElement ID="S" KEY="P_OBJECT" ENTRY="        Object Type" LENGTH="19 "/>
+    <textElement ID="S" KEY="P_OBJ_N" ENTRY="        Object Name" LENGTH="19 "/>
+    <textElement ID="S" KEY="P_OW" ENTRY="        Overwrite translations" LENGTH="38 "/>
+    <textElement ID="S" KEY="P_PGMID" ENTRY="        Program ID" LENGTH="18 "/>
+    <textElement ID="S" KEY="P_SLANG" ENTRY="        Source Language" LENGTH="23 "/>
+    <textElement ID="S" KEY="P_TR" ENTRY="        Transport request" LENGTH="25 "/>
+    <textElement ID="S" KEY="R_OBJ" ENTRY="        Add workbench objects" LENGTH="29 "/>
+    <textElement ID="S" KEY="R_TR" ENTRY="        Add from transport request" LENGTH="34 "/>
+    <textElement ID="S" KEY="SO_TLANG" ENTRY="        Target Languages" LENGTH="24 "/>
+   </language>
+  </textPool>
+  <pfstatus>
+   <pfstatus_sta CODE="STATUS" MODAL="D" ACTCODE="000001" PFKCODE="000001" BUTCODE="0001" INT_NOTE="Status"/>
+   <pfstatus_fun CODE="%PC" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_EXPORT" ICON_ID="@49@" FUN_TEXT="Local File..." PATH="L"/>
+   <pfstatus_fun CODE="%SC" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_SEARCH" ICON_ID="@13@" FUN_TEXT="Find"/>
+   <pfstatus_fun CODE="%SC+" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_SEARCH_NEXT" ICON_ID="@4E@" FUN_TEXT="Find next"/>
+   <pfstatus_fun CODE="&amp;ALL" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_SELECT_ALL" ICON_ID="@4B@" FUN_TEXT="Select All" PATH="S"/>
+   <pfstatus_fun CODE="&amp;AVE" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_ALV_VARIANT_SAVE" ICON_ID="@DN@" FUN_TEXT="Save Layout..."/>
+   <pfstatus_fun CODE="&amp;F03" TEXTNO="001" TEXT_TYPE="S" FUN_TEXT="Back" PATH="B"/>
+   <pfstatus_fun CODE="&amp;F12" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_CANCEL" ICON_ID="@0W@" FUN_TEXT="Cancel" PATH="A"/>
+   <pfstatus_fun CODE="&amp;F15" TEXTNO="001" TEXT_TYPE="S" FUN_TEXT="Exit" PATH="X"/>
+   <pfstatus_fun CODE="&amp;ILT" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_FILTER" ICON_ID="@4G@" FUN_TEXT="Set Filter" PATH="F"/>
+   <pfstatus_fun CODE="&amp;OAD" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_ALV_VARIANT_CHOOSE" ICON_ID="@DM@" FUN_TEXT="Select Layout"/>
+   <pfstatus_fun CODE="&amp;ODN" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_SORT_DOWN" ICON_ID="@3F@" FUN_TEXT="Sort in Descending Order" PATH="O"/>
+   <pfstatus_fun CODE="&amp;OL0" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_ALV_VARIANTS" ICON_ID="@LZ@" FUN_TEXT="Change Layout..."/>
+   <pfstatus_fun CODE="&amp;OUP" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_SORT_UP" ICON_ID="@3E@" FUN_TEXT="Sort in Ascending Order" PATH="I"/>
+   <pfstatus_fun CODE="&amp;SAL" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_DESELECT_ALL" ICON_ID="@4D@" FUN_TEXT="Deselect All" PATH="D"/>
+   <pfstatus_fun CODE="COPY" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_SYSTEM_COPY" ICON_ID="@2U@" FUN_TEXT="Copy source language to targets" ICON_TEXT="Copy source language to targets" INFO_TEXT="Copy source language to targets"/>
+   <pfstatus_fun CODE="DOWN" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_SAVE_AS_TEMPLATE" ICON_ID="@Q1@" FUN_TEXT="Download Template" ICON_TEXT="Download Template" INFO_TEXT="Download Template"/>
+   <pfstatus_fun CODE="TR" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_IMPORT_TRANSPORT_REQUEST" ICON_ID="@K5@" FUN_TEXT="Transport translations" ICON_TEXT="Transport translations" INFO_TEXT="Transport translations" PATH="T"/>
+   <pfstatus_fun CODE="UP" TEXTNO="001" TEXT_TYPE="S" TEXT_NAME="ICON_IMPORT" ICON_ID="@48@" FUN_TEXT="Upload Template" ICON_TEXT="Upload Template" INFO_TEXT="Upload Template"/>
+   <pfstatus_but PFK_CODE="000001" CODE="0001" NO="01" PFNO="05"/>
+   <pfstatus_but PFK_CODE="000001" CODE="0001" NO="02" PFNO="06"/>
+   <pfstatus_but PFK_CODE="000001" CODE="0001" NO="03" PFNO="S"/>
+   <pfstatus_but PFK_CODE="000001" CODE="0001" NO="04" PFNO="28"/>
+   <pfstatus_but PFK_CODE="000001" CODE="0001" NO="05" PFNO="40"/>
+   <pfstatus_but PFK_CODE="000001" CODE="0001" NO="06" PFNO="29"/>
+   <pfstatus_but PFK_CODE="000001" CODE="0001" NO="07" PFNO="S"/>
+   <pfstatus_but PFK_CODE="000001" CODE="0001" NO="08" PFNO="45"/>
+   <pfstatus_but PFK_CODE="000001" CODE="0001" NO="09" PFNO="S"/>
+   <pfstatus_but PFK_CODE="000001" CODE="0001" NO="10" PFNO="32"/>
+   <pfstatus_but PFK_CODE="000001" CODE="0001" NO="11" PFNO="33"/>
+   <pfstatus_but PFK_CODE="000001" CODE="0001" NO="12" PFNO="34"/>
+   <pfstatus_but PFK_CODE="000001" CODE="0001" NO="13" PFNO="S"/>
+   <pfstatus_but PFK_CODE="000001" CODE="0001" NO="14" PFNO="26"/>
+   <pfstatus_but PFK_CODE="000001" CODE="0001" NO="15" PFNO="27"/>
+   <pfstatus_but PFK_CODE="000001" CODE="0001" NO="16" PFNO="S"/>
+   <pfstatus_but PFK_CODE="000001" CODE="0001" NO="17" PFNO="25"/>
+   <pfstatus_but PFK_CODE="000001" CODE="0001" NO="18" PFNO="S"/>
+   <pfstatus_but PFK_CODE="000001" CODE="0001" NO="19" PFNO="08"/>
+   <pfstatus_pfk CODE="000001" PFNO="03" FUNCODE="&amp;F03" FUNNO="001"/>
+   <pfstatus_pfk CODE="000001" PFNO="05" FUNCODE="&amp;ALL" FUNNO="001"/>
+   <pfstatus_pfk CODE="000001" PFNO="06" FUNCODE="&amp;SAL" FUNNO="001"/>
+   <pfstatus_pfk CODE="000001" PFNO="08" FUNCODE="TR" FUNNO="001"/>
+   <pfstatus_pfk CODE="000001" PFNO="12" FUNCODE="&amp;F12" FUNNO="001"/>
+   <pfstatus_pfk CODE="000001" PFNO="15" FUNCODE="&amp;F15" FUNNO="001"/>
+   <pfstatus_pfk CODE="000001" PFNO="25" FUNCODE="COPY" FUNNO="001"/>
+   <pfstatus_pfk CODE="000001" PFNO="26" FUNCODE="DOWN" FUNNO="001"/>
+   <pfstatus_pfk CODE="000001" PFNO="27" FUNCODE="UP" FUNNO="001"/>
+   <pfstatus_pfk CODE="000001" PFNO="28" FUNCODE="&amp;OUP" FUNNO="001"/>
+   <pfstatus_pfk CODE="000001" PFNO="29" FUNCODE="&amp;ILT" FUNNO="001"/>
+   <pfstatus_pfk CODE="000001" PFNO="32" FUNCODE="&amp;OL0" FUNNO="001"/>
+   <pfstatus_pfk CODE="000001" PFNO="33" FUNCODE="&amp;OAD" FUNNO="001"/>
+   <pfstatus_pfk CODE="000001" PFNO="34" FUNCODE="&amp;AVE" FUNNO="001"/>
+   <pfstatus_pfk CODE="000001" PFNO="40" FUNCODE="&amp;ODN" FUNNO="001"/>
+   <pfstatus_pfk CODE="000001" PFNO="45" FUNCODE="%PC" FUNNO="001"/>
+   <pfstatus_pfk CODE="000001" PFNO="71" FUNCODE="%SC" FUNNO="001"/>
+   <pfstatus_pfk CODE="000001" PFNO="84" FUNCODE="%SC+" FUNNO="001"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="%PC"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="%SC"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="%SC+"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="&amp;ALL"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="&amp;AVE"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="&amp;F03"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="&amp;F12"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="&amp;F15"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="&amp;ILT"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="&amp;OAD"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="&amp;ODN"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="&amp;OL0"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="&amp;OUP"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="&amp;SAL"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="COPY"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="DOWN"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="TR"/>
+   <pfstatus_set STATUS="STATUS" FUNCTION="UP"/>
+   <pfstatus_doc OBJ_TYPE="A" OBJ_CODE="000001" MODAL="D" INT_NOTE="Status"/>
+   <pfstatus_doc OBJ_TYPE="P" OBJ_CODE="000001" MODAL="D" NORM="X" INT_NOTE="Status"/>
+   <pfstatus_doc OBJ_TYPE="B" OBJ_CODE="000001" SUB_CODE="0001" MODAL="D" INT_NOTE="Status"/>
+  </pfstatus>
+  <source>REPORT zabapinho_translator MESSAGE-ID 00.
+*--------------------------------------------------------- GLOBAL DATA *
+TABLES t002.                        &quot;Language Keys
+TYPE-POOLS: abap, icon, ole2, sscr. &quot;Only for old versions
+*----------------------------------------------------------- Constants *
+CONSTANTS:
+  gc_r3tr          TYPE pgmid        VALUE &apos;R3TR&apos;,    &quot;Main object
+  gc_temp          TYPE developclass VALUE &apos;$TMP&apos;,    &quot;Local development class
+  gc_excel_ext     TYPE string       VALUE &apos;XLSX&apos;,    &quot;Excel file extention
+  gc_ieq(3)        TYPE c            VALUE &apos;IEQ&apos;,     &quot;Ranges
+  gc_pgmid(5)      TYPE c            VALUE &apos;PGMID&apos;,   &quot;Fields names
+  gc_object(6)     TYPE c            VALUE &apos;OBJECT&apos;,
+  gc_lxe_object(3) TYPE c            VALUE &apos;LXE&apos;,
+  gc_textkey(8)    TYPE c            VALUE &apos;TEXTPAIR&apos;,
+  gc_length(6)     TYPE c            VALUE &apos;LENGTH&apos;,
+  gc_desc(11)      TYPE c            VALUE &apos;DESCRIPTION&apos;.
+*---------------------------------------------------------- Structures *
+*---------- Objects ----------*
+TYPES:
+  BEGIN OF gty_objects,
+    status   TYPE icon_d,       &quot;Check status
+    pgmid    TYPE pgmid,        &quot;Program ID in Requests and Tasks
+    object   TYPE trobjtype,    &quot;Object Type
+    obj_name TYPE sobj_name,    &quot;Object Name in Object Directory
+    obj_desc TYPE ddtext,       &quot;Object Explanatory short text
+    slang    TYPE spras,        &quot;Source Language
+    tlangs   TYPE string,       &quot;Target Languages
+    stattrn  TYPE icon_d,       &quot;Initial Translation status of an Object
+    statproc TYPE icon_d,       &quot;Process Translation status of an Object
+    devclass TYPE developclass, &quot;Development Package
+    target   TYPE tr_target,    &quot;Transport Target of Request
+  END OF gty_objects.
+*---------- LXE Object Lists ----------*
+TYPES:
+  BEGIN OF gty_colob,
+    pgmid    TYPE pgmid,        &quot;Program ID in Requests and Tasks
+    object   TYPE trobjtype,    &quot;Object Type
+    obj_name TYPE sobj_name.    &quot;Object Name in Object Directory
+        INCLUDE TYPE lxe_colob. &quot;Object Lists
+TYPES:
+  END OF gty_colob.
+*---------- Languages Informations ----------*
+TYPES:
+  BEGIN OF gty_languages,
+    r3_lang(2) TYPE c,          &quot;R3 Language (Char 2)
+    laiso      TYPE laiso,      &quot;Language according to ISO 639
+    o_language TYPE lxeisolang, &quot;Translation Language
+    text       TYPE sptxt,      &quot;Name of Language
+  END OF gty_languages.
+
+SET EXTENDED CHECK OFF.
+DATA:
+  gt_objects    TYPE TABLE OF gty_objects,    &quot;Objects to transport
+  gt_objs_desc  TYPE TABLE OF ko100,          &quot;Objects prograns IDs
+  gt_objs_colob TYPE TABLE OF gty_colob,      &quot;LXE Object Lists
+  gt_languages  TYPE TABLE OF gty_languages.  &quot;Target Languages Informations
+*----------------------------------------------------------- Variables *
+DATA:
+  gv_percent  TYPE i,       &quot;Progress bar percentage
+  gv_tlangs   TYPE string,  &quot;Target Languages
+  gv_msg_text TYPE string,  &quot;All Global Exceptions Text
+  gv_object   TYPE trobjtype.
+*------------------------------------------------------------- Objects *
+DATA:
+   go_objects TYPE REF TO cl_salv_table,  &quot;Objects ALV
+   go_exp     TYPE REF TO cx_root.        &quot;Abstract Superclass for All Global Exceptions
+SET EXTENDED CHECK ON.
+
+*-------------------------------------- CLASS HANDLE EVENTS DEFINITION *
+CLASS lcl_handle_events DEFINITION FINAL.
+  PUBLIC SECTION.
+    METHODS:
+      on_user_command FOR EVENT added_function OF cl_salv_events
+        IMPORTING e_salv_function,
+      on_double_click FOR EVENT double_click OF cl_salv_events_table
+        IMPORTING row column.                               &quot;#EC NEEDED
+ENDCLASS.                    &quot;lcl_handle_events DEFINITION
+
+*---------------------------------------------------- SELECTION SCREEN *
+*---------------------------------------------------- Object selection *
+SELECTION-SCREEN BEGIN OF BLOCK b01 WITH FRAME TITLE text-b01.
+SELECTION-SCREEN SKIP 1.
+*---------- Workbench object ----------*
+PARAMETERS r_obj RADIOBUTTON GROUP rbt USER-COMMAND rbt DEFAULT &apos;X&apos;.
+SELECTION-SCREEN BEGIN OF LINE.
+SELECTION-SCREEN POSITION 4.
+PARAMETERS:
+  p_pgmid  TYPE pgmid DEFAULT gc_r3tr,  &quot;Program ID in Requests and Tasks
+  p_object TYPE trobjtype,              &quot;Object Type
+  p_obj_n  TYPE sobj_name.              &quot;Object Name in Object Directory
+SELECTION-SCREEN END OF LINE.
+*---------- Transport request ----------*
+SELECTION-SCREEN SKIP 1.
+PARAMETERS r_tr RADIOBUTTON GROUP rbt.
+SELECTION-SCREEN BEGIN OF LINE.
+SELECTION-SCREEN POSITION 4.
+PARAMETERS p_tr TYPE trkorr.  &quot;Transport request
+SELECTION-SCREEN END OF LINE.
+SELECTION-SCREEN SKIP 1.
+SELECTION-SCREEN END OF BLOCK b01.
+*-------------------------------------------------- Translation options *
+SELECTION-SCREEN BEGIN OF BLOCK b02 WITH FRAME TITLE text-b02.
+SELECTION-SCREEN SKIP 1.
+PARAMETERS p_slang TYPE spras DEFAULT &apos;EN&apos;.           &quot;Source Language
+SELECT-OPTIONS so_tlang FOR t002-spras NO INTERVALS.  &quot;Target Languages
+SELECTION-SCREEN SKIP 1.
+PARAMETERS p_dep AS CHECKBOX DEFAULT abap_true.  &quot;Dependencies check
+PARAMETERS p_ow  AS CHECKBOX.  &quot;Overwrite existent translations
+SELECTION-SCREEN END OF BLOCK b02.
+
+*--------------------------------------------- SELECTION SCREEN EVENTS *
+*------------------------------------------------------- Program ID F4 *
+AT SELECTION-SCREEN ON VALUE-REQUEST FOR p_pgmid.
+  PERFORM pgmid_f4.
+*------------------------------------------------------ Object Type F4 *
+AT SELECTION-SCREEN ON VALUE-REQUEST FOR p_object.
+  PERFORM object_f4.
+*------------------------------------------------------ Object Name F4 *
+AT SELECTION-SCREEN ON VALUE-REQUEST FOR p_obj_n.
+  PERFORM object_name_f4.
+*--------------------------------------------------- Transport request *
+AT SELECTION-SCREEN ON VALUE-REQUEST FOR p_tr.
+  CALL FUNCTION &apos;TR_F4_REQUESTS&apos;
+    IMPORTING
+      ev_selected_request = p_tr.
+*----------------------------------------- Selection Screen Events PAI *
+
+AT SELECTION-SCREEN.
+  PERFORM screen_pai.
+
+*------------------------------------------------------- REPORT EVENTS *
+*----------------------------------------------- Initialization events *
+INITIALIZATION.
+  PERFORM load_of_program.
+*---------------------------------------------------- Executing events *
+START-OF-SELECTION.
+  PERFORM run_checks.
+
+END-OF-SELECTION.
+  PERFORM display_objects.
+
+*--------------------------------------------------------------- FORMS *
+*------------------------------------------------ Form LOAD_OF_PROGRAM *
+FORM load_of_program.
+  DATA:
+    lt_restrict  TYPE sscr_restrict,  &quot;Select Options Restrict
+    lt_opt_list  TYPE sscr_opt_list,
+    lt_associate TYPE sscr_ass.       &quot;selection screen object
+
+*---------- Fill Program IDs ----------*
+  CALL FUNCTION &apos;TR_OBJECT_TABLE&apos;
+    TABLES
+      wt_object_text = gt_objs_desc.
+
+*---------- SC restrict SOs ----------*
+  lt_opt_list-name = gc_ieq+1(2).
+  lt_opt_list-options-eq = abap_true.
+  APPEND lt_opt_list TO lt_restrict-opt_list_tab.
+  lt_associate-kind    = &apos;S&apos;.
+  lt_associate-name    = &apos;SO_TLANG&apos;.
+  lt_associate-sg_main = gc_ieq(1).
+  lt_associate-sg_addy = space.
+  lt_associate-op_main = gc_ieq+1(2).
+  lt_associate-op_addy = gc_ieq+1(2).
+  APPEND lt_associate TO lt_restrict-ass_tab.
+
+  CALL FUNCTION &apos;SELECT_OPTIONS_RESTRICT&apos;
+    EXPORTING
+      restriction            = lt_restrict
+    EXCEPTIONS
+      too_late               = 1
+      repeated               = 2
+      selopt_without_options = 3
+      selopt_without_signs   = 4
+      invalid_sign           = 5
+      empty_option_list      = 6
+      invalid_kind           = 7
+      repeated_kind_a        = 8
+      OTHERS                 = 9.
+
+  IF sy-subrc IS NOT INITIAL.
+    MESSAGE ID sy-msgid TYPE sy-msgty NUMBER sy-msgno
+            WITH sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4.
+  ENDIF.
+ENDFORM.                    &quot; LOAD_OF_PROGRAM
+*------------------------------------------------------- Form PGMID_F4 *
+FORM pgmid_f4 .
+  DATA lt_pgmids TYPE TABLE OF ko101.  &quot;Program IDs with Description
+
+*---------- Read PGMID ----------*
+  CALL FUNCTION &apos;TR_PGMID_TABLE&apos;
+    TABLES
+      wt_pgmid_text = lt_pgmids.
+*---------- Set PGMID F4 ----------*
+  CALL FUNCTION &apos;F4IF_INT_TABLE_VALUE_REQUEST&apos;              &quot;#EC FB_RC
+    EXPORTING
+      retfield        = &apos;PGMID&apos;
+      dynpprog        = sy-cprog
+      value_org       = &apos;S&apos;
+      dynpnr          = &apos;1000&apos;
+      dynprofield     = &apos;TRE071X-PGMID&apos;
+    TABLES
+      value_tab       = lt_pgmids
+    EXCEPTIONS
+      parameter_error = 1
+      no_values_found = 2
+      OTHERS          = 3.
+ENDFORM.                    &quot; PGMID_F4
+*------------------------------------------------------ Form OBJECT_F4 *
+FORM object_f4.
+  DATA:
+    lt_shlp          TYPE shlp_descr,               &quot;Description of Search Help
+    lt_return_values TYPE TABLE OF ddshretval,      &quot;Interface Structure Search Help
+    ls_return_values LIKE LINE OF lt_return_values,
+    lv_rc            TYPE sysubrc.                  &quot;Return Value of ABAP Statements
+  FIELD-SYMBOLS &lt;interface&gt; TYPE ddshiface.         &quot;Interface description of a F4 help method
+
+*---------- Get search help ----------*
+  CALL FUNCTION &apos;F4IF_GET_SHLP_DESCR&apos;
+    EXPORTING
+      shlpname = &apos;SCTSOBJECT&apos;
+    IMPORTING
+      shlp     = lt_shlp.
+*---------- Fill search help ----------*
+  LOOP AT lt_shlp-interface ASSIGNING &lt;interface&gt;.
+    IF &lt;interface&gt;-shlpfield = gc_object.
+      &lt;interface&gt;-valfield = abap_true.
+      &lt;interface&gt;-value    = gv_object.
+    ENDIF.
+    IF &lt;interface&gt;-shlpfield = gc_pgmid.
+      &lt;interface&gt;-valfield = abap_true.
+      &lt;interface&gt;-value    = p_pgmid.
+    ENDIF.
+  ENDLOOP.
+*---------- Call search help ----------*
+  CALL FUNCTION &apos;F4IF_START_VALUE_REQUEST&apos;
+    EXPORTING
+      shlp          = lt_shlp
+    IMPORTING
+      rc            = lv_rc
+    TABLES
+      return_values = lt_return_values.
+*---------- Set search help return ----------*
+  IF lv_rc IS INITIAL.
+    READ TABLE lt_return_values INTO ls_return_values WITH KEY fieldname = gc_object.
+    IF sy-subrc IS INITIAL.
+      p_object = ls_return_values-fieldval.
+    ENDIF.
+    READ TABLE lt_return_values INTO ls_return_values WITH KEY fieldname = gc_pgmid.
+    IF sy-subrc IS INITIAL.
+      p_pgmid = ls_return_values-fieldval.
+    ENDIF.
+  ENDIF.
+ENDFORM.&quot; OBJECT_F4
+*------------------------------------------------- Form OBJECT_NAME_F4 *
+FORM object_name_f4.
+  DATA lv_object_type TYPE seu_obj.  &quot;Object type
+
+*---------- Get objects repository information ----------*
+  lv_object_type = p_object.
+  CALL FUNCTION &apos;REPOSITORY_INFO_SYSTEM_F4&apos;                 &quot;#EC FB_RC
+    EXPORTING
+      object_type          = lv_object_type
+      object_name          = p_obj_n
+    IMPORTING
+      object_name_selected = p_obj_n
+    EXCEPTIONS
+      cancel               = 1
+      wrong_type           = 2
+      OTHERS               = 3.
+ENDFORM.                    &quot; OBJECT_NAME_F4
+*----------------------------------------------------- Form SCREEN_PAI *
+FORM screen_pai .
+  gv_object = p_object.
+*---------- Execute ----------*
+  IF sy-ucomm = &apos;ONLI&apos;.
+    TRY.
+*---------- Check and Read languages informations ----------*
+        PERFORM check_languages.
+
+        CASE abap_true.
+*---------- Add object or dev class objects ----------*
+          WHEN r_obj.
+            PERFORM execute_add_objects.
+*---------- Add TR objects ----------*
+          WHEN r_tr.
+            PERFORM execute_add_from_transport.
+        ENDCASE.
+
+*---------- Check if objects found ----------*
+        IF gt_objects IS INITIAL.
+          MESSAGE e398 WITH text-m03 space space space DISPLAY LIKE &apos;W&apos;.  &quot;Object not found
+        ENDIF.
+        IF p_ow IS NOT INITIAL.
+          MESSAGE w398 WITH text-m08 space space space. &quot;Overwrite existent translations activated
+        ENDIF.
+
+      CATCH cx_root INTO go_exp.                         &quot;#EC CATCH_ALL
+        gv_msg_text = go_exp-&gt;get_text( ).
+        MESSAGE s398 WITH gv_msg_text space space space DISPLAY LIKE &apos;E&apos;. &quot;Critical error
+    ENDTRY.
+  ENDIF.
+ENDFORM.                    &quot; SCREEN_PAI
+
+*--------------------------------------------------- Form PROGRESS_BAR *
+FORM progress_bar USING i_value TYPE itex132 i_tabix TYPE i.
+  DATA:
+    lv_text(40),
+    lv_percentage TYPE p,
+    lv_percent_char(3).
+
+  lv_percentage = ( i_tabix / 100 ) * 100.
+  lv_percent_char = lv_percentage.
+  SHIFT lv_percent_char LEFT DELETING LEADING space.
+  CONCATENATE i_value &apos;...&apos; INTO i_value.
+  CONCATENATE i_value lv_percent_char text-pb1 INTO lv_text SEPARATED BY space.
+
+  IF lv_percentage GT gv_percent OR i_tabix = 1.
+    CALL FUNCTION &apos;SAPGUI_PROGRESS_INDICATOR&apos;
+      EXPORTING
+        percentage = lv_percentage
+        text       = lv_text.
+
+    gv_percent = lv_percentage.
+  ENDIF.
+ENDFORM.                    &quot; PROGRESS_BAR
+*------------------------------------------------ Form DISPLAY_OBJECTS *
+FORM display_objects.
+  DATA:
+    lr_events        TYPE REF TO cl_salv_events_table,      &quot;ALV Events
+    lr_display       TYPE REF TO cl_salv_display_settings,  &quot;ALV Output Appearance
+    lr_columns       TYPE REF TO cl_salv_columns_table,     &quot;ALV Columns
+    lr_column        TYPE REF TO cl_salv_column_table,
+    lr_selections    TYPE REF TO cl_salv_selections,        &quot;ALV Selections
+    lr_layout        TYPE REF TO cl_salv_layout,            &quot;ALV Layout
+    lo_event_handler TYPE REF TO lcl_handle_events.         &quot;ALV Events Handler
+  DATA:
+    lt_column_ref TYPE salv_t_column_ref, &quot;Columns of ALV List
+    ls_column_ref TYPE salv_s_column_ref,
+    ls_key        TYPE salv_s_layout_key. &quot;Layout Key
+  DATA:
+    lv_title   TYPE lvc_title,  &quot;ALV title
+    lv_lines   TYPE i,          &quot;Number of objects
+    lv_lines_c TYPE string.
+
+  PERFORM progress_bar USING text-p04 &apos;90&apos;. &quot;Display objects
+  IF go_objects IS NOT BOUND. &quot;Create ALV
+    TRY.
+        IF lines( gt_objects ) = 1.
+          MESSAGE s398 WITH text-m06 space space space DISPLAY LIKE &apos;W&apos;.  &quot;No dependecies found
+        ELSE.
+          SORT gt_objects BY pgmid object obj_name.
+        ENDIF.
+*---------- Create ALV ----------*
+        cl_salv_table=&gt;factory( IMPORTING r_salv_table = go_objects
+                                 CHANGING t_table      = gt_objects ).
+*---------- Set ALV Functions ----------*
+        go_objects-&gt;set_screen_status(
+          pfstatus      = &apos;STATUS&apos;
+          report        = sy-cprog
+          set_functions = go_objects-&gt;c_functions_all ).
+*---------- Set Layout ----------*
+        lr_layout = go_objects-&gt;get_layout( ).
+        ls_key-report = sy-repid.
+        lr_layout-&gt;set_key( ls_key ).
+        lr_layout-&gt;set_save_restriction( ).
+*---------- Set ALV selections ----------*
+        lr_selections = go_objects-&gt;get_selections( ).
+        lr_selections-&gt;set_selection_mode( if_salv_c_selection_mode=&gt;row_column ).
+*---------- Set ALV Display and Title ----------*
+        lr_display = go_objects-&gt;get_display_settings( ).
+        lr_display-&gt;set_striped_pattern( if_salv_c_bool_sap=&gt;true ).
+        lv_lines = lines( gt_objects ).
+        lv_lines_c = lv_lines.
+        CONDENSE lv_lines_c NO-GAPS.
+        CONCATENATE &apos;(&apos; lv_lines_c &apos;)&apos; INTO lv_lines_c.
+        IF p_dep IS INITIAL.
+          CONCATENATE text-t01 p_pgmid p_object p_obj_n text-t02 lv_lines_c INTO lv_title SEPARATED BY space.
+        ELSE.
+          CONCATENATE text-t01 p_pgmid p_object p_obj_n text-t02  text-t03 lv_lines_c INTO lv_title SEPARATED BY space.
+        ENDIF.
+        lr_display-&gt;set_list_header( lv_title ).
+*---------- Set ALV Columns ----------*
+        lr_columns = go_objects-&gt;get_columns( ).
+        lr_columns-&gt;set_key_fixation( ).
+        lr_columns-&gt;set_optimize( ).
+        lt_column_ref = lr_columns-&gt;get( ).
+
+        LOOP AT lt_column_ref INTO ls_column_ref. &quot;Default format for all columns
+          lr_column ?= lr_columns-&gt;get_column( ls_column_ref-columnname ).
+          lr_column-&gt;set_f4( if_salv_c_bool_sap=&gt;false ).
+          lr_column-&gt;set_alignment( if_salv_c_alignment=&gt;centered ).
+*---------- Check status ----------*
+          IF ls_column_ref-columnname = &apos;STATUS&apos;.
+            lr_column-&gt;set_key( if_salv_c_bool_sap=&gt;true ).
+            lr_column-&gt;set_short_text( text-c06 ).  &quot;Check St.
+            lr_column-&gt;set_medium_text( text-c06 ).
+            lr_column-&gt;set_long_text( text-c06 ).
+          ENDIF.
+*---------- Object Keys ----------*
+          IF ls_column_ref-columnname = gc_pgmid OR
+             ls_column_ref-columnname = gc_object OR
+             ls_column_ref-columnname = &apos;OBJ_NAME&apos;.
+            lr_column-&gt;set_key( if_salv_c_bool_sap=&gt;true ).
+          ENDIF.
+*---------- Object name and development package ----------*
+          IF ls_column_ref-columnname = &apos;OBJ_NAME&apos; OR
+             ls_column_ref-columnname = &apos;DEVCLASS&apos;.
+            lr_column-&gt;set_alignment( if_salv_c_alignment=&gt;left ).
+          ENDIF.
+*---------- Object description ----------*
+          IF ls_column_ref-columnname = &apos;OBJ_DESC&apos;.
+            lr_column-&gt;set_alignment( if_salv_c_alignment=&gt;left ).
+            lr_column-&gt;set_short_text( text-c01 ).  &quot;Obj. Desc.
+            lr_column-&gt;set_medium_text( text-c01 ).
+            lr_column-&gt;set_long_text( text-c01 ).
+          ENDIF.
+*---------- Source Language ----------*
+          IF ls_column_ref-columnname = &apos;SLANG&apos;.
+            lr_column-&gt;set_short_text( text-c02 ).  &quot;Source
+            lr_column-&gt;set_medium_text( text-c02 ).
+            lr_column-&gt;set_long_text( text-c02 ).
+          ENDIF.
+*---------- Target Languages ----------*
+          IF ls_column_ref-columnname = &apos;TLANGS&apos;.
+            lr_column-&gt;set_short_text( text-c03 ).  &quot;Targets
+            lr_column-&gt;set_medium_text( text-c03 ).
+            lr_column-&gt;set_long_text( text-c03 ).
+          ENDIF.
+*---------- Translation status ----------*
+          IF ls_column_ref-columnname = &apos;STATTRN&apos;.
+            lr_column-&gt;set_short_text( text-c04 ).  &quot;Trans. St.
+            lr_column-&gt;set_medium_text( text-c04 ).
+            lr_column-&gt;set_long_text( text-c04 ).
+          ENDIF.
+*---------- Process status ----------*
+          IF ls_column_ref-columnname = &apos;STATPROC&apos;.
+            lr_column-&gt;set_short_text( text-c05 ).  &quot;Proc. St.
+            lr_column-&gt;set_medium_text( text-c05 ).
+            lr_column-&gt;set_long_text( text-c05 ).
+          ENDIF.
+        ENDLOOP.
+*---------- Register ALV Events ----------*
+        lr_events = go_objects-&gt;get_event( ).
+        CREATE OBJECT lo_event_handler.
+        SET HANDLER lo_event_handler-&gt;on_user_command FOR lr_events.
+        SET HANDLER lo_event_handler-&gt;on_double_click FOR lr_events.
+*---------- Display Objects ALV ----------*
+        go_objects-&gt;display( ).
+
+      CATCH cx_root INTO go_exp.                         &quot;#EC CATCH_ALL
+        gv_msg_text = go_exp-&gt;get_text( ).
+        MESSAGE s398 WITH gv_msg_text space space space DISPLAY LIKE &apos;E&apos;. &quot;Critical error
+    ENDTRY.
+
+  ELSE. &quot;Refresh ALV
+    go_objects-&gt;refresh( ).
+  ENDIF.
+ENDFORM.                    &quot; DISPLAY_OBJECTS
+*---------------------------------------------------------- FORMS ADDS *
+
+*&amp;---------------------------------------------------------------------*
+*&amp;      Form  CHECK_LANGUAGES
+*&amp;---------------------------------------------------------------------*
+FORM check_languages .
+  DATA:
+    ls_language   LIKE LINE OF gt_languages, &quot;Languages Informations
+    ls_tlang      LIKE LINE OF so_tlang.      &quot;Target Languages
+
+  IF p_slang IS INITIAL OR so_tlang[] IS INITIAL.
+    MESSAGE e398 WITH text-m01 space space space DISPLAY LIKE &apos;W&apos;.  &quot;Please fill all required fields
+  ENDIF.
+
+  ls_tlang     = gc_ieq.
+  ls_tlang-low = p_slang.
+  APPEND ls_tlang TO so_tlang.
+  REFRESH gt_languages.
+  CLEAR gv_tlangs.
+
+  LOOP AT so_tlang INTO ls_tlang WHERE low IS NOT INITIAL.
+    CALL FUNCTION &apos;LXE_T002_CHECK_LANGUAGE&apos;   &quot;#EC FB_RC  &quot;#EC CI_SUBRC
+      EXPORTING
+        r3_lang            = ls_tlang-low
+      IMPORTING
+        text               = ls_language-text       &quot;Name of Language
+        o_language         = ls_language-o_language &quot;Translation Language
+      EXCEPTIONS
+        language_not_in_cp = 1
+        unknown            = 2
+        OTHERS             = 3.
+
+    CALL FUNCTION &apos;CONVERSION_EXIT_ISOLA_OUTPUT&apos;
+      EXPORTING
+        input  = ls_tlang-low
+      IMPORTING
+        output = ls_language-r3_lang.
+
+    ls_language-laiso = ls_tlang-low. &quot;Language according to ISO 639
+    IF ls_tlang-low &lt;&gt; p_slang.
+      IF gv_tlangs IS INITIAL.
+        gv_tlangs = ls_language-r3_lang.
+      ELSE.
+        CONCATENATE gv_tlangs ls_language-r3_lang INTO gv_tlangs SEPARATED BY space.
+      ENDIF.
+    ENDIF.
+    APPEND ls_language TO gt_languages.
+    CLEAR ls_language.
+  ENDLOOP.
+  DELETE so_tlang WHERE low = p_slang.
+ENDFORM.                    &quot; CHECK_LANGUAGES
+
+*&amp;---------------------------------------------------------------------*
+*&amp;      Form  EXECUTE_ADD_OBJECTS
+*&amp;---------------------------------------------------------------------*
+FORM execute_add_objects .
+  DATA:
+    lt_objectlist TYPE TABLE OF rseui_set,    &quot;Transfer table (object list) - info system
+    ls_objectlist LIKE LINE OF lt_objectlist,
+    ls_env_dummy  TYPE senvi.                 &quot;Object in Development Environment
+  DATA lv_devclass TYPE devclass. &quot;Package
+
+  IF p_pgmid IS INITIAL OR p_object IS INITIAL OR p_obj_n IS INITIAL.
+    MESSAGE e398 WITH text-m01 space space space DISPLAY LIKE &apos;W&apos;.  &quot;Please fill all required fields
+  ENDIF.
+
+  PERFORM progress_bar USING text-p01 &apos;10&apos;. &quot;Adding object
+  CASE p_object.
+    WHEN &apos;DEVC&apos;.  &quot;Get all development package objects
+      lv_devclass = p_obj_n.
+      CALL FUNCTION &apos;RS_GET_OBJECTS_OF_DEVCLASS&apos;            &quot;#EC FB_RC
+        EXPORTING
+          devclass            = lv_devclass
+        TABLES
+          objectlist          = lt_objectlist
+        EXCEPTIONS
+          no_objects_selected = 1
+          OTHERS              = 2.
+
+      LOOP AT lt_objectlist INTO ls_objectlist.
+        PERFORM check_add_object USING gc_r3tr ls_objectlist-obj_type ls_objectlist-obj_name ls_env_dummy.
+      ENDLOOP.
+
+    WHEN OTHERS.  &quot;Add object
+      PERFORM check_add_object USING p_pgmid p_object p_obj_n ls_env_dummy.
+  ENDCASE.
+ENDFORM.                    &quot; EXECUTE_ADD_OBJECTS
+*&amp;---------------------------------------------------------------------*
+*&amp;      Form  EXECUTE_ADD_FROM_TRANSPORT
+*&amp;---------------------------------------------------------------------*
+FORM execute_add_from_transport .
+
+  DATA:
+    lt_request_headers TYPE trwbo_request_headers,
+    ls_request_headers TYPE trwbo_request_header,
+    lt_objects         TYPE tr_objects,
+    ls_object          TYPE e071,
+    ls_env_dummy  TYPE senvi.
+
+  IF p_tr IS INITIAL.
+    MESSAGE e398 WITH text-m01 space space space DISPLAY LIKE &apos;W&apos;.  &quot;Please fill all required fields
+  ENDIF.
+
+  PERFORM progress_bar USING text-p01 &apos;10&apos;. &quot;Adding object
+
+*---------- Read Requests and Tasks ----------*
+  CALL FUNCTION &apos;TR_READ_REQUEST_WITH_TASKS&apos;
+    EXPORTING
+      iv_trkorr          = p_tr
+    IMPORTING
+      et_request_headers = lt_request_headers
+    EXCEPTIONS
+      invalid_input      = 1
+      OTHERS             = 2.
+
+  IF sy-subrc IS NOT INITIAL.
+    MESSAGE e398 WITH text-m14 space space space DISPLAY LIKE &apos;W&apos;.  &quot;Error treating transport request
+  ENDIF.
+*---------- Read objects inside main request ----------*
+  READ TABLE lt_request_headers INTO ls_request_headers WITH KEY trfunction = &apos;K&apos;.
+  IF sy-subrc IS NOT INITIAL.
+    MESSAGE e398 WITH text-m14 space space space DISPLAY LIKE &apos;W&apos;.  &quot;Error treating transport request
+  ENDIF.
+
+  CALL FUNCTION &apos;TR_GET_OBJECTS_OF_REQ_AN_TASKS&apos;
+    EXPORTING
+      is_request_header      = ls_request_headers
+      iv_condense_objectlist = &apos;X&apos;
+    IMPORTING
+      et_objects             = lt_objects
+    EXCEPTIONS
+      invalid_input          = 1
+      OTHERS                 = 2.
+
+  IF sy-subrc IS NOT INITIAL.
+    MESSAGE e398 WITH text-m14 space space space DISPLAY LIKE &apos;W&apos;.  &quot;Error treating transport request
+  ENDIF.
+
+  CALL FUNCTION &apos;TR_SORT_OBJECT_AND_KEY_LIST&apos;
+    CHANGING
+      ct_objects = lt_objects.
+
+  LOOP AT lt_objects INTO ls_object.  &quot;Add found objects to processing
+    PERFORM check_add_object USING ls_object-pgmid ls_object-object ls_object-obj_name ls_env_dummy.
+  ENDLOOP.
+
+ENDFORM.                    &quot; EXECUTE_ADD_FROM_TRANSPORT
+*----------------------------------------------- Form CHECK_ADD_OBJECT *
+FORM check_add_object USING value(i_pgmid) TYPE pgmid i_object TYPE any i_obj_n TYPE any is_env_tab TYPE senvi.
+  DATA lo_wb_object TYPE REF TO cl_wb_object.  &quot;Repository Object
+  DATA:
+    ls_tadir          TYPE tadir,               &quot;Directory of Repository Objects
+    ls_wb_object_type TYPE wbobjtype,           &quot;Global WB Type
+    ls_object         LIKE LINE OF gt_objects.  &quot;Objects to transport line
+  DATA:
+    lv_tr_object   TYPE trobjtype,  &quot;Object Type
+    lv_tr_obj_name TYPE trobj_name, &quot;Object Name in Object List
+    lv_trans_pgmid TYPE pgmid.      &quot;Program ID in Requests and Tasks
+
+*---------- Object convertions ----------*
+  IF i_pgmid &lt;&gt; gc_r3tr.
+    SELECT pgmid UP TO 1 ROWS FROM tadir                &quot;#EC CI_GENBUFF
+      INTO i_pgmid
+     WHERE object   = i_object
+       AND obj_name = i_obj_n.
+    ENDSELECT.
+*---------- Is not a TADIR object and Conversion required ----------*
+    IF sy-subrc IS NOT INITIAL.
+      lv_tr_object   = i_object.
+      lv_tr_obj_name = i_obj_n.
+      cl_wb_object=&gt;create_from_transport_key( EXPORTING p_object                = lv_tr_object
+                                                         p_obj_name              = lv_tr_obj_name
+                                               RECEIVING p_wb_object             = lo_wb_object
+                                              EXCEPTIONS objecttype_not_existing = 1
+                                                         empty_object_key        = 2
+                                                         key_not_available       = 3
+                                                         OTHERS                  = 4 ).
+      IF sy-subrc IS INITIAL.
+        lo_wb_object-&gt;get_global_wb_key( IMPORTING p_object_type     = ls_wb_object_type
+                                        EXCEPTIONS key_not_available = 1
+                                                   OTHERS            = 2 ).
+        IF sy-subrc IS INITIAL.
+          lo_wb_object-&gt;get_transport_key( IMPORTING p_pgmid           = lv_trans_pgmid &quot;#EC CI_SUBRC
+                                          EXCEPTIONS key_not_available = 1
+                                                     OTHERS            = 2 ).
+*---------- Check Program ID ----------*
+          CASE lv_trans_pgmid.
+            WHEN gc_r3tr.  &quot;Main objects
+              i_pgmid = lv_trans_pgmid.
+
+            WHEN &apos;LIMU&apos;.  &quot;Sub object
+              CALL FUNCTION &apos;GET_R3TR_OBJECT_FROM_LIMU_OBJ&apos;
+                EXPORTING
+                  p_limu_objtype = lv_tr_object
+                  p_limu_objname = lv_tr_obj_name
+                IMPORTING
+                  p_r3tr_objtype = lv_tr_object
+                  p_r3tr_objname = lv_tr_obj_name
+                EXCEPTIONS
+                  no_mapping     = 1
+                  OTHERS         = 2.
+              IF sy-subrc IS INITIAL.
+                ls_object-pgmid    = gc_r3tr.
+                ls_object-object   = lv_tr_object.
+                ls_object-obj_name = lv_tr_obj_name.
+                PERFORM add_object USING ls_object.
+                RETURN.
+              ENDIF.
+
+            WHEN OTHERS.  &quot;Include objects
+              i_pgmid = gc_r3tr.
+              CALL FUNCTION &apos;GET_TADIR_TYPE_FROM_WB_TYPE&apos;
+                EXPORTING
+                  wb_objtype        = ls_wb_object_type-subtype_wb
+                IMPORTING
+                  transport_objtype = lv_tr_object
+                EXCEPTIONS
+                  no_mapping_found  = 1
+                  no_unique_mapping = 2
+                  OTHERS            = 3.
+
+              IF sy-subrc IS INITIAL.
+                i_object = lv_tr_object.
+                IF is_env_tab-encl_obj IS NOT INITIAL.
+                  i_obj_n = is_env_tab-encl_obj.
+                ENDIF.
+              ENDIF.
+          ENDCASE.
+        ENDIF.  &quot;Global WB key
+      ENDIF.  &quot;Transport_key
+    ENDIF.  &quot;No a TADIR
+  ENDIF.  &quot;Convertions
+
+*---------- Check in TADIR ----------*
+  SELECT SINGLE * FROM tadir
+    INTO ls_tadir
+   WHERE pgmid    = i_pgmid
+     AND object   = i_object
+     AND obj_name = i_obj_n.
+
+*---------- Add object ----------*
+  IF ls_tadir IS NOT INITIAL.
+    MOVE-CORRESPONDING ls_tadir TO ls_object.
+*---------- Set SAP Generated object status ----------*
+    IF ls_tadir-genflag IS NOT INITIAL.
+      ls_object-status = icon_led_yellow.
+    ENDIF.
+*---------- Add object to be checked ----------*
+    PERFORM add_object USING ls_object.
+*---------- Error Object not valid ----------*
+  ELSE.
+    IF lines( gt_objects ) &gt; 0. &quot;Skip first object
+      ls_object-pgmid    = i_pgmid.
+      ls_object-object   = i_object.
+      ls_object-obj_name = i_obj_n.
+      ls_object-status   = icon_led_red.
+      PERFORM add_object USING ls_object.
+    ENDIF.
+  ENDIF.
+ENDFORM.                    &quot;check_add_object
+*----------------------------------------------------- Form ADD_OBJECT *
+FORM add_object USING ps_object TYPE gty_objects.
+  DATA:
+    ls_objs_desc LIKE LINE OF gt_objs_desc,  &quot;Objects prograns ID line&quot;Info Environment
+    lt_devclass  TYPE scts_devclass,         &quot;Development Packages
+    ls_devclass  TYPE trdevclass.
+  DATA:
+    lv_object    TYPE trobjtype,  &quot;Object Type
+    lv_objname   TYPE sobj_name,  &quot;Object Name in Object Directory
+    lv_namespace TYPE namespace.  &quot;Object Namespace
+
+*---------- Check if already added ----------*
+  READ TABLE gt_objects TRANSPORTING NO FIELDS WITH KEY pgmid    = ps_object-pgmid
+                                                        object   = ps_object-object
+                                                        obj_name = ps_object-obj_name.
+  IF sy-subrc IS NOT INITIAL. &quot;New object
+*---------- Check if is customer object ----------*
+    lv_object  = ps_object-object.
+    lv_objname = ps_object-obj_name.
+    CALL FUNCTION &apos;TRINT_GET_NAMESPACE&apos;                     &quot;#EC FB_RC
+      EXPORTING
+        iv_pgmid            = ps_object-pgmid
+        iv_object           = lv_object
+        iv_obj_name         = lv_objname
+      IMPORTING
+        ev_namespace        = lv_namespace
+      EXCEPTIONS
+        invalid_prefix      = 1
+        invalid_object_type = 2
+        OTHERS              = 3.
+
+    IF lv_namespace = &apos;/0CUST/&apos;.  &quot;Is customer object
+*---------- Read object description ----------*
+      READ TABLE gt_objs_desc INTO ls_objs_desc WITH KEY object = ps_object-object.
+      IF sy-subrc IS INITIAL.
+        ps_object-obj_desc = ls_objs_desc-text.  &quot;Object type description
+      ENDIF.
+*---------- Read development class tecnical information ----------*
+      IF ps_object-devclass IS INITIAL.
+        SELECT SINGLE devclass FROM tadir
+          INTO ps_object-devclass
+         WHERE pgmid    = ps_object-pgmid
+           AND object   = ps_object-object
+           AND obj_name = ps_object-obj_name.
+      ENDIF.
+
+      IF ps_object-devclass IS NOT INITIAL AND ps_object-devclass &lt;&gt; gc_temp.
+        ls_devclass-devclass = ps_object-devclass.
+        APPEND ls_devclass TO lt_devclass.
+        CALL FUNCTION &apos;TR_READ_DEVCLASSES&apos;
+          EXPORTING
+            it_devclass = lt_devclass
+          IMPORTING
+            et_devclass = lt_devclass.
+        READ TABLE lt_devclass INTO ls_devclass INDEX 1.
+        IF sy-subrc IS INITIAL.
+          ps_object-target = ls_devclass-target.  &quot;Development package target
+        ENDIF.
+      ENDIF.
+
+      ps_object-slang  = p_slang.
+      ps_object-tlangs = gv_tlangs.
+*---------- Add object to transport ----------*
+      APPEND ps_object TO gt_objects.
+    ENDIF.
+  ENDIF.
+ENDFORM.                    &quot; ADD_OBJECT
+*-------------------------------------------------------- FORMS CHECKS *
+*----------------------------------------------------- Form RUN_CHECKS *
+FORM run_checks .
+  TRY.
+*---------- Dependecies check ----------*
+      PERFORM objects_dependencies_check.
+*---------- Translations check ----------*
+      PERFORM objects_translations_check.
+
+    CATCH cx_root INTO go_exp.                           &quot;#EC CATCH_ALL
+      gv_msg_text = go_exp-&gt;get_text( ).
+      MESSAGE s398 WITH gv_msg_text space space space DISPLAY LIKE &apos;E&apos;. &quot;Critical error
+  ENDTRY.
+ENDFORM.                    &quot; RUN_CHECKS
+*------------------------------------- Form OBJECTS_DEPENDENCIES_CHECK *
+FORM objects_dependencies_check .
+  DATA:
+    lv_obj_type TYPE seu_obj,         &quot;Object type
+    lt_env_tab  TYPE TABLE OF senvi,  &quot;Object to check dependencies
+    ls_env_tab  TYPE senvi.           &quot;Info Environment
+  FIELD-SYMBOLS &lt;ls_object&gt; LIKE LINE OF gt_objects.  &quot;Objects to transport
+
+  PERFORM progress_bar USING text-p02 &apos;30&apos;. &quot;Checking Dependecies
+  LOOP AT gt_objects ASSIGNING &lt;ls_object&gt; WHERE status IS INITIAL.
+*---------- Get object dependecies ----------*
+    IF p_dep IS NOT INITIAL.
+      REFRESH lt_env_tab.
+      lv_obj_type = &lt;ls_object&gt;-object.
+      CALL FUNCTION &apos;REPOSITORY_ENVIRONMENT_RFC&apos;
+        EXPORTING
+          obj_type        = lv_obj_type
+          object_name     = &lt;ls_object&gt;-obj_name
+        TABLES
+          environment_tab = lt_env_tab.
+
+      DELETE lt_env_tab INDEX 1.  &quot;Delete first line
+
+*---------- Add founded dependecies ----------*
+      LOOP AT lt_env_tab INTO ls_env_tab.                &quot;#EC CI_NESTED
+        PERFORM check_add_object USING space ls_env_tab-type ls_env_tab-object ls_env_tab.
+      ENDLOOP.
+    ENDIF.
+    &lt;ls_object&gt;-status = icon_led_green.  &quot;Status checked
+  ENDLOOP.
+ENDFORM.                    &quot; OBJECTS_DEPENDENCIES_CHECK
+*------------------------------------- Form OBJECTS_TRANSLATIONS_CHECK *
+FORM objects_translations_check .
+  DATA:
+    lt_colob      TYPE TABLE OF lxe_colob,    &quot;Object Lists
+    ls_colob      LIKE LINE OF lt_colob,
+    ls_objs_colob LIKE LINE OF gt_objs_colob, &quot;LXE Objects
+    ls_tlang      LIKE LINE OF so_tlang,      &quot;Target Languages
+    ls_language   LIKE LINE OF gt_languages,  &quot;Languages Informations
+    ls_slanguage  LIKE LINE OF gt_languages.
+  DATA:
+    lv_tr_obj_name TYPE trobj_name, &quot;Object Name in Object List
+    lv_stattrn     TYPE lxestattrn. &quot;Translation Status of an Object
+  FIELD-SYMBOLS &lt;ls_object&gt; LIKE LINE OF gt_objects.  &quot;Objects to transport
+
+  PERFORM progress_bar USING text-p03 &apos;60&apos;. &quot;Checking Translations
+*---------- Checking Translations ----------*
+  REFRESH gt_objs_colob.
+  LOOP AT gt_objects ASSIGNING &lt;ls_object&gt; WHERE status = icon_led_green.
+    REFRESH lt_colob.
+    lv_tr_obj_name = &lt;ls_object&gt;-obj_name.
+    CALL FUNCTION &apos;LXE_OBJ_EXPAND_TRANSPORT_OBJ&apos;
+      EXPORTING
+        pgmid           = &lt;ls_object&gt;-pgmid
+        object          = &lt;ls_object&gt;-object
+        obj_name        = lv_tr_obj_name
+      TABLES
+        ex_colob        = lt_colob
+      EXCEPTIONS
+        unknown_object  = 1
+        unknown_ta_type = 2
+        OTHERS          = 3.
+*---------- Check Status ----------*
+    IF sy-subrc IS NOT INITIAL. &quot;Error
+      &lt;ls_object&gt;-status = icon_led_red.
+      CONTINUE.
+    ENDIF.
+    IF lt_colob IS INITIAL. &quot;No translation
+      &lt;ls_object&gt;-status = icon_led_yellow.
+    ENDIF.
+
+*---------- Initial Translation status ----------*
+*---------- Add to global LXE object tables ----------*
+    LOOP AT lt_colob INTO ls_colob.                      &quot;#EC CI_NESTED
+      MOVE-CORRESPONDING &lt;ls_object&gt; TO ls_objs_colob.
+      MOVE-CORRESPONDING ls_colob    TO ls_objs_colob.
+      APPEND ls_objs_colob TO gt_objs_colob.
+      CLEAR ls_objs_colob.
+
+      IF &lt;ls_object&gt;-stattrn &lt;&gt; icon_led_yellow.
+*---------- Loop selected target language ----------*
+        LOOP AT so_tlang INTO ls_tlang.                  &quot;#EC CI_NESTED
+          READ TABLE gt_languages INTO ls_language WITH KEY laiso = ls_tlang-low. &quot;Read language tecnical info
+          READ TABLE gt_languages INTO ls_slanguage WITH KEY laiso = p_slang.
+          CLEAR lv_stattrn.
+          CALL FUNCTION &apos;LXE_OBJ_TRANSLATION_STATUS2&apos;
+            EXPORTING
+              t_lang  = ls_language-o_language
+              s_lang  = ls_slanguage-o_language
+              custmnr = ls_colob-custmnr
+              objtype = ls_colob-objtype
+              objname = ls_colob-objname
+            IMPORTING
+              stattrn = lv_stattrn.
+          IF lv_stattrn = &apos;T&apos;.  &quot;Translated
+            &lt;ls_object&gt;-stattrn = icon_led_green.
+          ELSE.
+            &lt;ls_object&gt;-stattrn = icon_led_yellow.
+            EXIT.
+          ENDIF.
+        ENDLOOP.  &quot;Target Languagues
+      ENDIF.  &quot;Status
+
+    ENDLOOP.  &quot;LXE Objects
+  ENDLOOP.  &quot;Objects
+ENDFORM.                    &quot; OBJECTS_TRANSLATIONS_CHECK
+*------------------------------------------------------- FORMS OPTIONS *
+*----------------------------------------------- Form CREATE_TRANSPORT *
+FORM create_transport TABLES lt_objects TYPE STANDARD TABLE. &quot;#EC PF_NO_TYPE
+  DATA:
+    lt_e071_temp  TYPE TABLE OF e071,         &quot;Change &amp; Transport System: Object Entries of Requests/Tasks
+    lt_e071       TYPE TABLE OF e071,
+    lt_e071k_temp TYPE TABLE OF e071k,
+    ls_object     LIKE LINE OF gt_objects,
+    lt_targets    TYPE TABLE OF tr_target,    &quot;Transport Target of Request
+    ls_target     LIKE LINE OF lt_targets,
+    ls_objs_colob LIKE LINE OF gt_objs_colob, &quot;LXE Objects
+    ls_tlang      LIKE LINE OF so_tlang.      &quot;Target Languages
+  DATA:
+    lv_order TYPE trkorr, &quot;Request/Task
+    lv_task  TYPE trkorr.
+
+*---------- Check selected objects to transport ----------*
+  LOOP AT lt_objects INTO ls_object.
+    IF ls_object-devclass = gc_temp.
+      MESSAGE i398 WITH text-m10 space space space DISPLAY LIKE &apos;E&apos;.  &quot;Request canceled, at least one object $TEMP detected
+      RETURN.
+    ENDIF.
+    ls_target = ls_object-target.
+    APPEND ls_target TO lt_targets.
+  ENDLOOP.
+*---------- Check targets ----------*
+  SORT lt_targets.
+  DELETE ADJACENT DUPLICATES FROM lt_targets.
+  IF lines( lt_targets ) &gt; 1. &quot;Only one valid target
+    MESSAGE i398 WITH text-m05 space space space. &quot;Transport not allowed for multiple targets
+    RETURN.
+  ENDIF.
+
+*---------- Add translations to transport ----------*
+  LOOP AT lt_objects INTO ls_object.
+    LOOP AT gt_objs_colob INTO ls_objs_colob WHERE pgmid    = ls_object-pgmid &quot;#EC CI_NESTED
+                                               AND object   = ls_object-object
+                                               AND obj_name = ls_object-obj_name.
+      LOOP AT so_tlang INTO ls_tlang.                    &quot;#EC CI_NESTED
+        CALL FUNCTION &apos;LXE_OBJ_CREATE_TRANSPORT_SE63&apos;
+          EXPORTING
+            language = ls_tlang-low
+            custmnr  = ls_objs_colob-custmnr
+            objtype  = ls_objs_colob-objtype
+            objname  = ls_objs_colob-objname
+          TABLES
+            ex_e071  = lt_e071_temp.
+        APPEND LINES OF lt_e071_temp TO lt_e071.
+        REFRESH lt_e071_temp.
+      ENDLOOP.
+    ENDLOOP.
+  ENDLOOP.
+*---------- Check selected translations ----------*
+  IF lt_e071 IS INITIAL.
+    MESSAGE i398 WITH text-m04 space space space. &quot;No objects selected
+    RETURN.
+  ENDIF.
+*---------- Create or Select transport request ----------*
+  READ TABLE lt_targets INTO ls_target INDEX 1.
+  CALL FUNCTION &apos;TRINT_ORDER_CHOICE&apos;
+    EXPORTING
+      iv_tarsystem           = ls_target
+    IMPORTING
+      we_order               = lv_order
+      we_task                = lv_task
+    TABLES
+      wt_e071                = lt_e071_temp
+      wt_e071k               = lt_e071k_temp
+    EXCEPTIONS
+      no_correction_selected = 1
+      display_mode           = 2
+      object_append_error    = 3
+      recursive_call         = 4
+      wrong_order_type       = 5
+      OTHERS                 = 6.
+*---------- Add object to transport request ----------*
+  IF sy-subrc IS INITIAL AND lv_task IS NOT INITIAL.
+    REFRESH lt_e071k_temp.
+    CALL FUNCTION &apos;TRINT_APPEND_COMM&apos;
+      EXPORTING
+        wi_exclusive       = abap_false
+        wi_sel_e071        = abap_true
+        wi_sel_e071k       = abap_true
+        wi_trkorr          = lv_task
+      TABLES
+        wt_e071            = lt_e071
+        wt_e071k           = lt_e071k_temp
+      EXCEPTIONS
+        e071k_append_error = 1
+        e071_append_error  = 2
+        trkorr_empty       = 3
+        OTHERS             = 4.
+*---------- Sort and compress request --------*
+    IF sy-subrc IS INITIAL. &quot;Added with sucess
+      CALL FUNCTION &apos;TR_SORT_AND_COMPRESS_COMM&apos; &quot;#EC FB_RC   &quot;#EC CI_SUBRC
+        EXPORTING
+          iv_trkorr                      = lv_task
+        EXCEPTIONS
+          trkorr_not_found               = 1
+          order_released                 = 2
+          error_while_modifying_obj_list = 3
+          tr_enqueue_failed              = 4
+          no_authorization               = 5
+          OTHERS                         = 6.
+      MESSAGE i398 WITH text-m07 lv_order space space DISPLAY LIKE &apos;S&apos;.  &quot;Objects added to request
+    ELSE.
+      MESSAGE i398 WITH text-ex2 space space space DISPLAY LIKE &apos;E&apos;.  &quot;Executed with errors
+    ENDIF.  &quot;Added
+
+  ELSE.
+    MESSAGE s398 WITH text-m09 space space space DISPLAY LIKE &apos;W&apos;.  &quot;Transport canceled
+  ENDIF.
+ENDFORM.                    &quot; CREATE_TRANSPORT
+*---------------------------------------------- Form COPY_TRANSLATIONS *
+FORM copy_translations TABLES lt_objects TYPE STANDARD TABLE. &quot;#EC PF_NO_TYPE
+  DATA:
+      ls_object     LIKE LINE OF gt_objects,    &quot;Objects to transport
+      ls_objs_colob LIKE LINE OF gt_objs_colob, &quot;LXE Objects
+      ls_tlang      LIKE LINE OF so_tlang,      &quot;Target Languages
+      lt_pcx_s1     TYPE TABLE OF lxe_pcx_s1,   &quot;Text Pairs
+      ls_pcx_s1     LIKE LINE OF lt_pcx_s1,
+      ls_tlanguage   LIKE LINE OF gt_languages, &quot;Languages Informations
+      ls_slanguage  LIKE LINE OF gt_languages.
+  DATA:
+    lv_pstatus TYPE lxestatprc, &quot;Process Status
+    lv_stattrn TYPE lxestattrn. &quot;Translation Status of an Object
+  FIELD-SYMBOLS:
+    &lt;ls_pcx_s1&gt; LIKE LINE OF lt_pcx_s1,   &quot;Text Pairs
+    &lt;ls_object&gt; LIKE LINE OF gt_objects.  &quot;Objects to translate
+
+*---------- Read source language details ----------*
+  READ TABLE gt_languages INTO ls_slanguage WITH KEY laiso = p_slang.
+
+*---------- Loop all selected objects ----------*
+  LOOP AT lt_objects INTO ls_object.
+
+*---------- Loop LXE Sub-Objects ----------*
+    LOOP AT gt_objs_colob INTO ls_objs_colob WHERE pgmid    = ls_object-pgmid &quot;#EC CI_NESTED
+                                               AND object   = ls_object-object
+                                               AND obj_name = ls_object-obj_name.
+
+*---------- Loop selected target language ----------*
+      LOOP AT so_tlang INTO ls_tlang. &quot;#EC CI_NESTED
+*---------- Read target language details ----------*
+        CLEAR ls_tlanguage.
+        READ TABLE gt_languages INTO ls_tlanguage WITH KEY laiso = ls_tlang-low. &quot;Read language tecnical info
+*---------- Read texts ----------*
+        CLEAR lv_pstatus.
+        REFRESH lt_pcx_s1.
+        CALL FUNCTION &apos;LXE_OBJ_TEXT_PAIR_READ&apos;
+          EXPORTING
+            t_lang    = ls_tlanguage-o_language
+            s_lang    = ls_slanguage-o_language
+            custmnr   = ls_objs_colob-custmnr
+            objtype   = ls_objs_colob-objtype
+            objname   = ls_objs_colob-objname
+            read_only = space
+          IMPORTING
+            pstatus   = lv_pstatus
+          TABLES
+            lt_pcx_s1 = lt_pcx_s1.
+        IF lv_pstatus &lt;&gt; &apos;S&apos; OR lt_pcx_s1 IS INITIAL. &quot;Not Successful or empty
+          CONTINUE.
+        ENDIF.
+*---------- Copy and check Overwrite ----------*
+        IF p_ow IS INITIAL.
+          LOOP AT lt_pcx_s1 ASSIGNING &lt;ls_pcx_s1&gt; WHERE t_text IS INITIAL. &quot;#EC CI_NESTED
+            &lt;ls_pcx_s1&gt;-t_text = &lt;ls_pcx_s1&gt;-s_text.
+          ENDLOOP.
+        ELSE.
+          LOOP AT lt_pcx_s1 ASSIGNING &lt;ls_pcx_s1&gt;.       &quot;#EC CI_NESTED
+            &lt;ls_pcx_s1&gt;-t_text = &lt;ls_pcx_s1&gt;-s_text.
+          ENDLOOP.
+        ENDIF.
+*---------- Update texts ----------*
+        CALL FUNCTION &apos;LXE_OBJ_TEXT_PAIR_WRITE&apos;
+          EXPORTING
+            t_lang    = ls_tlanguage-o_language
+            s_lang    = ls_slanguage-o_language
+            custmnr   = ls_objs_colob-custmnr
+            objtype   = ls_objs_colob-objtype
+            objname   = ls_objs_colob-objname
+          TABLES
+            lt_pcx_s1 = lt_pcx_s1.
+*---------- Create proposal and check status ----------*
+        LOOP AT lt_pcx_s1 INTO ls_pcx_s1 WHERE t_text IS NOT INITIAL. &quot;#EC CI_NESTED
+          CALL FUNCTION &apos;LXE_PP1_PROPOSAL_EDIT_SE63&apos;
+            EXPORTING
+              t_lang         = ls_tlanguage-o_language
+              s_lang         = ls_slanguage-o_language
+              custmnr        = ls_objs_colob-custmnr
+              objtype        = ls_objs_colob-objtype
+              domatyp        = ls_objs_colob-domatyp
+              domanam        = ls_objs_colob-domanam
+              pcx_s1         = ls_pcx_s1
+              direct_command = &apos;ASTX&apos;
+              direct_status  = &apos;69&apos;.
+        ENDLOOP.  &quot;Proposal
+
+*---------- Check and update translation status ----------*
+        READ TABLE gt_objects ASSIGNING &lt;ls_object&gt; WITH KEY pgmid    = ls_object-pgmid
+                                                             object   = ls_object-object
+                                                             obj_name = ls_object-obj_name.
+        IF sy-subrc IS INITIAL AND &lt;ls_object&gt;-statproc &lt;&gt; icon_led_yellow.
+          CLEAR lv_stattrn.
+          CALL FUNCTION &apos;LXE_OBJ_TRANSLATION_STATUS2&apos;
+            EXPORTING
+              t_lang  = ls_tlanguage-o_language
+              s_lang  = ls_slanguage-o_language
+              custmnr = ls_objs_colob-custmnr
+              objtype = ls_objs_colob-objtype
+              objname = ls_objs_colob-objname
+            IMPORTING
+              stattrn = lv_stattrn.
+*---------- Process Translation status ----------*
+          IF lv_stattrn = &apos;T&apos;.  &quot;Translated
+            &lt;ls_object&gt;-statproc = icon_led_green.
+          ELSE.
+            &lt;ls_object&gt;-statproc = icon_led_yellow.
+          ENDIF.
+        ENDIF.
+
+      ENDLOOP.  &quot;Target language
+    ENDLOOP.    &quot;LXE Sub-Objects
+  ENDLOOP.      &quot;Objects
+
+  MESSAGE i398 WITH text-ex1 space space space DISPLAY LIKE &apos;S&apos;. &quot;Executed with success
+ENDFORM.                    &quot; COPY_TRANSLATIONS
+*---------------------------------------------- Form DOWNLOAD_TEMPLATE *
+FORM download_template TABLES lt_objects TYPE STANDARD TABLE. &quot;#EC PF_NO_TYPE
+  DATA:
+    ls_object     LIKE LINE OF gt_objects,    &quot;Objects to transport
+    ls_tlanguage  LIKE LINE OF gt_languages,  &quot;Languages Informations
+    ls_slanguage  LIKE LINE OF gt_languages,
+    ls_tlang      LIKE LINE OF so_tlang,      &quot;Target Languages
+    lt_pcx_s1     TYPE TABLE OF lxe_pcx_s1,   &quot;Text Pairs
+    ls_objs_colob LIKE LINE OF gt_objs_colob, &quot;LXE Objects
+    ls_pcx_s1     LIKE LINE OF lt_pcx_s1.
+  DATA:
+    lv_filename          TYPE string,     &quot;File
+    lv_path              TYPE string,
+    lv_fullpath          TYPE string,
+    lv_window_title      TYPE string,     &quot;Popup Windows Title
+    lv_default_file_name TYPE string,     &quot;Default file
+    lv_user_action       TYPE i,          &quot;User Actions
+    lv_object            TYPE string,     &quot;Excel object
+    lv_lxe_object        TYPE string,     &quot;LXE object
+    lv_column            TYPE i VALUE 1,  &quot;Excel Columns
+    lv_row               TYPE i VALUE 1,  &quot;Excel rows
+    lv_row_lang          TYPE i,          &quot;Excel languages rows
+    lv_lang_txt          TYPE string,     &quot;Language description
+    lv_add_row           TYPE abap_bool,  &quot;Add new row to excel flag
+    lv_row_init          TYPE i,          &quot;Language start row
+    lv_obj_text          TYPE lxe0060lin. &quot;Texts for Object Attributes
+  DATA:
+    lo_application TYPE ole2_object,  &quot;OLE Automation Controller: OLE Typen
+    lo_workbook    TYPE ole2_object,
+    lo_worksheet   TYPE ole2_object,
+    lo_column      TYPE ole2_object.
+
+*---------- Save file dialog ----------*
+  lv_window_title = text-g02. &quot;Download Template
+  READ TABLE gt_languages INTO ls_slanguage WITH KEY laiso = p_slang.
+  CONCATENATE p_obj_n ls_slanguage-r3_lang text-f01 gv_tlangs INTO lv_default_file_name SEPARATED BY space.
+  CONCATENATE lv_default_file_name &apos;.&apos; gc_excel_ext INTO lv_default_file_name.
+
+  CALL METHOD cl_gui_frontend_services=&gt;file_save_dialog
+    EXPORTING
+      window_title         = lv_window_title
+      default_extension    = gc_excel_ext
+      default_file_name    = lv_default_file_name
+      prompt_on_overwrite  = abap_false
+    CHANGING
+      filename             = lv_filename
+      path                 = lv_path
+      fullpath             = lv_fullpath
+      user_action          = lv_user_action
+    EXCEPTIONS
+      cntl_error           = 1
+      error_no_gui         = 2
+      not_supported_by_gui = 3
+      OTHERS               = 4.
+  IF sy-subrc IS NOT INITIAL.
+    MESSAGE i398 WITH text-ex2 space space space DISPLAY LIKE &apos;E&apos;. &quot;Executed with errors
+    RETURN.
+  ENDIF.
+
+*---------- Create excel ----------*
+  IF lv_user_action IS INITIAL.
+    CREATE OBJECT lo_application &apos;excel.application&apos;.       &quot;#EC NOTEXT
+    IF sy-subrc IS NOT INITIAL.
+      MESSAGE i398 WITH text-ex2 space space space DISPLAY LIKE &apos;E&apos;. &quot;Executed with errors
+      RETURN.
+    ENDIF.
+    SET PROPERTY OF lo_application &apos;visible&apos; = 0.           &quot;#EC NOTEXT
+*---------- Create Workbook ----------*
+    CALL METHOD OF lo_application &apos;Workbooks&apos; = lo_workbook.  &quot;Get Workbook
+    SET PROPERTY OF lo_application &apos;SheetsInNewWorkbook&apos; = 1.
+    CALL METHOD OF lo_workbook &apos;Add&apos;.                         &quot;Create Workbook
+*---------- Create Worksheet ----------*
+    CALL METHOD OF lo_application &apos;Worksheets&apos; = lo_worksheet &quot;Get worksheet
+      EXPORTING #1 = 1.
+    CALL METHOD OF lo_worksheet &apos;Activate&apos;.                   &quot;Activate worksheet
+    SET PROPERTY OF lo_worksheet &apos;Name&apos; = text-f01.         &quot;#EC NOTEXT
+*---------- Create Header Column Object ----------*
+    PERFORM create_cell USING lv_row lv_column gc_object abap_true CHANGING lo_worksheet.
+*---------- Create Header Column LXE Object ----------*
+    ADD 1 TO lv_column.
+    PERFORM create_cell USING lv_row lv_column gc_lxe_object abap_true CHANGING lo_worksheet.
+*---------- Create Header Column Text Pair ----------*
+    ADD 1 TO lv_column.
+    PERFORM create_cell USING lv_row lv_column gc_textkey abap_true CHANGING lo_worksheet.
+*---------- Create Header Column LXE object description ----------*
+    ADD 1 TO lv_column.
+    PERFORM create_cell USING lv_row lv_column gc_desc abap_true CHANGING lo_worksheet.
+*---------- Create Header Column Length ----------*
+    ADD 1 TO lv_column.
+    PERFORM create_cell USING lv_row lv_column gc_length abap_true CHANGING lo_worksheet.
+*---------- Create Header Column Source Language column ----------*
+    ADD 1 TO lv_column.
+    CONCATENATE ls_slanguage-r3_lang ls_slanguage-text INTO lv_lang_txt SEPARATED BY space.
+    PERFORM create_cell USING lv_row lv_column lv_lang_txt abap_true CHANGING lo_worksheet.
+
+*---------- Create Header Columns Target Languages ----------*
+    LOOP AT so_tlang INTO ls_tlang.
+      READ TABLE gt_languages INTO ls_tlanguage WITH KEY laiso = ls_tlang-low. &quot;Read language tecnical info
+      IF sy-subrc IS INITIAL.
+        ADD 1 TO lv_column.
+        CONCATENATE ls_tlanguage-r3_lang ls_tlanguage-text INTO lv_lang_txt SEPARATED BY space.
+        PERFORM create_cell USING lv_row lv_column lv_lang_txt abap_true CHANGING lo_worksheet.
+      ENDIF.
+    ENDLOOP.
+
+*---------- Loop all selected objects ----------*
+    LOOP AT lt_objects INTO ls_object.
+      CONCATENATE ls_object-pgmid ls_object-object ls_object-obj_name INTO lv_object SEPARATED BY space.
+      lv_add_row = abap_true. &quot;Set add rows for new object
+      lv_column = 6.          &quot;Start text column
+      lv_row_init = lv_row.   &quot;Get init row
+
+*---------- Create Column by target languague ----------*
+      LOOP AT so_tlang INTO ls_tlang.                    &quot;#EC CI_NESTED
+        ADD 1 TO lv_column.
+        CLEAR ls_tlanguage.
+        READ TABLE gt_languages INTO ls_tlanguage WITH KEY laiso = ls_tlang-low. &quot;Read language tecnical info
+
+*---------- Create Rows by LXE object ----------*
+        LOOP AT gt_objs_colob INTO ls_objs_colob WHERE pgmid    = ls_object-pgmid &quot;#EC CI_NESTED
+                                                   AND object   = ls_object-object
+                                                   AND obj_name = ls_object-obj_name.
+          CONCATENATE ls_objs_colob-objtype ls_objs_colob-objname INTO lv_lxe_object SEPARATED BY space.
+*---------- Read texts ----------*
+          REFRESH lt_pcx_s1.
+          CALL FUNCTION &apos;LXE_OBJ_TEXT_PAIR_READ&apos;
+            EXPORTING
+              t_lang    = ls_tlanguage-o_language
+              s_lang    = ls_slanguage-o_language
+              custmnr   = ls_objs_colob-custmnr
+              objtype   = ls_objs_colob-objtype
+              objname   = ls_objs_colob-objname
+            TABLES
+              lt_pcx_s1 = lt_pcx_s1.
+
+*---------- Read objects description ----------*
+          CLEAR lv_obj_text.
+          CALL FUNCTION &apos;LXE_ATTOB_OBJECT_TYPE_TEXT_GET&apos;    &quot;#EC FB_RC
+            EXPORTING
+              obj_type      = ls_objs_colob-objtype
+            IMPORTING
+              obj_text      = lv_obj_text
+            EXCEPTIONS
+              no_text_found = 1
+              OTHERS        = 2.
+
+*---------- Create Rows (LXE Object) ----------*
+          lv_row_lang = lv_row_init.
+          LOOP AT lt_pcx_s1 INTO ls_pcx_s1.              &quot;#EC CI_NESTED
+            IF lv_add_row IS NOT INITIAL.
+              ADD 1 TO lv_row.
+              lv_row_lang = lv_row.
+*---------- Create Rows (Object) ----------*
+              PERFORM create_cell USING lv_row 1 lv_object abap_true CHANGING lo_worksheet.
+*---------- Create Rows (LXE Object) ----------*
+              PERFORM create_cell USING lv_row 2 lv_lxe_object abap_true CHANGING lo_worksheet.
+*---------- Create Rows (Text Pair) ----------*
+              PERFORM create_cell USING lv_row 3 ls_pcx_s1-textkey abap_true CHANGING lo_worksheet.
+*---------- Create Rows (Description) ----------*
+              PERFORM create_cell USING lv_row 4 lv_obj_text abap_true CHANGING lo_worksheet.
+*---------- Create Rows (Length) ----------*
+              PERFORM create_cell USING lv_row 5 ls_pcx_s1-unitmlt abap_true CHANGING lo_worksheet.
+*---------- Create Rows (LXE Object Source Language) ----------*
+              PERFORM create_cell USING lv_row 6 ls_pcx_s1-s_text abap_true CHANGING lo_worksheet.
+
+            ELSE.
+              ADD 1 TO lv_row_lang.
+            ENDIF.
+*---------- Create Rows (LXE Object Target languague ) ----------*
+            PERFORM create_cell USING lv_row_lang lv_column ls_pcx_s1-t_text abap_false CHANGING lo_worksheet.
+          ENDLOOP.  &quot;Rows
+        ENDLOOP.  &quot;LXE object
+
+        CLEAR lv_add_row.
+      ENDLOOP.  &quot;Column
+    ENDLOOP.  &quot;Selected objects
+
+*---------- Format Columns ----------*
+    CALL METHOD OF lo_application &apos;Columns&apos; = lo_column.  &quot;Get Column
+    CALL METHOD OF lo_column &apos;Autofit&apos;.                   &quot;Set Column Autofit
+
+    CALL METHOD OF lo_application &apos;COLUMNS&apos; = lo_column &quot;Get Column 2
+      EXPORTING #1 = 2.
+    SET PROPERTY OF lo_column &apos;ColumnWidth&apos; = 1.
+
+    CALL METHOD OF lo_application &apos;COLUMNS&apos; = lo_column &quot;Get Column 3
+      EXPORTING #1 = 3.
+    SET PROPERTY OF lo_column &apos;ColumnWidth&apos; = 1.
+
+*---------- Save excel worksheet ----------*
+    CALL METHOD OF lo_worksheet &apos;SaveAs&apos;                  &quot;Save excel
+      EXPORTING #1 = lv_fullpath.
+
+    IF sy-subrc IS INITIAL.
+*---------- Closes excel window ----------*
+      CALL METHOD OF lo_workbook &apos;CLOSE&apos;.                   &quot;Close Workbook
+      SET PROPERTY OF lo_application &apos;DisplayAlerts&apos; = 0.
+      CALL METHOD OF lo_application &apos;QUIT&apos;.                 &quot;End excel
+      FREE OBJECT: lo_column, lo_worksheet, lo_workbook, lo_application.
+      MESSAGE i398 WITH text-ex1 space space space DISPLAY LIKE &apos;S&apos;. &quot;Executed with success
+    ELSE.
+      MESSAGE i398 WITH text-ex2 space space space DISPLAY LIKE &apos;E&apos;. &quot;Executed with errors
+      RETURN.
+    ENDIF.
+  ENDIF.
+
+ENDFORM.                    &quot; DOWNLOAD_TEMPLATE
+*----------------------------------------------- Form UPLOAD_TEMPLATE *
+FORM upload_template TABLES lt_objects TYPE STANDARD TABLE. &quot;#EC PF_NO_TYPE
+  DATA:
+    ls_object          LIKE LINE OF gt_objects,                   &quot;Object to transport
+    lt_files           TYPE TABLE OF file_table,                  &quot;Files names
+    ls_file            LIKE LINE OF lt_files,
+    lt_excel_data      TYPE TABLE OF alsmex_tabline,              &quot;Rows for Table with Excel Data
+    ls_excel_data      LIKE LINE OF lt_excel_data,
+    lt_component_table TYPE cl_abap_structdescr=&gt;component_table, &quot;Component Description Table
+    ls_component_table LIKE LINE OF lt_component_table,
+    ls_tlanguage       LIKE LINE OF gt_languages,                 &quot;Languages Informations
+    ls_slanguage       LIKE LINE OF gt_languages,
+    ls_objs_colob      LIKE LINE OF gt_objs_colob,                &quot;LXE Objects
+    lt_pcx_s1          TYPE TABLE OF lxe_pcx_s1,                  &quot;Text Pairs
+    ls_pcx_s1          LIKE LINE OF lt_pcx_s1,
+    ls_tlang           LIKE LINE OF so_tlang.                     &quot;Target Languages
+  DATA:
+    lo_data        TYPE REF TO data,                &quot;Generic data
+    lo_data_line   TYPE REF TO data,
+    lo_excel_table TYPE REF TO cl_abap_tabledescr,  &quot;Runtime Type Services
+    lo_excel_type  TYPE REF TO cl_abap_structdescr.
+  DATA:
+    lv_title       TYPE string,      &quot;Window title
+    lv_rc          TYPE i,           &quot;User action
+    lv_filename    TYPE localfile,   &quot;File Name
+    lv_object      TYPE string,      &quot;Object
+    lv_pstatus     TYPE lxestatprc,  &quot;Process Status
+    lv_stattrn     TYPE lxestattrn,  &quot;Translation Status of an Object
+    lv_lxe_object  TYPE string,      &quot;LXE object
+    lv_tlang_exist TYPE abap_bool,  &quot;Target Language flag
+    lv_modify      TYPE abap_bool.
+  FIELD-SYMBOLS:
+    &lt;lt_excel_table&gt; TYPE STANDARD TABLE,      &quot;Dynamic excel
+    &lt;ls_excel_table&gt; TYPE any,
+    &lt;field&gt;          TYPE any,                 &quot;Field pointer
+    &lt;ls_pcx_s1&gt;      LIKE LINE OF lt_pcx_s1,   &quot;Text Pairs
+    &lt;ls_object&gt;      LIKE LINE OF gt_objects.  &quot;Objects to translate
+
+*---------- Open file dialog ----------*
+  lv_title = text-g01.  &quot;Upload Template
+  CALL METHOD cl_gui_frontend_services=&gt;file_open_dialog
+    EXPORTING
+      window_title            = lv_title
+      default_filename        = &apos;*.xlsx&apos;
+    CHANGING
+      file_table              = lt_files
+      rc                      = lv_rc
+    EXCEPTIONS
+      file_open_dialog_failed = 1
+      cntl_error              = 2
+      error_no_gui            = 3
+      not_supported_by_gui    = 4
+      OTHERS                  = 5.
+  IF sy-subrc IS NOT INITIAL.
+    MESSAGE i398 WITH text-ex2 space space space DISPLAY LIKE &apos;E&apos;. &quot;Executed with errors
+    RETURN.
+  ENDIF.
+
+*---------- Read excel ----------*
+  IF lv_rc = 1.
+    READ TABLE lt_files INTO ls_file INDEX 1.
+    IF sy-subrc IS INITIAL.
+*---------- Upload excel ----------*
+      lv_filename = ls_file-filename.
+      CALL FUNCTION &apos;ALSM_EXCEL_TO_INTERNAL_TABLE&apos;
+        EXPORTING
+          filename                = lv_filename
+          i_begin_col             = 1
+          i_begin_row             = 1
+          i_end_col               = 10000
+          i_end_row               = 10000
+        TABLES
+          intern                  = lt_excel_data
+        EXCEPTIONS
+          inconsistent_parameters = 1
+          upload_ole              = 2
+          OTHERS                  = 3.
+      IF sy-subrc IS NOT INITIAL OR lt_excel_data IS INITIAL.
+        MESSAGE i398 WITH text-m02 space space space DISPLAY LIKE &apos;E&apos;. &quot;Error opening file
+        RETURN.
+      ENDIF.
+*---------- Create dynamic table structure ----------*
+      LOOP AT lt_excel_data INTO ls_excel_data WHERE row = 1.
+        CASE ls_excel_data-col.
+          WHEN 1. &quot;Object
+            IF ls_excel_data-value &lt;&gt; gc_object.
+              MESSAGE i398 WITH text-m11 space space space DISPLAY LIKE &apos;E&apos;. &quot;File not valid
+              RETURN.
+            ENDIF.
+            ls_component_table-name = gc_object.  &quot;Object Type
+            ls_component_table-type = cl_abap_elemdescr=&gt;get_c( &apos;48&apos; ).
+
+          WHEN 2. &quot;LXE Object
+            IF ls_excel_data-value &lt;&gt; gc_lxe_object.
+              MESSAGE i398 WITH text-m11 space space space DISPLAY LIKE &apos;E&apos;. &quot;File not valid
+              RETURN.
+            ENDIF.
+            ls_component_table-name = gc_lxe_object. &quot;LXE Object
+            ls_component_table-type = cl_abap_elemdescr=&gt;get_c( &apos;75&apos; ).
+
+          WHEN 3. &quot;Text Pair
+            IF ls_excel_data-value &lt;&gt; gc_textkey.
+              MESSAGE i398 WITH text-m11 space space space DISPLAY LIKE &apos;E&apos;. &quot;File not valid
+              RETURN.
+            ENDIF.
+            ls_component_table-name = gc_textkey.  &quot;Text pair
+            ls_component_table-type = cl_abap_elemdescr=&gt;get_c( &apos;32&apos; ).
+
+          WHEN 4. &quot;Description
+            IF ls_excel_data-value &lt;&gt; gc_desc.
+              MESSAGE i398 WITH text-m11 space space space DISPLAY LIKE &apos;E&apos;. &quot;File not valid
+              RETURN.
+            ENDIF.
+            ls_component_table-name = gc_desc.  &quot;Description
+            ls_component_table-type = cl_abap_elemdescr=&gt;get_c( &apos;60&apos; ).
+
+          WHEN 5. &quot;Length
+            IF ls_excel_data-value &lt;&gt; gc_length.
+              MESSAGE i398 WITH text-m11 space space space DISPLAY LIKE &apos;E&apos;. &quot;File not valid
+              RETURN.
+            ENDIF.
+            ls_component_table-name = gc_length.  &quot;Length
+            ls_component_table-type = cl_abap_elemdescr=&gt;get_c( &apos;10&apos; ).
+
+          WHEN 6. &quot;Source language
+            READ TABLE gt_languages INTO ls_slanguage WITH KEY laiso = p_slang.
+            IF ls_excel_data-value(2) &lt;&gt; ls_slanguage-r3_lang.
+              MESSAGE i398 WITH text-m12 space space space DISPLAY LIKE &apos;E&apos;. &quot;File source language not valid
+              RETURN.
+            ENDIF.
+            ls_component_table-name = ls_excel_data-value(2).  &quot;Languagues
+            ls_component_table-type = cl_abap_elemdescr=&gt;get_c( &apos;132&apos; ).
+
+          WHEN OTHERS. &quot;Target languages
+            READ TABLE gt_languages INTO ls_tlanguage WITH KEY r3_lang = ls_excel_data-value(2).
+            IF sy-subrc IS INITIAL.
+              lv_tlang_exist = abap_true.
+            ENDIF.
+
+            ls_component_table-name = ls_excel_data-value(2).  &quot;Languagues
+            ls_component_table-type = cl_abap_elemdescr=&gt;get_c( &apos;132&apos; ).
+        ENDCASE.
+
+        APPEND ls_component_table TO lt_component_table.
+        CLEAR ls_component_table.
+      ENDLOOP.
+
+      IF lv_tlang_exist IS INITIAL.
+        MESSAGE i398 WITH text-m13 space space space DISPLAY LIKE &apos;E&apos;. &quot;File target languages not valid
+        RETURN.
+      ENDIF.
+
+*---------- Create dynamic table ----------*
+      IF lt_component_table IS NOT INITIAL.
+        lo_excel_type = cl_abap_structdescr=&gt;create( lt_component_table ).
+        lo_excel_table = cl_abap_tabledescr=&gt;create( p_line_type  = lo_excel_type
+                                                     p_table_kind = cl_abap_tabledescr=&gt;tablekind_std
+                                                     p_unique     = abap_false ).
+        CREATE DATA lo_data TYPE HANDLE lo_excel_table.
+        ASSIGN lo_data-&gt;* TO &lt;lt_excel_table&gt;.
+        IF &lt;lt_excel_table&gt; IS ASSIGNED.
+          CREATE DATA lo_data_line LIKE LINE OF &lt;lt_excel_table&gt;.
+          ASSIGN lo_data_line-&gt;* TO &lt;ls_excel_table&gt;.
+        ENDIF.
+      ENDIF.
+
+      IF &lt;lt_excel_table&gt; IS NOT ASSIGNED OR &lt;ls_excel_table&gt; IS NOT ASSIGNED.
+        MESSAGE i398 WITH text-ex2 space space space DISPLAY LIKE &apos;E&apos;. &quot;Executed with errors
+        RETURN.
+      ENDIF.
+*---------- Fill dynamic table with excel data ----------*
+      LOOP AT lt_excel_data INTO ls_excel_data WHERE row &gt; 1.
+        AT NEW row.                                     &quot;#EC AT_LOOP_WH
+          APPEND INITIAL LINE TO &lt;lt_excel_table&gt; ASSIGNING &lt;ls_excel_table&gt;.
+        ENDAT.
+
+        READ TABLE lt_component_table INTO ls_component_table INDEX ls_excel_data-col.
+        IF sy-subrc IS INITIAL.
+          ASSIGN COMPONENT ls_component_table-name OF STRUCTURE &lt;ls_excel_table&gt; TO &lt;field&gt;.
+          IF &lt;field&gt; IS NOT ASSIGNED.
+            CONTINUE.
+          ENDIF.
+        ENDIF.
+        &lt;field&gt; = ls_excel_data-value.
+      ENDLOOP.
+
+      IF &lt;lt_excel_table&gt; IS INITIAL.
+        MESSAGE i398 WITH text-m04 space space space DISPLAY LIKE &apos;W&apos;. &quot;No objects selected
+      ENDIF.
+
+*---------- Translate upload excel data ----------*
+*---------- Loop all selected objects ----------*
+      LOOP AT lt_objects INTO ls_object.                 &quot;#EC CI_NESTED
+        CONCATENATE ls_object-pgmid ls_object-object ls_object-obj_name INTO lv_object SEPARATED BY space.
+        READ TABLE &lt;lt_excel_table&gt; ASSIGNING &lt;ls_excel_table&gt; WITH KEY (gc_object) = lv_object.  &quot;Check if object exist in file
+        IF sy-subrc IS NOT INITIAL. &quot;Object not found in file
+          CONTINUE.
+        ENDIF.
+
+*---------- Loop LXE Sub-Objects ----------*
+        LOOP AT gt_objs_colob INTO ls_objs_colob WHERE pgmid    = ls_object-pgmid &quot;#EC CI_NESTED
+                                                   AND object   = ls_object-object
+                                                   AND obj_name = ls_object-obj_name.
+
+          CONCATENATE ls_objs_colob-objtype ls_objs_colob-objname INTO lv_lxe_object SEPARATED BY space.
+          READ TABLE &lt;lt_excel_table&gt; ASSIGNING &lt;ls_excel_table&gt; WITH KEY (gc_object)     = lv_object &quot;Check if object exist in file
+                                                                          (gc_lxe_object) = lv_lxe_object.
+          IF sy-subrc IS NOT INITIAL. &quot;Object not found in file
+            CONTINUE.
+          ENDIF.
+
+*---------- Loop selected target language ----------*
+          LOOP AT so_tlang INTO ls_tlang. &quot;#EC CI_NESTED
+            CLEAR ls_tlanguage.
+            READ TABLE gt_languages INTO ls_tlanguage WITH KEY laiso = ls_tlang-low. &quot;Read language tecnical info
+            READ TABLE lt_component_table TRANSPORTING NO FIELDS WITH KEY name = ls_tlanguage-r3_lang. &quot;Check if target language exist
+            IF sy-subrc IS NOT INITIAL. &quot;Target Language found
+              CONTINUE.
+            ENDIF.
+
+*---------- Read texts ----------*
+            CLEAR lv_pstatus.
+            REFRESH lt_pcx_s1.
+            CALL FUNCTION &apos;LXE_OBJ_TEXT_PAIR_READ&apos;
+              EXPORTING
+                t_lang    = ls_tlanguage-o_language
+                s_lang    = ls_slanguage-o_language
+                custmnr   = ls_objs_colob-custmnr
+                objtype   = ls_objs_colob-objtype
+                objname   = ls_objs_colob-objname
+                read_only = space
+              IMPORTING
+                pstatus   = lv_pstatus
+              TABLES
+                lt_pcx_s1 = lt_pcx_s1.
+            IF lv_pstatus &lt;&gt; &apos;S&apos; OR lt_pcx_s1 IS INITIAL. &quot;Not Successful or empty
+              CONTINUE.
+            ENDIF.
+
+*---------- Update and check Overwrite ----------*
+            CLEAR lv_modify.
+            LOOP AT lt_pcx_s1 ASSIGNING &lt;ls_pcx_s1&gt;.     &quot;#EC CI_NESTED
+              IF p_ow IS INITIAL AND &lt;ls_pcx_s1&gt;-t_text IS NOT INITIAL. &quot;Check Overwrite
+                CONTINUE.
+              ENDIF.
+
+              READ TABLE &lt;lt_excel_table&gt; ASSIGNING &lt;ls_excel_table&gt; WITH KEY (gc_object)     = lv_object
+                                                                              (gc_lxe_object) = lv_lxe_object
+                                                                              (gc_textkey)    = &lt;ls_pcx_s1&gt;-textkey.
+              IF sy-subrc IS INITIAL.
+                ASSIGN COMPONENT ls_tlanguage-r3_lang OF STRUCTURE &lt;ls_excel_table&gt; TO &lt;field&gt;.
+                IF sy-subrc IS INITIAL.
+                  IF &lt;field&gt; IS NOT INITIAL.
+                    &lt;ls_pcx_s1&gt;-t_text = &lt;field&gt;.
+                    lv_modify = abap_true.
+                  ENDIF.
+                ENDIF.
+              ENDIF.
+            ENDLOOP.
+
+*---------- Update texts ----------*
+            IF lv_modify IS NOT INITIAL.
+              CALL FUNCTION &apos;LXE_OBJ_TEXT_PAIR_WRITE&apos;
+                EXPORTING
+                  t_lang    = ls_tlanguage-o_language
+                  s_lang    = ls_slanguage-o_language
+                  custmnr   = ls_objs_colob-custmnr
+                  objtype   = ls_objs_colob-objtype
+                  objname   = ls_objs_colob-objname
+                TABLES
+                  lt_pcx_s1 = lt_pcx_s1.
+*---------- Create proposal and check status ----------*
+              LOOP AT lt_pcx_s1 INTO ls_pcx_s1 WHERE t_text IS NOT INITIAL. &quot;#EC CI_NESTED
+                CALL FUNCTION &apos;LXE_PP1_PROPOSAL_EDIT_SE63&apos;
+                  EXPORTING
+                    t_lang         = ls_tlanguage-o_language
+                    s_lang         = ls_slanguage-o_language
+                    custmnr        = ls_objs_colob-custmnr
+                    objtype        = ls_objs_colob-objtype
+                    domatyp        = ls_objs_colob-domatyp
+                    domanam        = ls_objs_colob-domanam
+                    pcx_s1         = ls_pcx_s1
+                    direct_command = &apos;ASTX&apos;
+                    direct_status  = &apos;69&apos;.
+              ENDLOOP.  &quot;Proposal
+            ENDIF.
+
+*---------- Check and update log translation status ----------*
+            READ TABLE gt_objects ASSIGNING &lt;ls_object&gt; WITH KEY pgmid    = ls_object-pgmid
+                                                                 object   = ls_object-object
+                                                                 obj_name = ls_object-obj_name.
+            IF sy-subrc IS INITIAL.
+              CLEAR lv_stattrn.
+              CALL FUNCTION &apos;LXE_OBJ_TRANSLATION_STATUS2&apos;
+                EXPORTING
+                  t_lang  = ls_tlanguage-o_language
+                  s_lang  = ls_slanguage-o_language
+                  custmnr = ls_objs_colob-custmnr
+                  objtype = ls_objs_colob-objtype
+                  objname = ls_objs_colob-objname
+                IMPORTING
+                  stattrn = lv_stattrn.
+*---------- Process Translation status ----------*
+              IF lv_stattrn = &apos;T&apos;.  &quot;Translated
+                IF &lt;ls_object&gt;-statproc &lt;&gt; icon_led_yellow.
+                  &lt;ls_object&gt;-statproc = icon_led_green.
+                ENDIF.
+              ELSE.
+                &lt;ls_object&gt;-statproc = icon_led_yellow.
+              ENDIF.
+            ENDIF.
+
+          ENDLOOP.  &quot;Target Languagens
+        ENDLOOP.  &quot;LXE Sub-Objects
+      ENDLOOP.  &quot;Objects
+
+      MESSAGE i398 WITH text-ex1 space space space DISPLAY LIKE &apos;S&apos;.  &quot;Executed with success
+    ENDIF.  &quot;Open excel
+  ENDIF.  &quot;Read excel
+
+ENDFORM.                    &quot; UPLOAD_TEMPLATE
+*--------------------------------------------------- Form CREATE_CELL *
+FORM create_cell USING p_row_num TYPE i p_cell_num TYPE i p_value TYPE any p_bold TYPE abap_bool
+              CHANGING c_sheet   TYPE ole2_object.
+  DATA:
+    lo_cell TYPE ole2_object,
+    e_bold  TYPE ole2_object.
+
+*---------- Create Excel cell ----------*
+  CALL METHOD OF c_sheet &apos;Cells&apos; = lo_cell  &quot;Get Cell
+    EXPORTING #1 = p_row_num #2 = p_cell_num.
+  SET PROPERTY OF lo_cell &apos;Value&apos; = p_value.                &quot;#EC NOTEXT
+  IF p_bold IS NOT INITIAL.
+    GET PROPERTY OF lo_cell &apos;Font&apos; = e_bold.                &quot;#EC NOTEXT
+    SET PROPERTY OF e_bold &apos;Bold&apos; = 1.                      &quot;#EC NOTEXT
+  ENDIF.
+ENDFORM.                    &quot; CREATE_CELL
+
+*---------------------------------- CLASS HANDLE EVENTS IMPLEMENTATION *
+CLASS lcl_handle_events IMPLEMENTATION.
+*-------------------------------------------------------- User command *
+  METHOD on_user_command.
+    CONSTANTS:
+      lc_copy TYPE string VALUE &apos;COPY&apos;, &quot;Copy original to targets
+      lc_down TYPE string VALUE &apos;DOWN&apos;, &quot;Download Template
+      lc_up   TYPE string VALUE &apos;UP&apos;,   &quot;Upload Template
+      lc_tr   TYPE string VALUE &apos;TR&apos;.   &quot;Transport request
+
+    CHECK e_salv_function = lc_copy OR e_salv_function = lc_down OR
+          e_salv_function = lc_up   OR e_salv_function = lc_tr.
+
+    DATA lr_selections TYPE REF TO cl_salv_selections. &quot;ALV Selections
+    DATA:
+      lt_rows    TYPE salv_t_row,            &quot;ALV Rows
+      ls_row     TYPE i,
+      lt_objects TYPE TABLE OF gty_objects.  &quot;Objects to translate
+    DATA lv_answer TYPE c.
+    FIELD-SYMBOLS &lt;ls_object&gt; LIKE LINE OF gt_objects.  &quot;Objects to translate
+
+    TRY.
+*---------- Get selected lines ----------*
+        lr_selections = go_objects-&gt;get_selections( ).
+        lt_rows = lr_selections-&gt;get_selected_rows( ).
+
+*---------- Get selected objects ----------*
+        LOOP AT lt_rows INTO ls_row.
+          READ TABLE gt_objects ASSIGNING &lt;ls_object&gt; INDEX ls_row.
+          IF sy-subrc IS INITIAL AND &lt;ls_object&gt;-status = icon_led_green. &quot;Object valid if status OK
+            CLEAR &lt;ls_object&gt;-statproc.                                   &quot;Clear translation status for reprocessing
+            APPEND &lt;ls_object&gt; TO lt_objects.                             &quot;Add selected object for processing
+          ENDIF.
+        ENDLOOP.
+
+        IF lt_objects IS NOT INITIAL. &quot;Objects selected
+*---------- Confirmation for copy or update ----------*
+          IF e_salv_function = lc_copy OR e_salv_function = lc_up.
+            CALL FUNCTION &apos;POPUP_TO_CONFIRM&apos;   &quot;#EC FB_RC &quot;#EC CI_SUBRC
+              EXPORTING
+                titlebar       = text-f01
+                text_question  = text-f02
+              IMPORTING
+                answer         = lv_answer
+              EXCEPTIONS
+                text_not_found = 1
+                OTHERS         = 2.
+            IF lv_answer &lt;&gt; &apos;1&apos;. RETURN. ENDIF.
+          ENDIF.
+
+*---------- Execution ----------*
+          CASE e_salv_function.
+*---------- Copy original to targets ----------*
+            WHEN lc_copy.
+              PERFORM copy_translations TABLES lt_objects.
+*---------- Download Template ----------*
+            WHEN lc_down.
+              PERFORM download_template TABLES lt_objects.
+*---------- Upload Template ----------*
+            WHEN lc_up.
+              PERFORM upload_template TABLES lt_objects.
+*---------- Transport request ----------*
+            WHEN lc_tr.
+              PERFORM create_transport TABLES lt_objects.
+          ENDCASE.
+
+*---------- ALV Refresh for copy or update ----------*
+          IF e_salv_function = lc_copy OR e_salv_function = lc_up.
+            go_objects-&gt;refresh( ).
+          ENDIF.
+
+        ELSE.
+          MESSAGE i398 WITH text-m04 space space space. &quot;No objects selected
+        ENDIF.
+
+      CATCH cx_root INTO go_exp.                         &quot;#EC CATCH_ALL
+        gv_msg_text = go_exp-&gt;get_text( ).
+        MESSAGE s398 WITH gv_msg_text space space space DISPLAY LIKE &apos;E&apos;. &quot;Critical error
+    ENDTRY.
+  ENDMETHOD.                    &quot;on_user_command
+*-------------------------------------------------------- Line dbclick *
+  METHOD on_double_click.
+    DATA:
+      lt_spopli   TYPE TABLE OF spopli,       &quot;Language infos
+      ls_spopli   LIKE LINE OF lt_spopli,
+      ls_language LIKE LINE OF gt_languages,
+      ls_e071     TYPE e071,                  &quot;Change &amp; Transport System: Object Entries of Requests/Tasks
+      ls_object   LIKE LINE OF gt_objects.    &quot;Objects to transport
+    DATA:
+      lv_answer TYPE c,     &quot;User Answer
+      lv_tlang  TYPE spras. &quot;Target Translation Language
+
+*---------- Get selected line ----------*
+    READ TABLE gt_objects INTO ls_object INDEX row.
+    IF sy-subrc IS INITIAL AND ls_object-status = icon_led_green.
+      TRY.
+          IF lines( so_tlang ) = 1. &quot;Only one target language
+            LOOP AT gt_languages INTO ls_language WHERE laiso &lt;&gt; p_slang.
+              lv_tlang = ls_language-laiso.
+              EXIT.
+            ENDLOOP.
+
+          ELSE. &quot;More that one target language
+*---------- Fill popup radio buttons ----------*
+            LOOP AT gt_languages INTO ls_language WHERE laiso &lt;&gt; p_slang.
+              CONCATENATE ls_language-r3_lang ls_language-text INTO ls_spopli-varoption
+                SEPARATED BY space.
+              APPEND ls_spopli TO lt_spopli.
+            ENDLOOP.
+*---------- Please select target language to Edit ----------*
+            CALL FUNCTION &apos;POPUP_TO_DECIDE_LIST&apos;
+              EXPORTING
+                textline1          = text-d01
+                titel              = text-d02
+              IMPORTING
+                answer             = lv_answer
+              TABLES
+                t_spopli           = lt_spopli
+              EXCEPTIONS
+                not_enough_answers = 1
+                too_much_answers   = 2
+                too_much_marks     = 3
+                OTHERS             = 4.
+            IF sy-subrc IS INITIAL AND lv_answer &lt;&gt; &apos;A&apos;.  &quot;Selected
+              READ TABLE lt_spopli INTO ls_spopli WITH KEY selflag = abap_true.                   &quot;Get selected radio button
+              READ TABLE gt_languages INTO ls_language WITH KEY r3_lang = ls_spopli-varoption(2). &quot;Get selected language
+              lv_tlang = ls_language-laiso.
+            ENDIF.
+          ENDIF.
+
+*---------- Edit Target Translation Language ----------*
+          IF lv_tlang IS NOT INITIAL.
+            MOVE-CORRESPONDING ls_object TO ls_e071.
+            CALL FUNCTION &apos;LXE_OBJ_CALL_WL_SE63&apos;
+              EXPORTING
+                s_lang  = p_slang
+                t_lang  = lv_tlang
+                do_eval = abap_true
+                e071    = ls_e071.
+          ENDIF.
+
+        CATCH cx_root INTO go_exp.                       &quot;#EC CATCH_ALL
+          gv_msg_text = go_exp-&gt;get_text( ).
+          MESSAGE s398 WITH gv_msg_text space space space DISPLAY LIKE &apos;E&apos;. &quot;Critical error
+      ENDTRY.
+    ENDIF.
+  ENDMETHOD.                    &quot;on_double_click
+ENDCLASS.                    &quot;lcl_handle_events IMPLEMENTATION</source>
+ </PROG>
+ <TRAN TCODE="ZABAPINHO_TRANSLATOR" PGMNA="ZABAPINHO_TRANSLATOR" DYPNO="1000" CINFO="80">
+  <tstct SPRSL="E" TCODE="ZABAPINHO_TRANSLATOR" TTEXT="Translator - Abapinho Dev Tools"/>
+  <tstcc TCODE="ZABAPINHO_TRANSLATOR" S_WEBGUI="1" S_WIN32="X" S_PLATIN="X"/>
+  <tstcp/>
+  <rsstcd ST_PROG="X" DEVCLASS="$TMP"/>
+ </TRAN>
+</nugget>
