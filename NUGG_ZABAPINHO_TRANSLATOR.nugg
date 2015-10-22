@@ -135,6 +135,11 @@
    <pfstatus_doc OBJ_TYPE="B" OBJ_CODE="000001" SUB_CODE="0001" MODAL="D" INT_NOTE="Status"/>
   </pfstatus>
   <source>REPORT zabapinho_translator MESSAGE-ID 00.
+*----------------------------------------------------------------------*
+* Created by Nuno Morais for objects translations
+* Version 1.0
+*----------------------------------------------------------------------*
+
 *--------------------------------------------------------- GLOBAL DATA *
 TABLES t002.                        &quot;Language Keys
 TYPE-POOLS: abap, icon, ole2, sscr. &quot;Only for old versions
@@ -1182,7 +1187,7 @@ FORM copy_translations TABLES lt_objects TYPE STANDARD TABLE. &quot;#EC PF_NO_TY
                                                AND obj_name = ls_object-obj_name.
 
 *---------- Loop selected target language ----------*
-      LOOP AT so_tlang INTO ls_tlang. &quot;#EC CI_NESTED
+      LOOP AT so_tlang INTO ls_tlang.                    &quot;#EC CI_NESTED
 *---------- Read target language details ----------*
         CLEAR ls_tlanguage.
         READ TABLE gt_languages INTO ls_tlanguage WITH KEY laiso = ls_tlang-low. &quot;Read language tecnical info
@@ -1687,7 +1692,7 @@ FORM upload_template TABLES lt_objects TYPE STANDARD TABLE. &quot;#EC PF_NO_TYPE
           ENDIF.
 
 *---------- Loop selected target language ----------*
-          LOOP AT so_tlang INTO ls_tlang. &quot;#EC CI_NESTED
+          LOOP AT so_tlang INTO ls_tlang.                &quot;#EC CI_NESTED
             CLEAR ls_tlanguage.
             READ TABLE gt_languages INTO ls_tlanguage WITH KEY laiso = ls_tlang-low. &quot;Read language tecnical info
             READ TABLE lt_component_table TRANSPORTING NO FIELDS WITH KEY name = ls_tlanguage-r3_lang. &quot;Check if target language exist

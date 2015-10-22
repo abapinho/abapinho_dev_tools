@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <nugget name="ZABAPINHO_DEPENDENCIES">
  <DEVC DEVCLASS="ZABAPINHO_DEPENDENCIES" CTEXT="Abapinho Dev Tools - Dependencies" LANGUAGE="E" MASTERLANG="E" KORRFLAG="X" DLVUNIT="HOME" NAMESPACE="/0CUST/" PARENTCL="ZABAPINHO_DEV_TOOLS" CREATED_BY="PT99375462" CREATED_ON="20151019" CHANGED_BY="PT99375462" CHANGED_ON="20151019" SRV_CHECK="X" PROJECT_GUID="00000000000000000000000000000000" TRANSLATION_DEPTH="NOT_CLASSIFIED" TRANSLATION_DEPTH_TEXT="Not Classified"/>
- <PROG NAME="ZABAPINHO_DEPENDENCIES" EDTX="X" VARCL="X" SUBC="1" RMAND="040" RLOAD="E" FIXPT="X" UCCHECK="X">
+ <PROG NAME="ZABAPINHO_DEPENDENCIES" VARCL="X" SUBC="1" RMAND="040" RLOAD="E" FIXPT="X" UCCHECK="X">
   <textPool>
    <language SPRAS="E">
     <textElement ID="I" KEY="B01" ENTRY="Object selection" LENGTH="16 "/>
@@ -125,7 +125,8 @@
   </pfstatus>
   <source>REPORT zabapinho_dependencies MESSAGE-ID 00.
 *----------------------------------------------------------------------*
-* Created by NM for Cross system objects recursive dependencies check with transport
+* Created by Nuno Morais for Cross system objects recursive dependencies check with transport
+* Version 1.0
 *----------------------------------------------------------------------*
 
 *---------------------------------------------- LOCAL CLASS DEFINITION *
@@ -1022,7 +1023,7 @@ CLASS obj_dep_trans IMPLEMENTATION.
         MESSAGE e398(00) WITH &apos;Error treating transport request&apos;(m15) space space space DISPLAY LIKE &apos;W&apos;.
       ENDIF.
 
-      LOOP AT lt_objects_temp INTO ls_object. &quot;#EC CI_NESTED
+      LOOP AT lt_objects_temp INTO ls_object.            &quot;#EC CI_NESTED
         ls_object-activity = ls_request_headers-trkorr.
         APPEND ls_object TO lt_objects.
       ENDLOOP.
